@@ -1,0 +1,11 @@
+
+
+1. Tell me about yourself.
+=  Good morning sir,
+I am Sayan.
+Basically I am from Malda  ,  I am a B-Tech  specialising in Electrical and electronics engineering with an overall CGPA of 8.4.
+
+During My 3rd Year , I had joined Bridge Healthcare as  a Frontend Developer .
+I have learned technologies like ReactJs , Tailwind , Material UI , javascipt.
+As part of my internship, I have Contributed to the seamless authentication process by implementing robust login and signup functionalities for both doctor and patient applications .
+My hobbies are Traveling and Listening to Music, Right now I am looking for an opportunity to apply my skill and learn with a reputed company like yours.
