@@ -5,7 +5,7 @@
 2.  What is a database?
  = A Database is a logical, consistent and organized collection of data that it can easily be accessed, managed and updated
 
-```
+
 3. What are the advantages of DBMS?
 
  =
@@ -18,7 +18,6 @@
  -   Easy accessibility,
  -   Easy data extraction and data processing due to the use of queries
 
-```
 4.  What is a checkpoint in DBMS?
  = A checkpoint is like a snapshot of the DBMS state. 
  Using checkpoints, the DBMS can reduce the amount of work to be done during a restart in the event of subsequent crashes. Checkpoints are used for the recovery of the database after the system crash. Checkpoints are used in the log-based recovery system. When due to a system crash we need to restart the system then at that point we use checkpoints. So that, we don't have to perform the transactions from the very starting.
@@ -43,7 +42,7 @@ One-To-One: Here one record of any object can be related to one record of anothe
 One-To-Many (many-to-one): Here one record of any object can be related to many records of other object and vice versa.
 Many-to-many: Here more than one records of an object can be related to n number of records of another object.
 
-```
+
 7. What are the disadvantages of file processing systems?
 = 
  - Inconsistent
@@ -56,7 +55,6 @@ Many-to-many: Here more than one records of an object can be related to n number
  -  Limited data sharing
  -  Atomicity problem
 
-```
 8. What is data abstraction in DBMS? 
     = Data abstraction in DBMS refers to the concept of hiding the complex details of data storage and organization from users and applications, providing them with a simplified and consistent view of the data. It allows users to interact with the database at a higher level of understanding without needing to be aware of the underlying implementation details.
 
