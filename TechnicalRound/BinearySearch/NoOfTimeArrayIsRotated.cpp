@@ -1,31 +1,36 @@
 #include<bits./stdc++.h>
 using namespace std;
-int FindNoOfTimeSorted(vector<int> vec)
+int FindNoOfTimeSorted(vector<int>&nums)
 {
-     int N = vec.size();
-int start = 0;
-int end = vec.size()-1;
-while(start <=end)
-{
-    int mid=(start+end)/2;
-    if (vec[mid] <= vec[(mid + 1) % N] && vec[mid] <= vec[(mid+N - 1)%N])
+
+    if (nums[0] <= nums[nums.size() - 1])
     {
-        return mid;
-     } 
-     else if(vec[start]<=vec[mid])
-     {
-        // matlab mid zyada hein , so its sorted, so we have to find the unsorted part , so shift your start mid+1
-        start=mid+1;
-     }
-     else{
-        end=mid-1;
-     }
+        return 0;
+    }
 
-}
-return -1;
+    int start = 0;
+    int end = nums.size() - 1;
+    int size = nums.size();
 
-
-
+    while (end >= start)
+    {
+        int mid = (start + end) / 2;
+        int prev = (mid + nums.size() - 1) % size;
+        int next = (mid + 1) % size;
+        if ((nums[mid] < nums[prev]) && (nums[mid] < nums[next]))
+        {
+            return mid;
+        }
+        else if (nums[mid] > nums[end])
+        {
+            start = mid + 1;
+        }
+        else
+        {
+            end = mid - 1;
+        }
+    }
+    return -1;
 } int main()
 {
     int n;

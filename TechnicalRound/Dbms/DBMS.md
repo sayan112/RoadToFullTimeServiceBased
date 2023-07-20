@@ -5,16 +5,20 @@
 2.  What is a database?
  = A Database is a logical, consistent and organized collection of data that it can easily be accessed, managed and updated
 
+```
 3. What are the advantages of DBMS?
- =    Redundancy control ,
-   Restriction for unauthorized access ,
-   Provides multiple user interfaces ,
-   Provides backup and recovery,
-   Enforces integrity constraints,
-   Ensure data consistency,
-   Easy accessibility,
-   Easy data extraction and data processing due to the use of queries
 
+ =
+ -     Redundancy control ,
+ -   Restriction for unauthorized access ,
+ -   Provides multiple user interfaces ,
+ -   Provides backup and recovery,
+ -   Enforces integrity constraints,
+ -   Ensure data consistency,
+ -   Easy accessibility,
+ -   Easy data extraction and data processing due to the use of queries
+
+```
 4.  What is a checkpoint in DBMS?
  = A checkpoint is like a snapshot of the DBMS state. 
  Using checkpoints, the DBMS can reduce the amount of work to be done during a restart in the event of subsequent crashes. Checkpoints are used for the recovery of the database after the system crash. Checkpoints are used in the log-based recovery system. When due to a system crash we need to restart the system then at that point we use checkpoints. So that, we don't have to perform the transactions from the very starting.
@@ -39,29 +43,32 @@ One-To-One: Here one record of any object can be related to one record of anothe
 One-To-Many (many-to-one): Here one record of any object can be related to many records of other object and vice versa.
 Many-to-many: Here more than one records of an object can be related to n number of records of another object.
 
+```
 7. What are the disadvantages of file processing systems?
-= Inconsistent
-  Not secure 
-  Data redundancy
-  Difficult in accessing data 
-  Data isolation
-  Data integrity
-  Concurrent access is not possible
-  Limited data sharing
-  Atomicity problem
-  
+= 
+ - Inconsistent
+ -   Not secure 
+ -  Data redundancy
+ -  Difficult in accessing data 
+ -  Data isolation
+ -  Data integrity
+ -  Concurrent access is not possible
+ -  Limited data sharing
+ -  Atomicity problem
+
+```
 8. What is data abstraction in DBMS? 
     = Data abstraction in DBMS refers to the concept of hiding the complex details of data storage and organization from users and applications, providing them with a simplified and consistent view of the data. It allows users to interact with the database at a higher level of understanding without needing to be aware of the underlying implementation details.
 
     levels Of Abstraction ->
 
-    Physical level: It is the lowest level of abstraction. It describes how data are stored.
+ -    Physical level: It is the lowest level of abstraction. It describes how data are stored.
 
-    Logical level: It is the next higher level of abstraction. It describes what data are stored in the database and what the relationship among those data is.
+ -    Logical level: It is the next higher level of abstraction. It describes what data are stored in the database and what the relationship among those data is.
 
-    View level: It is the highest level of data abstraction. It describes only part of the entire database.
+ -    View level: It is the highest level of data abstraction. It describes only part of the entire database.
 
-    For example- User interacts with the system using the GUI and fill the required details, but the user doesn't have any idea how the data is being used. So, the abstraction level is entirely high in VIEW LEVEL.
+ -    For example- User interacts with the system using the GUI and fill the required details, but the user doesn't have any idea how the data is being used. So, the abstraction level is entirely high in VIEW LEVEL.
 
     Then, the next level is for PROGRAMMERS as in this level the fields and records are visible and the programmers have the knowledge of this layer. So, the level of abstraction here is a little low in VIEW LEVEL.
 
@@ -79,12 +86,13 @@ Many-to-many: Here more than one records of an object can be related to n number
 
 10. Weat attribute and Stron attribute?
 
-= Strong Attribute:
+= 
+- Strong Attribute:
     A strong attribute is an attribute that is fully functional and can uniquely identify an entity on its own. It is not dependent on any other attribute within the entity. Strong attributes are represented inside the entity rectangle in an ER diagram.
 
     For example, consider an entity "Student" with attributes such as "Student ID" and "Name." The "Student ID" attribute can uniquely identify a student, even without considering any other attributes. Hence, it is a strong attribute.
 
-    = Weak Attribute: 
+-  Weak Attribute: 
     A weak attribute is an attribute that depends on some other attribute within the entity to uniquely identify an entity. It cannot function independently to identify the entity on its own. Weak attributes are represented with dashed lines in an ER diagram.
 
     Continuing with the "Student" entity example, suppose we introduce an attribute called "Course Enrollment" to represent the courses a student is enrolled in. This attribute cannot uniquely identify a student because multiple students can be enrolled in the same courses. It relies on the "Student ID" attribute to establish uniqueness. Therefore, "Course Enrollment" would be a weak attribute.
@@ -93,36 +101,36 @@ Many-to-many: Here more than one records of an object can be related to n number
 11. ACID property?  
  = ACID is an acronym that represents a set of properties or characteristics that ensure reliability, consistency, and integrity in database transactions. These properties are fundamental for maintaining the correctness and reliability of data in a DBMS (Database Management System). Let's dive into each property ->
 
-    Atomicity: Atomicity refers to the "all-or-nothing" property of a transaction. It ensures that a transaction is treated as a single, indivisible unit of work. Either all the operations within a transaction are executed successfully, and the changes are committed to the database, or none of the operations take effect, and the database remains unchanged. If any part of the transaction fails or encounters an error, all changes made by the transaction are rolled back to the previous consistent state. Atomicity ensures data integrity and prevents the database from being left in an inconsistent state.
+   -  Atomicity: Atomicity refers to the "all-or-nothing" property of a transaction. It ensures that a transaction is treated as a single, indivisible unit of work. Either all the operations within a transaction are executed successfully, and the changes are committed to the database, or none of the operations take effect, and the database remains unchanged. If any part of the transaction fails or encounters an error, all changes made by the transaction are rolled back to the previous consistent state. Atomicity ensures data integrity and prevents the database from being left in an inconsistent state.
 
-    Consistency: Consistency ensures that a transaction brings the database from one consistent state to another consistent state. It enforces predefined rules or constraints on the data, maintaining the validity and integrity of the database. In other words, a transaction should not violate any integrity constraints, such as unique key constraints or referential integrity, during its execution. If a transaction violates any consistency rules, the entire transaction is rolled back, and the database remains unchanged.
+ -    Consistency: Consistency ensures that a transaction brings the database from one consistent state to another consistent state. It enforces predefined rules or constraints on the data, maintaining the validity and integrity of the database. In other words, a transaction should not violate any integrity constraints, such as unique key constraints or referential integrity, during its execution. If a transaction violates any consistency rules, the entire transaction is rolled back, and the database remains unchanged.
 
-    Isolation: Isolation ensures that concurrent transactions do not interfere with each other. Each transaction should be executed in isolation, as if it were the only transaction running in the system. Isolation prevents various concurrency problems, such as dirty reads, non-repeatable reads, and phantom reads. It ensures that the intermediate states of a transaction are not visible to other transactions until the changes are committed. Isolation guarantees data consistency and prevents conflicts between concurrent transactions.
+ -    Isolation: Isolation ensures that concurrent transactions do not interfere with each other. Each transaction should be executed in isolation, as if it were the only transaction running in the system. Isolation prevents various concurrency problems, such as dirty reads, non-repeatable reads, and phantom reads. It ensures that the intermediate states of a transaction are not visible to other transactions until the changes are committed. Isolation guarantees data consistency and prevents conflicts between concurrent transactions.
 
-    Durability: Durability ensures that once a transaction is committed, its changes are permanent and will survive any subsequent failures, such as power outages, system crashes, or hardware failures. The committed data is stored in a stable and permanent manner, typically on disk or other non-volatile storage, to ensure its durability. Even in the event of a system failure, the database can recover the committed state and restore data consistency.
+ -    Durability: Durability ensures that once a transaction is committed, its changes are permanent and will survive any subsequent failures, such as power outages, system crashes, or hardware failures. The committed data is stored in a stable and permanent manner, typically on disk or other non-volatile storage, to ensure its durability. Even in the event of a system failure, the database can recover the committed state and restore data consistency.
 
 12. Keys in DBMS 
 =  Sure! Let's discuss the concepts of primary key, candidate key, super key, and foreign key with examples:
 
-    1. Primary Key:
+   -  1. Primary Key:
     A primary key is a unique identifier for each record (or row) in a database table. It uniquely identifies each record and ensures that there are no duplicate values. A primary key cannot have null values, and every table should have a primary key. Only one primary key is allowed per table.
 
     Example:
     Consider a table called "Employees" with columns such as EmployeeID, Name, Age, and Department. The EmployeeID column can be designated as the primary key since it uniquely identifies each employee.
 
-    2. Candidate Key:
+  -   2. Candidate Key:
     A candidate key is a column (or a set of columns) that can also uniquely identify each record in a table. In other words, it is a potential primary key. A table can have one or more candidate keys, but only one of them is selected as the primary key.
 
     Example:
     In the "Employees" table, besides the EmployeeID, suppose there is another column called SocialSecurityNumber (SSN) that also uniquely identifies each employee. In this case, both EmployeeID and SSN are candidate keys, but only one of them can be chosen as the primary key.
 
-    3. Super Key:
+  -   3. Super Key:
     A super key is a combination of columns that can uniquely identify each record in a table. It may include more columns than necessary to form a candidate key. In other words, a super key is a superset of a candidate key.
 
     Example:
     In the "Employees" table, a combination of EmployeeID and Department can uniquely identify each employee. This combination (EmployeeID + Department) is a super key because it satisfies the uniqueness requirement. However, it is not the minimum set of columns required for a candidate key since the EmployeeID itself is sufficient. Hence, EmployeeID is the candidate key, and (EmployeeID + Department) is a super key.
 
-    4. Foreign Key:
+  -   4. Foreign Key:
     A foreign key is a column or a set of columns in one table that refers to the primary key of another table. It establishes a relationship between two tables, enforcing referential integrity. The values in the foreign key column(s) must exist in the referenced table's primary key or be null (if allowed).
 
     Example:
@@ -137,11 +145,11 @@ Many-to-many: Here more than one records of an object can be related to n number
     For example: If a student is an entity in the table then age will be the attribute of that student. 
 
 
-            Simple attribute : 
+    -         Simple attribute : 
         An attribute that cannot be further subdivided into components is a simple attribute. 
         Example: The roll number of a student, the id number of an employee. 
 
-        Composite attribute : 
+    -     Composite attribute : 
         An attribute that can be split into components is a composite attribute. 
 
         Example: The address can be further split into house number, street number, city, state, country, and pin code, the name can also be 
@@ -152,17 +160,17 @@ Many-to-many: Here more than one records of an object can be related to n number
 
         Example: The age of a student. 
 
-        Multi-valued attribute : 
+     -    Multi-valued attribute : 
         The attribute which takes up more than a single value for each entity instance is a multi-valued attribute. 
 
         Example: Phone number of a student: Landline and mobile. 
 
-        Derived attribute : 
+     -    Derived attribute : 
         An attribute that can be derived from other attributes is derived attributes. 
 
         Example: Total and average marks of a student. 
 
-        Complex attribute :
+     -    Complex attribute :
         Those attributes, which can be formed by the nesting of composite and multi-valued attributes, are called Complex  Attributes. These 
         attributes are rarely used in DBMS(DataBase Management System). That’s why they are not so popular.
 
@@ -171,7 +179,7 @@ Many-to-many: Here more than one records of an object can be related to n number
 
         Example: DOB(Date of birth) is the stored attribute.
 
-        Key attribute:
+      -   Key attribute:
         Key attributes are those attributes that can uniquely identify the entity in the entity set.
 
         Example: Roll-No is the key attribute because it can uniquely identify the student. 
