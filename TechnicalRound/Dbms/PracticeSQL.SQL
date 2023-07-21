@@ -285,3 +285,31 @@ The result will be:
 | NULL         | NULL        |
 
 That covers the different types of joins in MySQL.
+
+
+
+
+-- practice SQL
+
+ SHOW DATABASES;
+use testdb;
+
+SELECT * from persons;
+
+insert into persons (PersonID,FirstName,LastName,Address,City,DOB) values (101 ,"john","doe","london",'lawra','2002-11-02'),
+(102 ,"john","lodu","london",'lawra' ,'2004-11-02'), 
+(103 ,"sumit","doe","colombo",'lawra' ,'2003-02-03'), 
+(104 ,"Kaku","doe","new jersy",'lawra' ,'2002-11-04'), 
+(104 ,"lawra","som","london",'lawra' ,'2011-05-01') ,
+(106 ,"tohar","behen","new york",'lawra' ,'2045-12-08'), 
+(107 ,"kalin","bhaiya","jodhpur",'lawra' ,'2014-03-12') ,
+(108 ,"munna bhaiya","doe","mirzapur",'lawra' ,'2012-01-11') ,
+(109 ,"john","doe","london",'lawra' ,'2001-01-01') 
+;
+
+SELECT firstName, lastName
+FROM persons
+WHERE
+   Address  ='london'
+ORDER BY
+    PersonID;

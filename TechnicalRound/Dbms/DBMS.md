@@ -84,7 +84,7 @@ Many-to-many: Here more than one records of an object can be related to n number
     For example: In the employee database of a company, the employee, department, and the designation can be considered as the entities. These entities have some characteristics which will be the attributes of the corresponding entity.
 
 
-10. Weat attribute and Stron attribute?
+10. Weak attribute and Strong attribute?
 
 = 
 - Strong Attribute:
@@ -93,12 +93,13 @@ Many-to-many: Here more than one records of an object can be related to n number
     For example, consider an entity "Student" with attributes such as "Student ID" and "Name." The "Student ID" attribute can uniquely identify a student, even without considering any other attributes. Hence, it is a strong attribute.
 
 -  Weak Attribute: 
-    A weak attribute is an attribute that depends on some other attribute within the entity to uniquely identify an entity. It cannot function independently to identify the entity on its own. Weak attributes are represented with dashed lines in an ER diagram.
+    A weak attribute is an attribute that depends on some other attribute(strong attribute) within the entity to uniquely identify an entity. It cannot function independently to identify the entity on its own. Weak attributes are represented with dashed lines in an ER diagram.
 
     Continuing with the "Student" entity example, suppose we introduce an attribute called "Course Enrollment" to represent the courses a student is enrolled in. This attribute cannot uniquely identify a student because multiple students can be enrolled in the same courses. It relies on the "Student ID" attribute to establish uniqueness. Therefore, "Course Enrollment" would be a weak attribute.
 
 
 11. ACID property?  
+
  = ACID is an acronym that represents a set of properties or characteristics that ensure reliability, consistency, and integrity in database transactions. These properties are fundamental for maintaining the correctness and reliability of data in a DBMS (Database Management System). Let's dive into each property ->
 
    -  Atomicity: Atomicity refers to the "all-or-nothing" property of a transaction. It ensures that a transaction is treated as a single, indivisible unit of work. Either all the operations within a transaction are executed successfully, and the changes are committed to the database, or none of the operations take effect, and the database remains unchanged. If any part of the transaction fails or encounters an error, all changes made by the transaction are rolled back to the previous consistent state. Atomicity ensures data integrity and prevents the database from being left in an inconsistent state.
@@ -110,11 +111,12 @@ Many-to-many: Here more than one records of an object can be related to n number
  -    Durability: Durability ensures that once a transaction is committed, its changes are permanent and will survive any subsequent failures, such as power outages, system crashes, or hardware failures. The committed data is stored in a stable and permanent manner, typically on disk or other non-volatile storage, to ensure its durability. Even in the event of a system failure, the database can recover the committed state and restore data consistency.
 
 12. Keys in DBMS 
-=  Sure! Let's discuss the concepts of primary key, candidate key, super key, and foreign key with examples:
+= Keys play an important role in the relational database.
+It is used to uniquely identify any record or row of data from the table. It is also used to establish and identify relationships between tables.  
+Sure! Let's discuss the concepts of primary key, candidate key, super key, and foreign key with examples:
 
-   -  1. Primary Key:
-    A primary key is a unique identifier for each record (or row) in a database table. It uniquely identifies each record and ensures that there are no duplicate values. A primary key cannot have null values, and every table should have a primary key. Only one primary key is allowed per table.
-
+   -  1. Super Key / key :
+    A super key is a set of all the keys (with single or multiple attributes) which can uniquely identify the records of the table.
     Example:
     Consider a table called "Employees" with columns such as EmployeeID, Name, Age, and Department. The EmployeeID column can be designated as the primary key since it uniquely identifies each employee.
 
@@ -124,10 +126,9 @@ Many-to-many: Here more than one records of an object can be related to n number
     Example:
     In the "Employees" table, besides the EmployeeID, suppose there is another column called SocialSecurityNumber (SSN) that also uniquely identifies each employee. In this case, both EmployeeID and SSN are candidate keys, but only one of them can be chosen as the primary key.
 
-  -   3. Super Key:
-    A super key is a combination of columns that can uniquely identify each record in a table. It may include more columns than necessary to form a candidate key. In other words, a super key is a superset of a candidate key.
-
-    Example:
+  -   3. Primary Key:
+    A primary key is a unique identifier for each record (or row) in a database table. It uniquely identifies each record and ensures that there are no duplicate values. A primary key cannot have null values, and every table should have a primary key. Only one primary key is allowed per table. (candidate key also identfies unique records int the table but DBA choose only one primary key among candidate key )
+        Example:
     In the "Employees" table, a combination of EmployeeID and Department can uniquely identify each employee. This combination (EmployeeID + Department) is a super key because it satisfies the uniqueness requirement. However, it is not the minimum set of columns required for a candidate key since the EmployeeID itself is sufficient. Hence, EmployeeID is the candidate key, and (EmployeeID + Department) is a super key.
 
   -   4. Foreign Key:
@@ -215,7 +216,8 @@ Many-to-many: Here more than one records of an object can be related to n number
 
 16. Transparency In DBMS , Types ?
 
-= In the context of Distributed Database Management Systems (DDBMS), transparency refers to the degree to which the distribution of data and the complexity of the underlying system are hidden from users and applications. Transparency aims to provide a simplified and unified view of the distributed database, allowing users to interact with it as if it were a single, centralized database.
+= In the context of Distributed Database Management Systems (DDBMS),Transparent hides implementation details from the user. 
+Transparency aims to provide a simplified and unified view of the distributed database, allowing users to interact with it as if it were a single, centralized database.
 
 There are several types of transparency in DDBMS:
 
@@ -267,8 +269,8 @@ There are several types of transparency in DDBMS:
 
     2NF: It is known as the second normal form. A table to be in its second normal form should satisfy the following conditions:
     The table should be in its 1NF i.e. satisfy all the conditions of 1NF.
-    Every non-prime attribute of the table should be fully functionally dependent on the primary key i.e. every non-key attribute should be dependent on the primary key in such a way that if any key element is deleted then even the non_key element will be saved in the database.
-        
+    Every non-prime attribute of the table should be fully functionally dependent on the primary key.
+
     3NF: It is known as the third normal form. A table to be in its third normal form should satisfy the following conditions:
     The table should be in its 2NF i.e. satisfy all the conditions of 2NF.
     There is no transitive functional dependency of one attribute on any attribute in the same table.
