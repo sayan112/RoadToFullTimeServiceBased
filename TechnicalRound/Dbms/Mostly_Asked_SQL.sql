@@ -1,7 +1,5 @@
 show DATABASES;
-
-CREATE DATABASE MostlyAskedInterviewSQL;
-
+ USE Practice ;
 
 CREATE table EmployeeDetails (
 
@@ -23,9 +21,8 @@ VALUES
     (982, 'Emma Smith', 876, '2023-06-20', 'London'),
     (843, 'James Brown', 321, '2022-09-05', 'Chicago'),
     (561 ,"lawra lasun",NULL,"2014-03-23","Sydney") ,
-    (235, 'Sophia Lee', 876, '2023-03-28', 'Sydney');
-
-
+    (235, 'Sophia Lee', 876, '2023-03-28', 'Sydney'),
+    (101, 'John lawra', 221, '2009-01-31', 'Toronto');
 
 
 
@@ -167,6 +164,10 @@ LIMIT 10;
 
 SELECT DISTINCT( Project) from EmployeeSalary ;
 
+-- What is query to find distinct records without using distinct keyword?(Asked 90 % of Interview Questions for IBM)
+
+SELECT Project from EmployeeSalary GROUP BY Project;
+
 --Using LIKE to perform partial string matching: (return all the name starts with J)
 
 SELECT FullName
@@ -178,3 +179,15 @@ where `FullName` LIKE '% J';
 SELECT FullName
 from Employeedetails
 where `FullName` LIKE '% White';
+
+
+-- What is query to display first 50% records from table employee?
+SELECT * FROM Employeedetails LIMIT (SELECT COUNT(*)/2 FROM Employeedetails);
+
+
+-- SELECT return only 9th no record 
+SELECT * FROM Employeedetails  ORDER BY EmpId  LIMIT 1 OFFSET 9;
+
+-- How to Show the Max marks and min marks together from student table? 
+
+SELECT MAX(Salary) FROM Employeesalary UNION SELECT MIN(Salary) FROM Employeesalary ;

@@ -1,6 +1,6 @@
 1. What is DBMS?
  = DBMS is a collection of programs that facilitates users to create and maintain a database.
-  In other words, DBMS provides us an interface or tool for performing different operations such as the creation of a database, inserting data into it, deleting data from it, updating the data, etc. DBMS is a software in which data is stored in a more secure way as compared to the file-based system. Using DBMS, we can overcome many problems such as- data redundancy, data inconsistency, easy access, more organized and understandable, and so on. There is the name of some popular Database Management System- MySQL, Oracle, SQL Server, Amazon simple DB (Cloud-based), etc.
+  In other words, DBMS provides us an interface or tool for performing different operations such as the creation of a database, inserting data into it, deleting data from it, updating the data, etc. DBMS is a software in which data is stored in a more secure way as compared to the file-based system. Using DBMS, we can overcome many problems such as- data redundancy, data inconsistency, easy access, more organized and understandable, and so on. There is the name of some popular Database Management System- MySQL, Oracle, SQL Server, Amazon simple DB (Cloud-based).
 
 2.  What is a database?
  = A Database is a logical, consistent and organized collection of data that it can easily be accessed, managed and updated
@@ -9,12 +9,12 @@
 3. What are the advantages of DBMS?
 
  =
- -     Redundancy control ,
- -   Restriction for unauthorized access ,
+ -  ( Data Redundancy) control ,
+ -  (Data Security) Restriction for unauthorized access ,
  -   Provides multiple user interfaces ,
- -   Provides backup and recovery,
- -   Enforces integrity constraints,
- -   Ensure data consistency,
+ -  (Data Backup and Recovery) Provides backup and recovery,
+ -  (Data Inegrity) Enforces integrity constraints,
+ -  (Data Consistency) Ensure data consistency,
  -   Easy accessibility,
  -   Easy data extraction and data processing due to the use of queries
 
@@ -71,7 +71,7 @@ Many-to-many: Here more than one records of an object can be related to n number
  -    For example- User interacts with the system using the GUI and fill the required details, but the user doesn't have any idea how the data is being used. So, the abstraction level is entirely high in VIEW LEVEL.
 
     Then, the next level is for PROGRAMMERS as in this level the fields and records are visible and the programmers have the knowledge of this layer. So, the level of abstraction here is a little low in VIEW LEVEL.
-
+    
     And lastly, physical level in which storage blocks are described.
 
 9. What is the E-R model?
@@ -88,7 +88,7 @@ Many-to-many: Here more than one records of an object can be related to n number
 
 = 
 - Strong Attribute:
-    A strong attribute is an attribute that is fully functional and can uniquely identify an entity on its own. It is not dependent on any other attribute within the entity. Strong attributes are represented inside the entity rectangle in an ER diagram.
+    A strong attribute is an attribute that is fully functional and can uniquely identify, exist as  an entity on its own. It is not dependent on any other attribute within the entity. Strong attributes are represented inside the entity rectangle in an ER diagram.
 
     For example, consider an entity "Student" with attributes such as "Student ID" and "Name." The "Student ID" attribute can uniquely identify a student, even without considering any other attributes. Hence, it is a strong attribute.
 
@@ -127,9 +127,13 @@ Sure! Let's discuss the concepts of primary key, candidate key, super key, and f
     In the "Employees" table, besides the EmployeeID, suppose there is another column called SocialSecurityNumber (SSN) that also uniquely identifies each employee. In this case, both EmployeeID and SSN are candidate keys, but only one of them can be chosen as the primary key.
 
   -   3. Primary Key:
-    A primary key is a unique identifier for each record (or row) in a database table. It uniquely identifies each record and ensures that there are no duplicate values. A primary key cannot have null values, and every table should have a primary key. Only one primary key is allowed per table. (candidate key also identfies unique records int the table but DBA choose only one primary key among candidate key )
+    A primary key is a unique identifier for each record (or row) in a database table. It uniquely identifies each record and ensures that there are no duplicate values. 
+    A primary key cannot have null values, and every table should have a primary key.
+    Only one primary key is allowed per table. (candidate key also identfies unique records int the table but DBA choose only one primary key among candidate key )
         Example:
-    In the "Employees" table, a combination of EmployeeID and Department can uniquely identify each employee. This combination (EmployeeID + Department) is a super key because it satisfies the uniqueness requirement. However, it is not the minimum set of columns required for a candidate key since the EmployeeID itself is sufficient. Hence, EmployeeID is the candidate key, and (EmployeeID + Department) is a super key.
+    In the "Employees" table, a combination of EmployeeID and Department can uniquely identify each employee. 
+    This combination (EmployeeID + Department) is a super key because it satisfies the uniqueness requirement.
+     However, it is not the minimum set of columns required for a candidate key since the EmployeeID itself is sufficient. Hence, EmployeeID is the candidate key, and (EmployeeID + Department) is a super key.
 
   -   4. Foreign Key:
     A foreign key is a column or a set of columns in one table that refers to the primary key of another table. It establishes a relationship between two tables, enforcing referential integrity. The values in the foreign key column(s) must exist in the referenced table's primary key or be null (if allowed).
@@ -218,7 +222,6 @@ Sure! Let's discuss the concepts of primary key, candidate key, super key, and f
 
 = In the context of Distributed Database Management Systems (DDBMS),Transparent hides implementation details from the user. 
 Transparency aims to provide a simplified and unified view of the distributed database, allowing users to interact with it as if it were a single, centralized database.
-
 There are several types of transparency in DDBMS:
 
         1. Distribution Transparency: Distribution transparency hides the fact that the data is distributed across multiple nodes or sites. Users and applications can access and manipulate the data without being aware of its distribution. It allows the system to handle data distribution and replication transparently, ensuring that users can operate on the distributed data as if it were stored locally.
@@ -227,7 +230,7 @@ There are several types of transparency in DDBMS:
 
         3. Replication Transparency: Replication transparency hides the fact that data is replicated across multiple sites for improved availability, fault tolerance, and performance. Users and applications can access the data without being aware of its replicated copies. The system ensures that data modifications are propagated to all replicas and that consistency is maintained across the distributed copies, providing a transparent view of the data.
 
-        4. Fragmentation Transparency: Fragmentation transparency hides the fact that data is divided into fragments or subsets across multiple nodes or sites. Users and applications can access and manipulate the data as if it were stored in a single logical unit. The system handles the process of data fragmentation and aggregation transparently, ensuring that users can work with the distributed data without explicitly dealing with the fragmentation details.
+        4. Fragmentation Transparency: Fragmentation transparency hides the fact that data is divided into fragments or subsets across multiple nodes or sites. Users and applications can access and manipulate the data as if it were stored in a single logical unit. The system handles the process of data fragmentation and aggregation transparently, ensuring that users can work with the distributed data without explicitly dealing with the fragmentation details. user thinks that they are interacting with a single data source entity.
 
         5. Transaction Transparency: Transaction transparency hides the fact that transactions may span multiple nodes or sites in a distributed system. Users and applications can initiate and execute transactions without being aware of their distributed nature. The system handles the coordination and management of distributed transactions transparently, ensuring that the ACID properties (Atomicity, Consistency, Isolation, Durability) are maintained across the distributed environment.
 
@@ -457,4 +460,32 @@ LAST() - Fetches the last element in a collection of values.
         Subqueries can be powerful tools for performing complex queries and data manipulations in a database. They allow you to break down problems into smaller steps and combine the results to achieve the desired outcome.
 
 
-30.         
+30. DBMS Vs. RDBMS ?
+= DBMS (Database Management System) and RDBMS (Relational Database Management System) are related concepts but have some key differences. Let's explore the distinctions between the two:
+
+        1. Database Management System (DBMS):
+        - A DBMS is a software system that manages and controls the storage, retrieval, and manipulation of data in a database.
+        - It provides an interface between the user, applications, and the database itself.
+        - DBMS can be non-relational and doesn't strictly enforce a structured data model, allowing for various data models like hierarchical, 
+          network, or key-value.
+        - It may not support the concept of relationships between data tables, and it might not provide features like data integrity 
+         constraints, normalization, or enforcing referential integrity.
+
+        2. Relational Database Management System (RDBMS):
+        - RDBMS is a type of DBMS that specifically manages relational databases.
+        - It enforces a tabular structure for data representation, where data is organized in tables with rows and columns, and the 
+         relationships between tables are maintained through foreign keys.
+        - RDBMS follows the principles of the relational model proposed by E.F. Codd in the 1970s.
+        - It provides advanced features like data integrity constraints (primary keys, unique keys, foreign keys), normalization to eliminate 
+         data redundancy, ACID (Atomicity, Consistency, Isolation, Durability) properties to ensure data consistency, and support for SQL 
+          (Structured Query Language) for data manipulation.
+
+        In summary, all RDBMS are DBMS, but not all DBMS are RDBMS. RDBMS is a specialized type of DBMS that adheres to the relational model and provides additional features to ensure data integrity, consistency, and efficiency in handling relational data. Examples of popular RDBMS include MySQL, PostgreSQL, Oracle, SQL Server, and SQLite. On the other hand, non-relational databases like MongoDB, Cassandra, and Redis fall under the broader category of DBMS but are not considered RDBMS because they use different data models and may not support SQL or relational data structures.
+        
+
+31. what is constraint in SQL?
+= In SQL, a constraint is a rule or condition that is applied to a table or column to enforce data integrity and ensure that the data in the database remains consistent and accurate. Constraints define limits or restrictions on the type of data that can be inserted, updated, or deleted from a table. They help maintain data integrity and prevent data anomalies or inconsistencies.
+  example ->
+   Not Null Constraint:A not null constraint ensures that a column cannot contain null values.
+                                It enforces that a specific column must always have a value, and nulls are not allowed.        
+
