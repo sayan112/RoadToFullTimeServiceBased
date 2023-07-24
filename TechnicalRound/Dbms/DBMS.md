@@ -201,7 +201,7 @@ Sure! Let's discuss the concepts of primary key, candidate key, super key, and f
 
         Transaction Control Language (TCL) e.g., COMMIT, ROLLBACK, and SAVEPOINT. These are the commands used for managing transactions in the database. TCL is used for managing the changes made by DML.
 
-15. Difference  Schema and tables
+15. Difference  Schema and tables?
 = 
     Schema:
     A schema is a logical container or a namespace that represents the overall structure and organization of a database. It acts as a blueprint for the database, defining the database's structure, relationships, constraints, and permissions. It provides a way to group related database objects together, such as tables, views, indexes, and stored procedures.
@@ -244,20 +244,38 @@ There are several types of transparency in DDBMS:
     Example: NULL value in “number_of_courses” taken by a student represents that its value is unknown whereas 0 in it means that the student hasn't taken any courses.
 
 
-18.  Explain the difference between the DELETE and TRUNCATE command in a DBMS ?
+18.  Explain the difference between the DROP ,  DELETE and TRUNCATE command in a DBMS ?
 
-= DELETE command: this command is needed to delete rows from a table based on the condition provided by the WHERE clause.
+= In SQL, `DROP`, `DELETE`, and `TRUNCATE` are three different commands used to remove data or database objects, but they have distinct purposes and consequences:
 
-    It deletes only the rows which are specified by the WHERE clause.
-    It can be rolled back if required.
-    It maintains a log to lock the row of the table before deleting it and hence it’s slow.
+  DROP:
+   - The `DROP` command is used to remove database objects like tables, views, indexes, or entire databases.
+   - When you use `DROP`, the object and all its associated data are permanently deleted from the database, and it cannot be recovered.
+   - The syntax to drop a table is as follows:
+     ```sql
+     DROP TABLE table_name;
+     ```
+   - Make sure to use this command with caution, as data loss is irreversible.
 
-    TRUNCATE command: this command is needed to remove complete data from a table in a database. It is like a DELETE command which has no WHERE clause.
+  DELETE:
+   - The `DELETE` command is used to remove rows (records) from a table based on a specified condition.
+   - Unlike `DROP`, `DELETE` only removes the data and not the entire table or other objects.
+   - Deleted rows can be rolled back (if executed within a transaction) or recovered from backups, but it's essential to be careful when using this command to avoid unintentional data loss.
+   - The syntax to delete rows from a table is as follows:
+     ```sql
+     DELETE FROM table_name WHERE condition;
+     ```
 
-    It removes complete data from a table in a database.
-    It can't be rolled back even if required. ( truncate can be rolled back in some databases depending on their version but it can be tricky and can lead to data loss). Check this link for more details
-    It doesn’t maintain a log and deletes the whole table at once and hence it’s fast. 
+  TRUNCATE:
+   - The `TRUNCATE` command is used to remove all rows from a table quickly. It is more efficient than `DELETE` when you want to empty a table entirely.
+   - Like `DELETE`, `TRUNCATE` only removes the data and not the table structure or other objects.
+   - `TRUNCATE` is not logged row by row, making it faster and less resource-intensive for large tables. However, it cannot be used with tables that have foreign key constraints referencing them, and it cannot be rolled back.
+   - The syntax to truncate a table is as follows:
+     ```sql
+     TRUNCATE TABLE table_name;
+     ```
 
+In summary, use `DROP` to remove entire database objects permanently, use `DELETE` to remove specific rows from a table based on a condition, and use `TRUNCATE` to quickly remove all rows from a table while preserving the table structure. Always exercise caution while using these commands to avoid unintended data loss. It's recommended to take database backups regularly to protect against accidental data deletions.
 19. What is meant by normalization and denormalization?
 
 = Normalization is a process of reducing redundancy by organizing the data into multiple tables. Normalization leads to better usage of disk spaces and makes it easier to maintain the integrity of the database. 
@@ -299,7 +317,9 @@ There are several types of transparency in DDBMS:
   On the contrary, MySQL is a relational database management system, like SQL Server, Oracle or IBM DB2, that is used to manage SQL databases.
   
 23. What are Constraints in SQL?
- =   Constraints are used to specify the rules concerning data in the table. It can be applied for single or multiple fields in an SQL table  during the creation of the table or after creating using the ALTER TABLE command. The constraints are:
+ =   Constraints are used to specify the rules concerning data in the table.
+ a constraint is a rule or condition that is applied to a table or column to enforce data integrity and ensure that the data in the database remains consistent and accurate. Constraints define limits or restrictions on the type of data that can be inserted, updated, or deleted from a table. They help maintain data integrity and prevent data anomalies or inconsistencies.
+  It can be applied for single or multiple fields in an SQL table  during the creation of the table or after creating using the ALTER TABLE command. The constraints are:
 
         NOT NULL - Restricts NULL value from being inserted into a column.
         CHECK - Verifies that all values in a field satisfy a condition.
@@ -481,11 +501,4 @@ LAST() - Fetches the last element in a collection of values.
           (Structured Query Language) for data manipulation.
 
         In summary, all RDBMS are DBMS, but not all DBMS are RDBMS. RDBMS is a specialized type of DBMS that adheres to the relational model and provides additional features to ensure data integrity, consistency, and efficiency in handling relational data. Examples of popular RDBMS include MySQL, PostgreSQL, Oracle, SQL Server, and SQLite. On the other hand, non-relational databases like MongoDB, Cassandra, and Redis fall under the broader category of DBMS but are not considered RDBMS because they use different data models and may not support SQL or relational data structures.
-        
-
-31. what is constraint in SQL?
-= In SQL, a constraint is a rule or condition that is applied to a table or column to enforce data integrity and ensure that the data in the database remains consistent and accurate. Constraints define limits or restrictions on the type of data that can be inserted, updated, or deleted from a table. They help maintain data integrity and prevent data anomalies or inconsistencies.
-  example ->
-   Not Null Constraint:A not null constraint ensures that a column cannot contain null values.
-                                It enforces that a specific column must always have a value, and nulls are not allowed.        
-
+    
