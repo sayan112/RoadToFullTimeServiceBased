@@ -13,7 +13,7 @@
 -
 
 
-    1. Batched OS: Processes large data in batches without user interaction. Examples: Payroll Systems, Transaction Processing.
+        1. Batched OS: Processes large data in batches without user interaction. Examples: Payroll Systems, Transaction Processing.
 
         2. Multi-Programmed OS: Allows multiple programs to run simultaneously by switching the CPU between them. Examples: Windows OS, UNIX.
 
@@ -30,9 +30,6 @@
 
 4. what Operation system do ?
    =
-
--
-
 1.      What does an Operating system do?
 2.      Process Management
 3.      Process Synchronization
@@ -130,17 +127,13 @@ Security and Protection: Enforcing security policies, access controls, and preve
 5. **Multilevel Queue Scheduling**:
    - Description: Processes are divided into multiple queues based on priority. Each queue may use a different scheduling algorithm, and the queues are scheduled in a priority order.
    - Advantages: Allows for different classes of processes with different scheduling requirements.
-   - Disadvantages: Complexity increases with the number of queues.
+   - Disadvantages: Complexity increases with the number of queues. 
 
 6. **Multilevel Feedback Queue Scheduling**:
    - Description: Similar to multilevel queue scheduling but allows processes to move between queues based on their behavior. For example, a process using too much CPU time may be moved to a lower priority queue.
    - Advantages: Adapts well to different process behaviors, avoids starvation.
    - Disadvantages: Complexity increases due to dynamic queue assignment.
 
-7. **Highest Response Ratio Next (HRRN)**:
-   - Description: Selects the process with the highest response ratio (waiting time + burst time / burst time) to run next. It combines elements of SJF and priority scheduling.
-   - Advantages: Gives priority to short jobs and prevents starvation.
-   - Disadvantages: May not always provide the best overall performance.
 
 These are some of the commonly used process scheduling algorithms in operating systems. Each algorithm has its own strengths and weaknesses, and the choice of the best algorithm depends on the specific workload and system requirements. Some modern operating systems may use a combination of these algorithms to achieve better overall performance.                            
 
@@ -186,11 +179,11 @@ By using these synchronization techniques, developers can avoid race conditions 
 
 
 13. What are the advantages of Threads in Operating Systems?
-= Improved Responsiveness: By using threads, a program can be designed to perform multiple tasks concurrently. This allows the application to remain responsive even when some tasks are computationally intensive or blocked, as other threads can continue to execute.
+= **Improved Responsiveness**: By using threads, a program can be designed to perform multiple tasks concurrently. This allows the application to remain responsive even when some tasks are computationally intensive or blocked, as other threads can continue to execute.
 
-Efficient Resource Utilization: Threads are lightweight compared to processes, as they share the same address space and resources of their parent process. Creating and switching between threads is faster and requires less overhead than creating and switching between processes.
+**Efficient Resource Utilization**: Threads are lightweight compared to processes, as they share the same address space and resources of their parent process. Creating and switching between threads is faster and requires less overhead than creating and switching between processes.
 
-Faster Communication: Threads within the same process can easily communicate with each other using shared memory. This communication is faster and more efficient compared to inter-process communication (IPC) mechanisms, which are required for communication between separate processes.
+**Faster Communication**: Threads within the same process can easily communicate with each other using shared memory. This communication is faster and more efficient compared to inter-process communication (IPC) mechanisms, which are required for communication between separate processes.
 
 14. Context switching in OS ?
 = A context switch in an operating system is like changing the channel on a TV. When you watch TV, you can switch between different channels to see different shows. Similarly, the operating system switches between different processes or tasks on the CPU.
@@ -198,3 +191,78 @@ Faster Communication: Threads within the same process can easily communicate wit
 When one process is running on the CPU and another process needs to run, the operating system saves the current state of the first process (like pausing the show you're watching) and loads the state of the new process (like switching to a new channel). This quick switching between processes is called a context switch.
 
 Context switching allows the operating system to give each process some time to run, making it seem like many tasks are happening simultaneously, even though the CPU can only do one thing at a time. It's like how a TV can show different channels one after the other, giving you the illusion of multiple shows running at once.
+
+
+
+15. what is Paging and Segmentation?
+= 
+**Paging**:  Paging is a memory management scheme , It divides the logical memory and physical memory (actual RAM) into fixed-sized blocks called pages. Similarly, the memory is divided into fixed-sized blocks called frames.
+The main idea behind paging is to allow the physical memory to be non-contiguous, making memory allocation more flexible and efficient.
+
+**Segmentation**: Segmentation is another memory management technique that also breaks down the address space of a process into blocks, but these blocks can have variable sizes instead of fixed-sized pages.
+
+
+
+16. Process vs Thread?
+= 
+   1.  Process means any program is in execution.    
+   2. The process takes more time to terminate and creation .
+   3. The process is isolated.
+   4. The process does not share data with each other.
+
+   1. Thread means a segment of a process.
+   2. The thread takes less time to terminate and creation.
+   3. Threads share memory.
+   4. Threads share data with each other.
+
+
+**17. What is a deadlock in the context of operating systems?**
+   
+   Answer: Deadlock is a situation in which two or more processes are unable to proceed further because each is waiting for the other to release a resource that they need to continue execution.
+
+**18. What are the necessary conditions for a deadlock to occur?**
+
+   Answer: Deadlock can occur if the following four necessary conditions are satisfied simultaneously:
+   - Mutual Exclusion: At least one resource must be held in a non-sharable mode.
+   - Hold and Wait: A process must hold at least one resource while waiting for another resource.
+   - No Preemption: Resources cannot be forcibly taken away from the process holding them; they must be released voluntarily.
+   - Circular Wait: There must be a circular chain of two or more processes, where each process is waiting for a resource held by the next process in the chain.
+
+**19. How can deadlocks be prevented in an operating system?**
+
+   Answer: Deadlocks can be prevented by employing one or more of the following techniques:
+   - Resource Allocation Graph (RAG): Detect potential deadlocks and avoid circular wait.
+   - Banker's Algorithm: Ensures that the system never enters an unsafe state by checking resource requests before allocation.
+   - Disable Interrupts: Avoid preemption, but this approach is generally not recommended as it can lead to other issues.
+   - Lock Ordering: Ensuring a consistent order for acquiring locks to prevent circular wait.
+
+**20. What is the difference between deadlock prevention and deadlock avoidance?**
+
+   Answer: 
+   - Deadlock Prevention aims to eliminate one or more of the four necessary conditions for deadlocks to occur. It is a proactive approach and guarantees deadlock-free execution, but it may lead to resource underutilization.
+   - Deadlock Avoidance involves dynamically analyzing the resource requests and allocations to avoid unsafe states that could lead to deadlocks. It is a reactive approach and allows more flexibility in resource utilization, but it does not guarantee deadlock-free execution.
+
+**21. Can you explain the Banker's Algorithm for deadlock avoidance?**
+
+   Answer: The Banker's Algorithm is a deadlock avoidance algorithm that checks whether the system is in a safe state before granting resource requests from processes. It is based on the concept of resource allocation graphs. If a request leads to an unsafe state, the request is not granted, and the process must wait.
+
+**22. What is a resource allocation graph, and how is it used to detect deadlocks?**
+
+   Answer: A resource allocation graph is a graphical representation of resources and processes. It consists of nodes representing processes and resources, and edges representing requests and assignments. A cycle in the graph indicates a potential deadlock. By analyzing the graph, deadlocks can be detected and resolved.
+
+**23. How can deadlocks be detected in an operating system?**
+
+   Answer: Deadlocks can be detected by using algorithms like the Resource Allocation Graph (RAG), which checks for the presence of cycles in the graph. If a cycle is found, a deadlock is present in the system.
+
+**24. What is the difference between deadlock detection and deadlock recovery?**
+
+   Answer: 
+   - Deadlock Detection identifies the presence of a deadlock in the system but does not resolve it. It is typically used in conjunction with other mechanisms to recover from the deadlock.
+   - Deadlock Recovery involves taking corrective actions to resolve the deadlock once it is detected. Recovery methods include process termination, resource preemption, or rolling back processes to a safe state.
+
+**25. What are some common strategies for deadlock recovery?**
+
+   Answer: Some common strategies for deadlock recovery include:
+   - Process Termination: Terminating one or more processes involved in the deadlock to break the circular wait.
+   - Resource Preemption: Forcibly preempting resources from one or more processes to satisfy the needs of other processes and break the deadlock.
+   - Process Rollback: Rolling back the execution of one or more processes to a previous checkpoint where the deadlock didn't exist.
