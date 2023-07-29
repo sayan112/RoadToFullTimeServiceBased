@@ -161,41 +161,41 @@ UDP:
             GAN (Global Area Network): It uses satellites to connect devices over global are.    
 
 23. What happens when u press google.com ?
- = As an interview candidate, if asked about what happens when you click on "google.com," you can provide a high-level overview of the steps involved. Keep in mind that the exact technical details may vary, and this explanation is simplified for a general understanding. Here are the steps:
+         = As an interview candidate, if asked about what happens when you click on "google.com," you can provide a high-level overview of the steps involved. Keep in mind that the exact technical details may vary, and this explanation is simplified for a general understanding. Here are the steps:
 
-1. **DNS Resolution:**
-   - When you type "google.com" in your web browser and hit Enter, your browser needs to find the IP address of the server hosting the Google website. It does this by performing a DNS (Domain Name System) resolution.
-   - The browser sends a DNS request to your local DNS server or a public DNS resolver, asking for the IP address associated with "google.com."
-   - The DNS resolver searches its cache and, if it doesn't have the answer, recursively queries other DNS servers until it finds the IP address for "google.com."
-   - Once the IP address is obtained (e.g., 172.217.168.206), the browser can proceed to the next step.
+         1. **DNS Resolution:**
+            - When you type "google.com" in your web browser and hit Enter, your browser needs to find the IP address of the server hosting the Google website. It does this by performing a DNS (Domain Name System) resolution.
+            - The browser sends a DNS request to your local DNS server or a public DNS resolver, asking for the IP address associated with "google.com."
+            - The DNS resolver searches its cache and, if it doesn't have the answer, recursively queries other DNS servers until it finds the IP address for "google.com."
+            - Once the IP address is obtained (e.g., 172.217.168.206), the browser can proceed to the next step.
 
-2. **Establishing a TCP Connection:**
-   - Using the obtained IP address, the browser initiates a TCP (Transmission Control Protocol) connection to the Google server.
-   - This involves a three-way handshake between the browser and the server to establish a reliable connection.
+         2. **Establishing a TCP Connection:**
+            - Using the obtained IP address, the browser initiates a TCP (Transmission Control Protocol) connection to the Google server.
+            - This involves a three-way handshake between the browser and the server to establish a reliable connection.
 
-3. **Sending an HTTP Request:**
-   - With the TCP connection established, the browser sends an HTTP (Hypertext Transfer Protocol) request to the Google server.
-   - The HTTP request contains various information, such as the requested resource (e.g., the homepage "/" in this case), the HTTP version, and additional headers.
+         3. **Sending an HTTP Request:**
+            - With the TCP connection established, the browser sends an HTTP (Hypertext Transfer Protocol) request to the Google server.
+            - The HTTP request contains various information, such as the requested resource (e.g., the homepage "/" in this case), the HTTP version, and additional headers.
 
-4. **Processing the Request on the Server:**
-   - The Google server receives the HTTP request and processes it.
-   - It determines the requested resource and any other relevant details from the request headers.
+         4. **Processing the Request on the Server:**
+            - The Google server receives the HTTP request and processes it.
+            - It determines the requested resource and any other relevant details from the request headers.
 
-5. **Generating an HTTP Response:**
-   - Based on the request, the server generates an HTTP response.
-   - For the Google homepage, it might be an HTML document containing the necessary content, scripts, and links.
+         5. **Generating an HTTP Response:**
+            - Based on the request, the server generates an HTTP response.
+            - For the Google homepage, it might be an HTML document containing the necessary content, scripts, and links.
 
-6. **Sending the Response to the Browser:**
-   - The server sends the HTTP response back to the browser via the established TCP connection.
+         6. **Sending the Response to the Browser:**
+            - The server sends the HTTP response back to the browser via the established TCP connection.
 
-7. **Rendering the Webpage:**
-   - Upon receiving the response, the browser starts rendering the webpage.
-   - It interprets the HTML, executes JavaScript, and fetches additional resources like CSS, images, and other assets referenced in the HTML.
+         7. **Rendering the Webpage:**
+            - Upon receiving the response, the browser starts rendering the webpage.
+            - It interprets the HTML, executes JavaScript, and fetches additional resources like CSS, images, and other assets referenced in the HTML.
 
-8. **Displaying the Webpage:**
-   - The browser renders all the fetched content, and you see the Google homepage on your screen.
+         8. **Displaying the Webpage:**
+            - The browser renders all the fetched content, and you see the Google homepage on your screen.
 
-9. **Handling User Interaction:**
-   - From this point on, any user interactions, such as clicking on links or submitting forms, will trigger new HTTP requests, and the process repeats for each subsequent request.
+         9. **Handling User Interaction:**
+            - From this point on, any user interactions, such as clicking on links or submitting forms, will trigger new HTTP requests, and the process repeats for each subsequent request.
 
-It's important to note that this is a high-level overview, and the actual process is much more intricate, involving various optimizations and protocols. However, providing this concise overview will demonstrate your understanding of the basic steps involved when clicking on a website URL.            
+         It's important to note that this is a high-level overview, and the actual process is much more intricate, involving various optimizations and protocols. However, providing this concise overview will demonstrate your understanding of the basic steps involved when clicking on a website URL.            
