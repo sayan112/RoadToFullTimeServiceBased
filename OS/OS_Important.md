@@ -30,13 +30,13 @@
 
 4. what Operation system do ?
    =
-1.      What does an Operating system do?
-2.      Process Management
-3.      Process Synchronization
-4.      Memory Management
-5.      CPU Scheduling
-6.      File Management
-7.      Security
+               1.      What does an Operating system do?
+               2.      Process Management
+               3.      Process Synchronization
+               4.      Memory Management
+               5.      CPU Scheduling
+               6.      File Management
+               7.      Security
 
 8.  What is a process ?
     =
