@@ -87,7 +87,7 @@ In summary, hubs and switches are used to connect devices within a LAN, with swi
 7. Q: Explain the difference between TCP and UDP.
    A: TCP (Transmission Control Protocol) is a connection-oriented protocol that ensures reliable data delivery, while UDP (User Datagram Protocol) is connectionless and provides faster but unreliable data transmission. Example: TCP is used for web browsing, while UDP is commonly used for real-time applications like video streaming and online gaming.
 
-     TCP:
+TCP:
 - Connection-oriented
 - Reliable data delivery
 - Three-way handshake for connection setup
@@ -133,8 +133,6 @@ UDP:
 16. Q: What is a VLAN (Virtual LAN)?
     A: A VLAN is a logical segmentation of a local network into separate virtual networks. It allows devices in different physical locations to communicate as if they were connected to the same physical network. Example: In a company, finance and engineering departments can be assigned to separate VLANs for better security and traffic management.
 
-17. Q: Explain the concept of a proxy server.
-    A: A proxy server acts as an intermediary between a client and a destination server. It can be used to enhance security, improve performance, and provide anonymity. Example: A proxy server can cache frequently requested web content, reducing the load on the destination server and speeding up user access.
 
 19. Q: What are the different network topologies?
     A: Network topology refers to the physical or logical arrangement of devices in a network. Common topologies include star, bus, ring, and mesh. Example: In a star topology, all devices are connected to a central hub or switch.
