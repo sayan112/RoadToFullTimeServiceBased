@@ -3,24 +3,9 @@
 using namespace std;
 int GCD(int a, int b)
 {
-    if (a == 0 || b == 0)
-    {
-        return a + b;
-    } // Base cases.
-
-    else if (a == b)
-    {
+    if (b == 0)
         return a;
-    }
-
-    else if (a > b)
-    {
-        return GCD(a - b, b);
-    }
-  return GCD(a, b - a);
-    
-
-    
+    return GCD(b, a % b);
 }
 int main()
 {

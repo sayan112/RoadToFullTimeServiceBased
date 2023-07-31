@@ -6,6 +6,7 @@
         "sstream": "cpp",
         "tuple": "cpp",
         "iostream": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "random": "cpp"
     }
 }
