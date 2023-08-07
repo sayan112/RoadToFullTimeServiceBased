@@ -4,15 +4,24 @@ Wipro is one of the largest Indian companies that provide IT services. The compa
 Top 10 Wipro HR Interview Questions and Answers
 
 Q1. Can you briefly tell us about yourself?
-Answer: My name is A and I have finished my graduation from X University. I wish to join the Z sector and I have tried my best to gain the necessary skills for this domain. I have 2 years of work experience (or no work experience) and have a deployed project based on Y. I have finished my schooling at X Higher Secondary School and my hobbies are reading books, swimming and playing the guitar. I also love playing and watching football.
-To be Noted: One should be careful about what one answers as the next questions will be based on this. For example, if you have mentioned a hobby, a skill, or a project, you might be getting questions related to those. Thus, one must prepare what to say and be ready to answer questions associated with the things you mention. Also, since this is not a technical interview, one should not go into technical details and the HR interviewer generally does not want that.
+Answer:Hello, my name is Sayan Maitra. I am a fourth-year student at Hooghly Engineering and Technology, Kolkata. I have a strong educational background, having completed my schooling at Ramkrishna Mission Vivekananda Vidyamandir, where I spent 14 years honing my academic skills.
+
+In terms of technical expertise, I possess a solid foundation in programming languages such as C++ and JavaScript. I am proficient in React.js and have hands-on experience with Material UI, enabling me to develop user-friendly dashboards and handle complex React components effectively. Additionally, I have a strong grasp of Object-Oriented Programming (OOPs) concepts, which further enhances my problem-solving abilities.
+
+During my third year, I had the opportunity to work as an intern at Bridge Healthcare, where I focused on frontend development. I actively contributed to the Doctor and Patient application, showcasing my ability to work in a real-world software development environment.
+
+Apart from my technical skills, I have a genuine passion for software engineering and strive to keep myself updated with the latest industry trends. My dedication to continuous learning and my ability to adapt to new challenges make me a valuable asset for any software engineering position.
+
+Outside of academics, I have a keen interest in watching movies and web series, particularly those in the thriller genre and Bengali stories. This not only provides me with a way to unwind but also helps me stay creative and open-minded.
+
 
 Q2. What are your strongest points?
 Answer: My strongest points would be dedication, loyalty, and enthusiasm. I also try to be humble, honest, and as collaborative as possible. Cooperation is necessary and I love teamwork. My friends (or colleagues) have mentioned that I have a likable personality and I believe that I have good communication skills. I also believe in goals and I am dedicated to achieving them. It is not great to compliment yourself, but I believe that I would be a good fit for the corporate culture and I have a positive attitude. I am also confident in my work and I maintain the integrity of my initial tasks.
 To be Noted: One should not be too overconfident or speak too well about themselves, however, interviews wish to hear that you are goal-oriented and confident about your skills. Being humble is great but you must also get your greatest strengths across. Employers want loyal, honest, and cooperative employees, thus, it is in one’s best interest to talk about these factors. One should never say that they work better than others or are faster than others. This seems disrespectful and is not the quality of a good leader. One should try to disguise one or two strong points as a weakness and humbly put those across as well. This will make the interviewees think of you as a humble and honest candidate.
 
 Q3. Why do you want to work at Wipro?
-Answer: Wipro is a huge MNC and would make me incredibly proud to work in a conglomerate like this. This is an amazing company and most of the employees that I have come across have only good things to say about their experience in Wipro. I believe that I will also get a lot of industry exposure as Wipro handles multiple foreign projects and has a global presence. The company is also a very old company and has a very good track record, I wish to truly be a part of this. I believe that I will get incredible opportunities while working in Wipro and I would like to think that I have a very bright future in this company. More than anything, I would love to work in an Indian giant such as Wipro.
+Answer: Wipro is a huge MNC and would make me incredibly proud to work in a conglomerate like this. This is an amazing company and most of the employees that I have come across have only good things to say about their experience in Wipro.starting my professional journey with a tech giant like Wipro would be an incredible honor for me.
+ I believe that I will also get a lot of industry exposure as Wipro handles multiple foreign projects and has a global presence. The company is also a very old company and has a very good track record, I wish to truly be a part of this. I believe that I will get incredible opportunities while working in Wipro and I would like to think that I have a very bright future in this company. More than anything, I would love to work in an Indian giant such as Wipro.
 To be Noted: Do not only talk about the strong points of Wipro as the interviewers already know that. Instead, speak about why you would want to join the company and what you expect from the company. Do not speak about salary packages.
 
 Q4. Why should we choose you?
@@ -21,11 +30,24 @@ Answer: I would not say that I am better than all the candidates that you have i
 To be Noted: Be humble and never compare yourself with others, however, put your strong points across again. Try to state why it would be a good idea for the company to hire you. Also, mention that you intend to stick to the company.
 
 Q5. What are your weaknesses?
-Answer: I am very goal-oriented and I push my team too hard sometimes, however, once the goal is achieved, they definitely do not mind anymore.
-To be Noted: Switch the question around in a way that you end up disguising a strong point as a weakness. Do not mention any other thing as this is generally a trick question that is intended to bring out your reaction. Do not ever mention any flaws, instead, try thinking about the question a bit and stick to a strong point that can be disguised as a weakness. 
+Answer:
+As an interview candidate, my main weakness is public speaking. I can feel a bit nervous and anxious when addressing larger groups or presenting in front of important audiences. However, I am actively taking steps to overcome this challenge by participating in public speaking workshops.
+
 
 Q6. What skills do you have for this role?
-Answer: Yes, I have gone through the job roles and responsibilities very thoroughly and I believe I have an understanding of what is required. I have also done some additional research and identified the daily tasks one needs to do for this job. This particular job requires me to handle X, Y, Z, and other associated tasks. My responsibility will be to see that A, B and C are operational/progressing. I have gone through several modules to learn X and Y skills due to not having extensive experience, however, I have other skills such as A, B, C, D, E, F, and experience with X and Y technologies.
+Answer: As an interview candidate, I possess a strong set of skills that align well with the requirements of this role:
+
+1. C++: I am proficient in C++, which is a versatile and powerful programming language commonly used in software development and system programming.
+
+2. JavaScript: I have a solid understanding of JavaScript, a fundamental language for web development, enabling me to build interactive and dynamic web applications.
+
+3. React.js: I am skilled in React.js, a popular JavaScript library for building user interfaces. With React.js, I can create efficient and responsive web applications.
+
+4. Material UI: I have hands-on experience with Material UI, a UI framework that allows me to design and develop visually appealing and user-friendly interfaces.
+
+5. OOPs (Object-Oriented Programming): I have a strong grasp of Object-Oriented Programming concepts, which is crucial for designing scalable and maintainable software solutions.
+
+With this combination of skills, I am well-equipped to contribute effectively in this role and deliver high-quality software solutions. My technical expertise in C++, JavaScript, React.js, Material UI, and understanding of OOPs will allow me to approach complex challenges with confidence and creativity, making me a valuable asset to the team.
 
 To be Noted: To answer this question well, one must first go through the job requirements properly from the job portal. One must also research a bit in order to find out what are the daily job roles of the job you are applying to. You must also mention what skills you already had and what additional preparation you have gone through in order to satisfy the job requirements.
 

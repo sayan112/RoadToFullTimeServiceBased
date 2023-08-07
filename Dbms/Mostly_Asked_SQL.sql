@@ -66,13 +66,11 @@ SELECT DISTINCT(Project) from EmployeeSalary ;
 
 --  Write an SQL query to fetch the count of employees working in project ‘P1’.
 
-SELECT COUNT(*)
-from EmployeeDetails
-WHERE `EmpId` IN (
-        SELECT EmpId
+
+        SELECT COUNT(EmpId)
         from EmployeeSalary
-        WHERE `Project` = 'P1'
-    );
+        WHERE `Project` = 'P1';
+
 
 SELECT *
 from EmployeeDetails
