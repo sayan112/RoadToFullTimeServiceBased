@@ -69,7 +69,7 @@ void merge(int *arr, int low, int mid, int high)
         j++;
     }
 }
-
+ 
 // The mergeSort() function.
 void mergeSort(int *arr, int low, int high)
 {

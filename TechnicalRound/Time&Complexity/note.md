@@ -1,0 +1,4 @@
+1. what is the time complexity ?
+= time comeplxity != time taken by the code to compile& execute 
+   So time complexity is the rate at which the time taken inscreases with respect to input size
+    Time complexity is defined as the amount of time taken by an algorithm to run, as a function of the length of the input. It measures the time taken to execute each statement of code in an algorithm. It is not going to examine the total execution time of an algorithm. Rather, it is going to give information about the variation (increase or decrease) in execution time when the number of operations (increase or decrease) in an algorithm. Yes, as the definition says, the amount of time taken is a function of the length of input only. 
