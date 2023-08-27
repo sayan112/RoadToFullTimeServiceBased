@@ -266,3 +266,53 @@ The main idea behind paging is to allow the physical memory to be non-contiguous
    - Process Termination: Terminating one or more processes involved in the deadlock to break the circular wait.
    - Resource Preemption: Forcibly preempting resources from one or more processes to satisfy the needs of other processes and break the deadlock.
    - Process Rollback: Rolling back the execution of one or more processes to a previous checkpoint where the deadlock didn't exist.
+
+
+***26. What is GUI?***
+GUI is short for Graphical User Interface. It provides users with an interface wherein actions can be performed by interacting with icons and graphical symbols.
+
+***27. What is Semaphore?***
+In the context of operating systems, a semaphore is a synchronization primitive used to control access to shared resources by multiple processes or threads. It's a simple integer variable that is used to solve the critical section problem, which refers to the issue of multiple processes or threads trying to access a shared resource simultaneously, potentially leading to data corruption or inconsistent behavior.
+
+Semaphores come in two main types:
+
+1. **Binary Semaphores:** Also known as mutex (short for mutual exclusion), binary semaphores can have only two values: 0 and 1. They are used to enforce exclusive access to a resource, allowing only one process or thread at a time to access it. This prevents race conditions and ensures that the resource is used safely.
+
+2. **Counting Semaphores:** These semaphores can have values greater than 1 and are used to control access to a resource when there are multiple instances of that resource available. For instance, if you have a pool of 10 identical resources and you want to allow up to 5 processes to use them simultaneously, you can use a counting semaphore initialized to 5.
+
+Advantages of Semaphores:
+
+1. **Synchronization:** Semaphores provide a mechanism to synchronize the activities of multiple processes or threads, allowing them to coordinate access to shared resources in a controlled manner.
+
+2. **Mutual Exclusion:** Binary semaphores (mutexes) ensure that only one process or thread can access a critical section of code or a shared resource at a time. This prevents conflicts and maintains data integrity.
+
+3. **Resource Management:** Counting semaphores help manage the allocation of a finite number of resources among multiple processes. For instance, if there are a limited number of printers in a network, a counting semaphore could help control access to them.
+
+4. **Blocking and Unblocking:** Semaphores can be used to block (suspend) processes or threads that are waiting for a resource to become available. When a semaphore's value drops to 0, any further attempts to access the resource will result in the requesting process/thread being blocked until the semaphore value becomes non-zero again. This helps avoid busy-waiting and saves CPU cycles.
+
+5. **Priority Management:** Semaphores can be used in priority systems to manage access to resources based on priorities assigned to processes or threads.
+
+6. **Flexibility:** Semaphores can be used to implement various synchronization patterns, making them a versatile tool for managing concurrency.
+
+However, it's worth noting that improper use of semaphores can lead to deadlocks (where processes wait indefinitely for resources) or other synchronization issues. Therefore, careful design and implementation are necessary to avoid these problems. Additionally, modern programming languages and operating systems often provide higher-level synchronization constructs, like monitors and locks, which encapsulate the complexities of semaphore usage.
+
+
+
+***28 .  what is zombie and orphan process ? ***
+= Certainly! In simple words:
+
+**Zombie Process:** Imagine you have a program (a process) that has finished its job and is supposed to exit, but it's still listed in the system's process table. This process is like a "zombie" – it's not really alive, but it's not completely gone either. It's in a state where it has finished its task but hasn't been properly cleaned up by the operating system yet. Zombie processes don't consume any resources, but they clutter up the process table until the operating system removes them.
+
+**Orphan Process:** Now, let's say a parent process (a process that started another process, the child) is still running, but the child process has finished its work and exited. If the parent process doesn't properly handle its child's exit and doesn't wait for it, the child becomes an "orphan." Orphan processes are like kids left to fend for themselves – they're alive, but their parent isn't around anymore. These orphans are adopted by the special process called the "init" process (or "systemd" in some modern systems), which takes care of them and ensures they get cleaned up properly.
+
+In both cases, zombie and orphan processes represent situations where processes aren't being managed as cleanly as they should be after they've finished their tasks. These states can potentially cause issues in the system, so it's important for the operating system to handle them appropriately.
+
+***29.  What is a critical- section?***
+When more than one processes access the same code segment that segment is known as the critical section. The critical section contains shared variables or resources which are needed to be synchronized to maintain the consistency of data variables. In simple terms, a critical section is a group of instructions/statements or regions of code that need to be executed atomically such as accessing a resource (file, input or output port, global data, etc.).
+
+***30. What are the issues related to concurrency?***
+Non-atomic: Operations that are non-atomic but interruptible by multiple processes can cause problems.
+Race conditions: A race condition occurs of the outcome depends on which of several processes gets to a point first.
+Blocking: Processes can block waiting for resources. A process could be blocked for a long period of time waiting for input from a terminal. If the process is required to periodically update some data, this would be very undesirable.
+Starvation: It occurs when a process does not obtain service to progress.
+Deadlock: It occurs when two processes are blocked and hence neither can proceed to execute

@@ -8,7 +8,7 @@ OOPS stands for Object-Oriented Programming (OOP). It is a programming methodlog
 using namespace std;
 
 // class
-class Hero
+class Hero 
 {
 private:
     // has properties like health, height, weight and color

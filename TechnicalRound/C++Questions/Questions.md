@@ -58,7 +58,7 @@ Private: All data members and member functions are not accessible outside the cl
    "this" allows you to access the current object's members and member functions from within its own member functions.
 
 10. Which operator can not be overloaded in C++?
-    = "::"
+    = "::" 
 
 11. What is an abstract class in c++?
     =
@@ -323,6 +323,7 @@ Remember that with great power comes great responsibility. Pointers can be trick
     Common techniques to implement modularity include the use of functions, classes, libraries, and packages in programming languages. Modular programming is widely used in various programming paradigms, including procedural, object-oriented, and functional programming. It is a fundamental concept in software engineering and promotes the development of robust, maintainable, and extensible software systems.
 
 30 . what is SDLC ?
+
 = SDLC stands for Software Development Life Cycle. It is a structured approach followed by software development teams to design, create, test, and deploy high-quality software applications. The SDLC process encompasses various phases that guide the development team through the entire software development process. The primary goal of SDLC is to produce efficient, reliable, and scalable software solutions that meet the specific requirements of the end-users or clients. Different organizations may adopt different SDLC models, but the core phases generally remain the same.
 
 Here are the typical phases in the SDLC process:

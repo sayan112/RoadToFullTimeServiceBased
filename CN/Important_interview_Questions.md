@@ -160,7 +160,7 @@ UDP:
 
 23. What happens when u press google.com ?
          = As an interview candidate, if asked about what happens when you click on "google.com," you can provide a high-level overview of the steps involved. Keep in mind that the exact technical details may vary, and this explanation is simplified for a general understanding. Here are the steps:
-
+ 
          1. **DNS Resolution:**
             - When you type "google.com" in your web browser and hit Enter, your browser needs to find the IP address of the server hosting the Google website. It does this by performing a DNS (Domain Name System) resolution.
             - The browser sends a DNS request to your local DNS server or a public DNS resolver, asking for the IP address associated with "google.com."
@@ -197,3 +197,48 @@ UDP:
             - From this point on, any user interactions, such as clicking on links or submitting forms, will trigger new HTTP requests, and the process repeats for each subsequent request.
 
          It's important to note that this is a high-level overview, and the actual process is much more intricate, involving various optimizations and protocols. However, providing this concise overview will demonstrate your understanding of the basic steps involved when clicking on a website URL.            
+
+
+
+24.  Mention all devices working in all levels ? 
+
+= Sure, here's a list of devices that operate in various layers of the OSI (Open Systems Interconnection) model, along with any layers in which they might operate simultaneously:
+
+1. **Physical Layer:**
+   - Hub
+   - Repeater
+   - Network cables
+   - Network adapters (NICs)
+   - Switches (operate at both Layer 2 and Layer 3)
+
+2. **Data Link Layer:**
+   - Bridge
+   - Switch
+   - Network Interface Card (NIC)
+   - Wireless Access Points (WAPs)
+   - Virtual LAN (VLAN) switches
+
+3. **Network Layer:**
+   - Router
+   - Layer 3 switch
+   - IP (Internet Protocol) devices (operate at both Layer 2 and Layer 3)
+   - Network Address Translator (NAT) device
+
+4. **Transport Layer:**
+   - Gateway (can operate at multiple layers including transport)
+   - Firewalls (operate at multiple layers including transport)
+
+5. **Session Layer:**
+   - This layer is generally implemented in software rather than specific hardware devices.
+
+6. **Presentation Layer:**
+   - This layer is also typically implemented in software rather than specific hardware devices.
+
+7. **Application Layer:**
+   - Servers (e.g., web servers, email servers)
+   - Computers
+   - Mobile devices
+   - Printers
+   - IoT devices
+
+Please note that some devices, like routers and switches, can operate at multiple layers depending on their specific features and configurations. Additionally, the Session and Presentation layers are often implemented as part of the operating system and software rather than as separate hardware devices.

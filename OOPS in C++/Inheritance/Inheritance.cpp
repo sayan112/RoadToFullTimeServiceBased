@@ -5,6 +5,9 @@
 // The derived class inherits the features from the base class and can have additional features of its own.
 // Inheritance is a feature or a process in which, new classes are created from the existing classes. The new class created is called “derived class” or “child class” and the existing class is known as the “base class” or “parent class”. The derived class now is said to be inherited from the base class.
 
+// Sub Class : The class that inherits properties from another class is called Subclass or Derived Class.
+// Super Class : The class whose properties are inherited by a subclass is called Base Class or Superclass.
+
 // Why and when to use inheritance?
 
 // Consider a group of vehicles. You need to create classes for Bus, Car, and Truck. The methods fuelAmount(), capacity(), applyBrakes() will be the same for all three classes. If we create these classes avoiding inheritance then we have to write all of these functions in each of the three classes as shown below figure:
@@ -132,7 +135,7 @@ using namespace std;
 // ********** in Base class any data member is in  public and Child class in protected then data members are also inherited in protected way 
 
 #include<bits/stdc++.h>
-                                                                                                                                                                                                                                                                                       using namespace std;
+                                                                                                                                                                                                   using namespace std;
  class Human {
   public:
    int height;

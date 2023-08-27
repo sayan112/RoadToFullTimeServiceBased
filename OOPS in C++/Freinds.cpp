@@ -3,14 +3,14 @@
 //  ********* Purpose Of a Friend Function :) ************
 
 
-// Okay so we know that the private section of any class is accessible only and only through the public section of the same class. what if we want to give access to the private member through a function which is outside of the class in such circumstances we use the concept of a friend function.
+// Okay so we know that the private section of any class is accessible only and only through the public section of the same class. what if we want to give access to the private member through a function which is outside of the class in such circumstances we use the concept of a friend function. 
 
 
 // Features of Friend Functions :)
 
 //  A friend function is a special function in C++ that in spite of not being a member function of a class has the privilege to access the private and protected data of a class.
 
-// A friend function is a non-member function or ordinary function of a class, which is declared as a friend using the keyword “friend” inside the class. By declaring a function as a friend, all the access permissions are given to the function.
+// A friend function is a non-member function or ordinary function of a class, which is declared as a friend using the keyword “friend” inside the class. By declaring a function as a friend and it has the privilege to access the private and protected data of a class.
 
 // The keyword “friend” is placed only in the function declaration of the friend function and not in the function definition or call.
 
