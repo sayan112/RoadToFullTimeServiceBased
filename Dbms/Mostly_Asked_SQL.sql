@@ -10,7 +10,7 @@ CREATE table EmployeeDetails (
      City VARCHAR(30)
 )
 
-
+SELECT * FROM EmployeeDetails;
 INSERT INTO EmployeeDetails (EmpId, FullName, ManagerId, DateOfJoining, City)
 VALUES
  (121, 'John Snow', 321, '2019-01-31', 'Toronto'),
@@ -72,6 +72,9 @@ SELECT DISTINCT(Project) from EmployeeSalary ;
         WHERE `Project` = 'P1';
 
 
+        SELECT COUNT(EmpId) from EmployeeSalary  WHERE `Project`='P2'
+
+
 SELECT *
 from EmployeeDetails
 WHERE `EmpId` IN (
@@ -81,11 +84,10 @@ WHERE `EmpId` IN (
     );
 
 -- Write an SQL query to uppercase the name of the employee and lowercase the city values.
-
-SELECT UPPER(FullName) , LOWER(`City`) FROM EmployeeDetails ;
+SELECT UPPER(FullName) , LOWER(City) FROM EmployeeDetails ;
 
 -- Fetch all the employees who are not working on any project.
-
+--using NULL 
 SELECT `EmpId` from EmployeeSalary WHERE `Project`=NULL;
 
 --Write an SQL query to fetch employee names having a salary greater than or equal to 5000 and less than or equal to 10000.
@@ -109,7 +111,7 @@ WHERE
     `Salary` >= 5000
     AND `Salary` <= 10000;
 
--- highest , LOWest salary
+-- highest , LOWest salary , average salary
 
 SELECT MAX(Salary) from Employeesalary;
 
@@ -189,3 +191,32 @@ SELECT * FROM Employeedetails  ORDER BY EmpId  LIMIT 1 OFFSET 9;
 -- How to Show the Max marks and min marks together from student table? 
 
 SELECT MAX(Salary) FROM Employeesalary UNION SELECT MIN(Salary) FROM Employeesalary ;
+
+
+
+-- wants to delete the whole table ;
+
+SHOW DATABASES;
+USE world;
+DROP DATABASE  world;
+
+
+
+-- Delete the whole table data 
+
+USE TESTDB;
+SHOW TABLES;
+ SELECT * from persons;
+ --whole row where last name is maitra is gone 
+ DELETE  FROM persons where lastname='maitra'; 
+-- all rows are deleted , but the SCHEMA is there 
+ DELETE  FROM persons; 
+
+-- as same as delete , it DELETE all your tables rows  but more efficient way ;
+
+ TRUNCATE TABLE persons;
+ -- to see the schema 
+DESCRIBE persons;
+
+--delete the whole table , no SCHEMA;
+DROP TABLE persons;

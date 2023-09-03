@@ -308,7 +308,7 @@ However, it's worth noting that improper use of semaphores can lead to deadlocks
 In both cases, zombie and orphan processes represent situations where processes aren't being managed as cleanly as they should be after they've finished their tasks. These states can potentially cause issues in the system, so it's important for the operating system to handle them appropriately.
 
 ***29.  What is a critical- section?***
-When more than one processes access the same code segment that segment is known as the critical section. The critical section contains shared variables or resources which are needed to be synchronized to maintain the consistency of data variables. In simple terms, a critical section is a group of instructions/statements or regions of code that need to be executed atomically such as accessing a resource (file, input or output port, global data, etc.).
+When more than one processes access the same code segment that segment is known as the critical section. The critical section contains shared variables or resources which are needed to be synchronized to maintain the consistency of data variables. In simple terms, a critical section is a group of instructions/statements or regions of code that need to be executed atomically such as accessing a resource (file, input or output port, global data, etc)
 
 ***30. What are the issues related to concurrency?***
 Non-atomic: Operations that are non-atomic but interruptible by multiple processes can cause problems.

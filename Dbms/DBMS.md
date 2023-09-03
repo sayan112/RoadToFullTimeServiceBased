@@ -21,7 +21,7 @@
 ```
 4.  What is a checkpoint in DBMS?
  = A checkpoint is like a snapshot of the DBMS state. 
- Using checkpoints, the DBMS can reduce the amount of work to be done during a restart in the event of subsequent crashes. Checkpoints are used for the recovery of the database after the system crash. Checkpoints are used in the log-based recovery system. When due to a system crash we need to restart the system then at that point we use checkpoints. So that, we don't have to perform the transactions from the very starting.
+ Checkpoints are used for the recovery of the database after the system crash. Checkpoints are used in the log-based recovery system. When due to a system crash we need to restart the system then at that point we use checkpoints. So that, we don't have to perform the transactions from the very starting.  
 
 5.  What is RDBMS?
 = RDBMS stands for Relational Database Management Systems.
@@ -37,11 +37,13 @@ Examples of popular RDBMS systems are MySQL, Oracle DB, etc.
 
 
 6. What is the Relationship?
+
 = The Relationship is defined as an association among two or more entities. There are three type of relationships in DBMS-
 
 One-To-One: Here one record of any object can be related to one record of another object.
 One-To-Many (many-to-one): Here one record of any object can be related to many records of other object and vice versa.
 Many-to-many: Here more than one records of an object can be related to n number of records of another object.
+
 
 ```
 7. What are the disadvantages of file processing systems?
@@ -55,6 +57,7 @@ Many-to-many: Here more than one records of an object can be related to n number
  -  Concurrent access is not possible
  -  Limited data sharing
  -  Atomicity problem
+
 
 ```
 8. What is data abstraction in DBMS? 
@@ -105,7 +108,7 @@ Many-to-many: Here more than one records of an object can be related to n number
    -  Atomicity: Atomicity refers to the "all-or-nothing" property of a transaction. It ensures that a transaction is treated as a single, indivisible unit of work. Either all the operations within a transaction are executed successfully, and the changes are committed to the database, or none of the operations take effect, and the database remains unchanged. If any part of the transaction fails or encounters an error, all changes made by the transaction are rolled back to the previous consistent state. Atomicity ensures data integrity and prevents the database from being left in an inconsistent state.
 
  -    Consistency: Consistency ensures that a transaction brings the database from one consistent state to another consistent state. It enforces predefined rules or constraints on the data, maintaining the validity and integrity of the database. In other words, a transaction should not violate any integrity constraints, such as unique key constraints or referential integrity, during its execution. If a transaction violates any consistency rules, the entire transaction is rolled back, and the database remains unchanged.
-
+ 
  -    Isolation: Isolation ensures that concurrent transactions do not interfere with each other. Each transaction should be executed in isolation, as if it were the only transaction running in the system. Isolation prevents various concurrency problems, such as dirty reads, non-repeatable reads, and phantom reads. It ensures that the intermediate states of a transaction are not visible to other transactions until the changes are committed. Isolation guarantees data consistency and prevents conflicts between concurrent transactions.
 
  -    Durability: Durability ensures that once a transaction is committed, its changes are permanent and will survive any subsequent failures, such as power outages, system crashes, or hardware failures. The committed data is stored in a stable and permanent manner, typically on disk or other non-volatile storage, to ensure its durability. Even in the event of a system failure, the database can recover the committed state and restore data consistency.
@@ -153,7 +156,7 @@ Sure! Let's discuss the concepts of primary key, candidate key, super key, and f
     -         Simple attribute : 
         An attribute that cannot be further subdivided into components is a simple attribute. 
         Example: The roll number of a student, the id number of an employee. 
-
+ 
     -     Composite attribute : 
         An attribute that can be split into components is a composite attribute. 
 
@@ -232,8 +235,6 @@ There are several types of transparency in DDBMS:
 
         4. Fragmentation Transparency: Fragmentation transparency hides the fact that data is divided into fragments or subsets across multiple nodes or sites. Users and applications can access and manipulate the data as if it were stored in a single logical unit. The system handles the process of data fragmentation and aggregation transparently, ensuring that users can work with the distributed data without explicitly dealing with the fragmentation details. user thinks that they are interacting with a single data source entity.
 
-        5. Transaction Transparency: Transaction transparency hides the fact that transactions may span multiple nodes or sites in a distributed system. Users and applications can initiate and execute transactions without being aware of their distributed nature. The system handles the coordination and management of distributed transactions transparently, ensuring that the ACID properties (Atomicity, Consistency, Isolation, Durability) are maintained across the distributed environment.
-
         By providing transparency in these various aspects, DDBMS aims to simplify the interaction with distributed databases, shielding users and applications from the complexities of data distribution, replication, and fragmentation. It allows for seamless integration and access to data across multiple nodes or sites, providing a unified and transparent view of the distributed database system.
 
 
@@ -276,6 +277,7 @@ There are several types of transparency in DDBMS:
      ```
 
 In summary, use `DROP` to remove entire database objects permanently, use `DELETE` to remove specific rows from a table based on a condition, and use `TRUNCATE` to quickly remove all rows from a table while preserving the table structure. Always exercise caution while using these commands to avoid unintended data loss. It's recommended to take database backups regularly to protect against accidental data deletions.
+
 19. What is meant by normalization and denormalization?
 
 = Normalization is a process of reducing redundancy by organizing the data into multiple tables. Normalization leads to better usage of disk spaces and makes it easier to maintain the integrity of the database. 
@@ -529,7 +531,7 @@ LAST() - Fetches the last element in a collection of values.
         In summary, all RDBMS are DBMS, but not all DBMS are RDBMS. RDBMS is a specialized type of DBMS that adheres to the relational model and provides additional features to ensure data integrity, consistency, and efficiency in handling relational data. Examples of popular RDBMS include MySQL, PostgreSQL, Oracle, SQL Server, and SQLite. On the other hand, non-relational databases like MongoDB, Cassandra, and Redis fall under the broader category of DBMS but are not considered RDBMS because they use different data models and may not support SQL or relational data structures.
     
 
-32.  Advantages of Indexing ? 
+32.  Advantages of Indexing ?
 = Indexing in the context of a database management system (DBMS) refers to the process of creating data structures that improve the speed of data retrieval operations on a database table. An index provides a way to quickly look up records based on the values in one or more columns, similar to how an index in a book helps you quickly find specific topics or information.
 
 Advantages of Indexing in DBMS:

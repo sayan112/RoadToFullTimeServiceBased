@@ -56,6 +56,7 @@ The OSI model is a theoretical framework that aids in understanding networking c
 
 
 3. Q: What is the difference between a hub, switch, and router?
+
    A: Sure, let's delve into the details of hub, switch, router, and repeater in the context of computer networking (CN):
 
 1. Hub:
@@ -109,8 +110,19 @@ UDP:
 8. Q: What is HTTP and HTTPS?
    A: HTTP (Hypertext Transfer Protocol) is a standard protocol used for transmitting data over the internet, while HTTPS (HTTP Secure) is a secure version that uses encryption (SSL/TLS) to protect data during transmission. Example: HTTP is used for regular website browsing, while HTTPS is used for secure online transactions and sensitive data transfer.
 
+   ***Security***: HTTPS provides data encryption and thus enhances the security of data transmission, making it much more difficult for attackers to intercept and understand the data being exchanged.
+
+***Trust and Authentication***: HTTPS also involves the use of digital certificates that are issued by trusted Certificate Authorities (CAs). These certificates verify the identity of the website, ensuring that you are indeed connected to the genuine website and not a malicious imposter.
+
+***Search Engine Ranking***: Search engines like Google consider HTTPS as a ranking factor, so websites that use HTTPS are more likely to appear higher in search results compared to their HTTP counterparts.
+
+***Data Integrity***: The encryption provided by HTTPS also ensures that the data remains unaltered during transmission, preventing tampering by third parties.
+
+
+
 9. Q: What is a firewall?
    A: A firewall is a security device or software that monitors and controls incoming and outgoing network traffic, allowing or blocking specific data packets based on predefined security rules. Example: A firewall can block unauthorized access to a corporate network.
+   A firewall is a network security device, either hardware or software-based, which monitors all incoming and outgoing traffic, and based on a defined set of security rules it accepts, rejects, or drops that specific traffic.
 
 10. Q: What is a subnet mask?
     A: A subnet mask is used in conjunction with an IP address to determine the network and host portions of the address. It helps in dividing a large network into smaller subnetworks. Example: In the IP address 192.168.1.10 with a subnet mask of 255.255.255.0, the first three sets (192.168.1) represent the network, and the last set (10) represents the host.
@@ -242,3 +254,105 @@ UDP:
    - IoT devices
 
 Please note that some devices, like routers and switches, can operate at multiple layers depending on their specific features and configurations. Additionally, the Session and Presentation layers are often implemented as part of the operating system and software rather than as separate hardware devices.
+
+
+
+
+
+25. Situation based questions like if you have 50 MB process and 40 MB RAM, how to run it interview question ?
+= The interview question you've provided seems to be testing your problem-solving skills and your understanding of memory management. When faced with a situation where a process requires more memory (50 MB) than what's currently available (40 MB RAM), you might consider various strategies to address this situation. Here's how you could approach this question:
+
+1. **Virtual Memory:**
+   Most modern operating systems use virtual memory, which allows processes to use more memory than physically available RAM by using a portion of the hard disk as an extension of RAM. The OS swaps data between RAM and the disk as needed. In this scenario, the operating system might use a portion of the hard disk as additional "virtual" memory to accommodate the 50 MB process.
+
+2. **Memory Paging:**
+   Memory paging is a technique where the memory is divided into fixed-sized blocks called "pages." When a process is too large to fit into available physical RAM, the OS can swap portions of the process in and out of RAM as needed. The 50 MB process could be divided into pages, and only the necessary pages would be loaded into RAM at a given time.
+
+
+
+
+
+
+
+26. Situational based, a large file, dont care if I lose some packets but I want to send it in lesser time, TCP or UDP?
+
+= In a situation where you have a large file to transfer and prioritize speed over data integrity (i.e., you don't mind losing some packets), UDP (User Datagram Protocol) would be more suitable than TCP (Transmission Control Protocol). Here's why:
+
+**UDP:**
+
+1. **Faster Transfer:** UDP is a connectionless protocol that does not involve the overhead of establishing and maintaining a connection like TCP does. This means that data can be sent more quickly without waiting for acknowledgments or retransmissions.
+
+2. **No Handshaking:** UDP does not involve the three-way handshake that TCP uses to establish a connection. This further reduces the time required to initiate the data transfer.
+
+3. **No Flow Control:** Unlike TCP, UDP does not implement flow control mechanisms to regulate the rate of data transfer. This allows UDP to send data as fast as the network can handle, which can result in faster transfer speeds.
+
+4. **Less Overhead:** UDP has a smaller header size compared to TCP, which means less overhead in the data packets. This contributes to more efficient data transfer, especially for large files.
+
+**Considerations:**
+
+However, choosing UDP for faster transfer with potential packet loss comes with its own set of considerations:
+
+1. **Data Loss:** Since UDP does not guarantee delivery or order of packets, some packets may be lost during transmission. This can lead to incomplete or corrupted files.
+
+2. **No Reliability:** UDP does not have built-in mechanisms for retransmitting lost or corrupted packets. If reliability is important, you might need to implement your own error-checking and retransmission mechanisms at the application level.
+
+3. **Packet Reordering:** Packets sent via UDP may arrive out of order due to varying network paths and speeds. This could complicate the process of reconstructing the original file.
+
+4. **Application-Level Management:** With UDP, you need to manage data integrity, retransmission, and error-checking at the application level, which can increase the complexity of your code.
+
+In summary, if your main priority is to send a large file in a shorter amount of time and you can tolerate some data loss, UDP might be a suitable choice. However, be prepared to address potential issues related to packet loss and data integrity at the application level. If data integrity is critical, TCP might be a better option despite the potential reduction in transfer speed.
+
+
+
+
+
+27. Explain Segmentation and Paging  in depth simple words . Compare and which is faster ?
+= Certainly, I'd be happy to explain segmentation and paging, compare them, and touch on virtual memory.
+
+**Segmentation:**
+Segmentation is a memory management technique used by some operating systems. In segmentation, a program's memory is divided into different segments, where each segment holds a specific type of data, such as code, data, and stack. Each segment has a unique identifier or name.
+
+Imagine it like different sections in a library. You have one section for fiction books, another for non-fiction, and so on. In the same way, segmentation separates different parts of a program's memory.
+
+**Paging:**
+Paging is another memory management technique. In paging, memory is divided into fixed-size blocks called "pages," and the program's memory is also divided into fixed-size blocks called "frames." The pages of a program don't have to be contiguous in physical memory; they can be scattered. The operating system maintains a table (called a page table) that maps pages to frames.
+
+Think of it like a puzzle where you break a picture into many pieces (pages), and you have a separate set of pieces (frames) to assemble the picture. The table helps you know which piece goes where.
+
+**Comparison:**
+Segmentation and paging have their pros and cons. Segmentation can help manage different types of data more flexibly, but it can lead to fragmentation, where free memory is divided into small chunks. Paging helps avoid fragmentation but might require more memory to store the page table.
+
+**Speed Comparison:**
+In terms of speed, paging tends to be faster in many cases. This is because paging allows the operating system to move individual pages between RAM and disk, making memory management more efficient. Segmentation might involve moving larger chunks of data, which can be less efficient in terms of speed.
+
+
+
+
+
+28. **Virtual Memory:**
+Virtual memory is a memory management technique that allows a computer to use more memory than is physically available by using a combination of RAM and disk space. It's an extension of the computer's physical memory. When programs need more memory than is available in RAM, the operating system swaps data between RAM and disk, making it seem like there's more memory available than there actually is.
+
+Imagine you're working on a desk with limited space. Virtual memory is like having extra drawers where you can store things that you're not currently using on the desk. You can swap things between the desk and drawers as needed.
+
+In summary, segmentation and paging are memory management techniques that divide a program's memory in different ways. Paging is often faster due to its efficiency, and virtual memory is a technique that extends physical memory using disk space when needed. The choice between these techniques depends on the specific requirements and constraints of the system.
+
+
+29. How will you check number of running processes in your PC?
+= **Task Manager**: Press Ctrl + Shift + Esc or Ctrl + Alt + Delete and then select "Task Manager." In the "Processes" tab, you'll see a list of running processes along with their details.
+
+**Command Prompt**: Open the Command Prompt (CMD) and enter the command tasklist to see a list of running processes along with their process IDs (PIDs) and memory usage.
+
+30. Explain  Internal Fragmentation  and External Fragmentation ?
+
+= **Internal Fragmentation**:
+
+Internal fragmentation occurs when memory is allocated in fixed-size blocks, and a block is assigned to a process that doesn't fully utilize all the space within the block, resulting in wasted memory.
+
+In internal fragmentation, a memory block assigned to a process is bigger. Some portion of the memory is left unused, as it cannot be used by another process. Also, the problem of internal fragmentation occurs when the memory is divided into fixsized partitions. The problem of internal fragmentation can be reduced by effectively assigning the smallest partition but large enough for the process.
+The solution of internal fragmentation is the best-fit block.
+
+**External Fragmentation**:
+
+External fragmentation occurs when free memory is available, but it's scattered in small, non-contiguous chunks. As a result, it's difficult to allocate larger blocks of memory to new processes, even if the total free space is sufficient.
+
+The solution to external fragmentation is compaction and paging.
