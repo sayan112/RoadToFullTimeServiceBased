@@ -3,6 +3,49 @@ Wipro is one of the largest Indian companies that provide IT services. The compa
 
 Top 10 Wipro HR Interview Questions and Answers
 
+ ***Tell Me about Your Self ***
+= Thanks sir for giving me this opportunity to introduce myself , My sayan Maitra . I am currently a Final Year Btech Computer Science student  of Hooghly Engineering And Technology College . My technical skills are c++ , Ooops, JavaScript . In 3rd year I did my Major internship at Bridge Healthcare where I was working as a frontend Engineer intern . I contributed to ther some of the major project like Doctor apptication and Patient application . Talking about my project ,I have 2 major projects One is notefy (which is a notes application ) , and other one is BuySnekars (which is a snkear application) .  Coming to my extra curicular activitis , In my free time I love to listen to audio stories , play games , watch cricket .
+
+
+ *** What was your role ?  ***
+
+ = As a project lead responsible for managing the frontend part while your teammates handle the backend, you can convey your management approach and skills during interviews. Here's how you might explain your role and responsibilities, as well as address questions related to task management, meeting deadlines, and team collaboration, both as a project lead and as a candidate:
+
+**Project Lead Responsibilities:**
+
+1. **Role Explanation:** As the project lead for NoteFy, I took on the responsibility of overseeing the frontend development while coordinating closely with my backend teammates. This division of responsibilities allowed us to work efficiently, ensuring that both the frontend and backend components of the application progressed simultaneously.
+
+2. **Task Management:** I managed the frontend tasks by breaking down the project into smaller, manageable tasks and creating a task board or project management tool, such as Notion  to track progress. Each task was assigned to the appropriate team member based on their expertise.
+
+3. **Setting Priorities:** To ensure we met our deadlines, I prioritized tasks based on their importance and dependencies. Critical frontend components that needed to align with backend development were given high priority to maintain a smooth workflow.
+
+4. **Collaboration:** Effective communication and collaboration were key. I conducted regular team meetings to discuss progress, address any roadblocks, and ensure everyone was aligned with project goals. Clear communication channels were established to facilitate information exchange.
+
+5. **Monitoring Progress:** I regularly reviewed the work completed by the frontend team, provided feedback, and ensured that the code met quality standards and design guidelines.
+
+6. **Deadline Management:** To meet deadlines, I set realistic milestones and closely monitored our progress towards them. If any issues or delays arose, I proactively addressed them by reassigning tasks or allocating additional resources when necessary.
+
+**Interview Questions and Answers:**
+
+1. **How did you manage tasks and ensure efficient collaboration between the frontend and backend teams?**
+   - As the project lead, I maintained a well-organized task management system where we tracked tasks, assigned them to the appropriate team members, and maintained clear priorities. Regular team meetings allowed us to coordinate and address any challenges promptly.
+
+2. **How did you ensure that your team met project deadlines?**
+   - Meeting deadlines was a priority. I set realistic milestones, closely monitored progress, and identified potential issues early on. If we encountered delays, I took proactive measures to reallocate resources or adjust priorities to keep us on track.
+
+3. **Can you provide an example of a situation where you had to manage a tight deadline successfully?**
+   - Certainly. There was a critical feature in NoteFy that needed to be launched within a tight timeframe due to user demand. I organized the team, streamlined the development process, and maintained constant communication. By optimizing our workflow and committing extra hours when necessary, we met the deadline without compromising quality.
+
+4. **How did you handle disagreements or conflicts within your team?**
+   - Open communication was key. When conflicts arose, I encouraged team members to express their concerns and facilitated discussions to reach a consensus. If necessary, I would escalate the issue to higher management for resolution.
+
+5. **What strategies did you employ to ensure that the frontend aligned with the backend seamlessly?**
+   - Close collaboration was essential. I ensured that both frontend and backend teams had a clear understanding of the project's architecture and dependencies. We maintained continuous integration and conducted regular testing to identify and address any integration issues promptly.
+
+By addressing these questions with clear examples and emphasizing your proactive approach to management and teamwork, you can demonstrate your effectiveness as a project lead in coordinating frontend and backend development and achieving project goals.
+
+
+
 Q1. Can you briefly tell us about yourself?
 Answer:Hello, my name is Sayan Maitra. I am a fourth-year student at Hooghly Engineering and Technology, Kolkata. I have a strong educational background, having completed my schooling at Ramkrishna Mission Vivekananda Vidyamandir, where I spent 14 years honing my academic skills.
 
@@ -24,10 +67,12 @@ Answer: Wipro is a huge MNC and would make me incredibly proud to work in a cong
  I believe that I will also get a lot of industry exposure as Wipro handles multiple foreign projects and has a global presence. The company is also a very old company and has a very good track record, I wish to truly be a part of this. I believe that I will get incredible opportunities while working in Wipro and I would like to think that I have a very bright future in this company. More than anything, I would love to work in an Indian giant such as Wipro.
 To be Noted: Do not only talk about the strong points of Wipro as the interviewers already know that. Instead, speak about why you would want to join the company and what you expect from the company. Do not speak about salary packages.
 
+
 Q4. Why should we choose you?
 Answer: I would not say that I am better than all the candidates that you have interviewed as I do not know anything about their skills. However, I can speak for myself and assure you that I would work very hard. I am dedicated, honest, and loyal. I also am very goal-oriented and I take my assigned tasks very seriously. I work with team members very well and I am a people person. I like working with others and helping out wherever needed. More than anything, I am confident about the things I know or the skills I have learned, however, I am always open to learning new things. I also wish to work at Wipro for a long time and would not cause the company any trouble while working on a project.
 
 To be Noted: Be humble and never compare yourself with others, however, put your strong points across again. Try to state why it would be a good idea for the company to hire you. Also, mention that you intend to stick to the company.
+
 
 Q5. What are your weaknesses?
 Answer:
@@ -85,3 +130,7 @@ Q10. Do you have any questions for us?
     Never speak badly about ex-employers or colleagues.
     Do not seem fidgety and give your all for the interview.
     Do not act disinterested but do not act desperate.
+
+
+
+

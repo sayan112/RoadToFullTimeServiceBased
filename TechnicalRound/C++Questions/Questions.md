@@ -483,3 +483,10 @@ In computer programming, a vector is often used to refer to a dynamic array or a
 
 8. **Two-Dimensional Array**:
 A two-dimensional array is an extension of the concept of a one-dimensional array. While a one-dimensional array is like a list of elements, a two-dimensional array is like a table or grid of elements. It's organized into rows and columns, forming a matrix-like structure. Each element in a two-dimensional array is accessed using two indices: one for the row and one for the column.
+
+9.                     set	                                      map
+1.	Set is used to store all the unique elements.	map is used to store all the unique elements.
+2.	Its syntax is -: set<data_type>name_of_set.     Its syntax is -: map<data_type , data_type>name_of_map;
+3.	It stores the elements in increasing order	It stores the elements in key , value pairs.
+4.	Set is implemented using Binary search tree.	Map is implemented using Balance Binary tree.
+5.	Sets are traversed using the iterators. 	It is defined in #include <map> header file.

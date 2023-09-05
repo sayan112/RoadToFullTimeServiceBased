@@ -398,9 +398,41 @@ LAST() - Fetches the last element in a collection of values.
 
 27. What are the differences between OLTP and OLAP?
 
-    = OLTP stands for Online Transaction Processing, is a class of software applications capable of supporting transaction-oriented programs. An important attribute of an OLTP system is its ability to maintain concurrency. OLTP systems often follow a decentralized architecture to avoid single points of failure. These systems are generally designed for a large audience of end-users who conduct short transactions. Queries involved in such databases are generally simple, need fast response times, and return relatively few records. A number of transactions per second acts as an effective measure for such systems.
+    = ***OLTP*** stands for Online Transaction Processing, is a class of software applications capable of supporting transaction-oriented programs. An important attribute of an OLTP system is its ability to maintain concurrency. OLTP systems often follow a decentralized architecture to avoid single points of failure. These systems are generally designed for a large audience of end-users who conduct short transactions. Queries involved in such databases are generally simple, need fast response times, and return relatively few records. A number of transactions per second acts as an effective measure for such systems.
 
-    OLAP stands for Online Analytical Processing, a class of software programs that are characterized by the relatively low frequency of online transactions. Queries are often too complex and involve a bunch of aggregations. For OLAP systems, the effectiveness measure relies highly on response time. Such systems are widely used for data mining or maintaining aggregated, historical data, usually in multi-dimensional schemas.
+    Every industry in today’s world use OLTP system to record their transactional data. The main concern of OLTP systems is to enter, store and retrieve the data. They covers all day to day operations such as purchasing, manufacturing, payroll, accounting, etc.of an organization. Such systems have large numbers of user which conduct short transaction. It supports simple database query so the response time of any user action is very fast.
+
+    Advantages of an OLTP System:
+
+OLTP Systems are user friendly and can be used by anyone having basic understanding
+It allows its user to perform operations like read, write and delete data quickly.
+It responds to its user actions immediately as it can process query very quickly.
+This systems are original source of the data.
+It helps to administrate and run fundamental business tasks.
+It helps in widening customer base of an organization by simplifying individual processes.
+
+    1. **OLTP Online Analytical Processing:** , is a technology used for data analysis and reporting. It allows users to interactively analyze multidimensional data to gain insights and make informed decisions. Here are the characteristics of OLAP:
+
+1. **Multidimensional Data:** OLAP systems organize data into multidimensional structures, such as cubes or hypercubes. These structures represent data with multiple dimensions, such as time, geography, and product categories, making it easy to analyze data from different perspectives.
+
+2. **Fast Query Performance:** OLAP databases are optimized for query performance. They precompute and store aggregated data to ensure that queries, even complex ones, are processed quickly.
+
+3. **Complex Calculations:** OLAP systems support complex calculations and aggregations, enabling users to perform operations like sum, average, and percentage calculations on the data.
+
+4. **User-Friendly Interface:** OLAP tools often come with user-friendly interfaces that allow non-technical users to explore and analyze data easily. Users can navigate through data hierarchies and drill down into details as needed.
+
+5. **Consolidation and Roll-Up:** OLAP allows data to be consolidated or rolled up to higher levels of aggregation. For example, you can view sales data at the regional level, then drill down to see sales for specific stores within each region.
+
+6. **Slicing and Dicing:** Users can "slice" data by selecting a particular dimension or attribute and "dice" it by selecting multiple dimensions. This capability enables flexible data exploration.
+
+7. **Data Cubes:** OLAP systems often use data cubes to store data efficiently. These cubes store precomputed aggregations for various combinations of dimensions, allowing for quick retrieval.
+
+8. **Support for Historical Data:** OLAP systems can store historical data, making it possible to analyze trends and changes over time.
+
+9. **Security:** OLAP systems typically have robust security features to control access to data and ensure that sensitive information is protected.
+
+10. **Scalability:** OLAP systems are designed to handle large volumes of data and can scale to accommodate growing data needs.
+
 
 28. Types of join in SQL?
 
