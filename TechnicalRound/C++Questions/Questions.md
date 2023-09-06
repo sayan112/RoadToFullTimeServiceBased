@@ -490,3 +490,48 @@ A two-dimensional array is an extension of the concept of a one-dimensional arra
 3.	It stores the elements in increasing order	It stores the elements in key , value pairs.
 4.	Set is implemented using Binary search tree.	Map is implemented using Balance Binary tree.
 5.	Sets are traversed using the iterators. 	It is defined in #include <map> header file.
+
+
+
+
+
+10. what is graph ?
+= A Graph is a non-linear data structure consisting of vertices and edges. The vertices are sometimes also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by G(V, E).
+
+11. what is Tree ? 
+ = A Binary Tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child, and the topmost node in the tree is called the root.
+
+
+12. What is a leaf node? 
+
+Any node in a binary tree or a tree that does not have any children is called a leaf node. 
+
+13.  What is a root node? 
+
+The first node or the top node in a tree is called the root node. 
+
+
+14. Binary Tree:
+
+A binary tree is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child.
+It is widely used for various applications, including binary search trees (BST), expression trees, and more.
+
+
+15.  Breadth-First Search (BFS):
+
+BFS is a tree traversal algorithm that starts at the root node and explores all the nodes at the current level before moving on to the next level.
+It uses a queue data structure to keep track of nodes to be visited. The algorithm follows these steps:
+
+
+Depth-First Search (DFS):
+
+DFS is a tree traversal algorithm that explores as far down a branch as possible before backtracking to explore other branches.
+It can be implemented using either recursion or a stack data structure. Here's the basic idea:
+Start at the root node.
+Process the current node (e.g., print its value or perform an operation).
+Recursively or iteratively visit all of its child nodes one by one, going as deep as possible before backtracking.
+Repeat this process for each unvisited child node until all nodes are visited.
+DFS has multiple variants, including Preorder DFS (process the node before its children), Inorder DFS (process the left child, then the node, then the right child, often used for binary search trees), and Postorder DFS (process the node after its children).
+
+
+

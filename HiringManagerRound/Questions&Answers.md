@@ -46,6 +46,39 @@ By addressing these questions with clear examples and emphasizing your proactive
 
 
 
+
+
+
+ *** Explain Your Internship experience *** 
+
+
+During my internship as a fresher candidate, I had the opportunity to work on a dynamic and exciting project that allowed me to gain valuable experience in various aspects of web development. Here's a breakdown of my internship experience:
+
+1. **React Toastify Notifications**: I was responsible for integrating React Toastify notifications into the application. This feature added real-time notifications to the platform, improving user engagement and providing important updates to both doctors and patients.
+
+2. **React Calendar for Doctor Appointments**: I implemented a React calendar component to help manage doctor appointments efficiently. This feature allowed doctors and patients to schedule, view, and manage their appointments easily, enhancing the overall user experience.
+
+3. **Nivo Charts for Patient Height and Weight**: I integrated Nivo charts to visualize patient height and weight data. This addition made it simpler for healthcare professionals to monitor patient progress and make data-driven decisions.
+
+4. **Material UI and Tailwind CSS**: I used Material UI and Tailwind CSS to design an intuitive and visually appealing user interface. These UI libraries helped in creating a modern and responsive design, ensuring that the application was user-friendly and aesthetically pleasing.
+
+5. **Login and Signup with Validation**: I implemented user authentication features, including login and signup forms with validation. This ensured secure access to the doctor and patient apps. I used React and Axios to seamlessly integrate these features with the backend APIs.
+
+6. **Bug Resolution**: In a fast-paced startup environment, I had the opportunity to troubleshoot and resolve over 80+ bugs and issues. This experience allowed me to develop problem-solving skills and adapt to changing project requirements quickly.
+
+Throughout my internship, I learned to work effectively in a team, communicate with colleagues and stakeholders, and adapt to the evolving needs of the project. I gained hands-on experience with popular front-end technologies like React, Axios, Material UI, and Tailwind CSS. Additionally, I improved my problem-solving abilities by tackling a variety of issues and bugs, contributing to the overall success of the project.
+
+Overall, my internship experience as a fresher candidate was incredibly valuable, as it not only allowed me to apply my technical skills but also provided me with exposure to real-world development challenges in a fast-paced startup environment. It was a great opportunity for personal and professional growth, and I look forward to building upon this experience in my future endeavors.
+
+
+
+
+
+
+
+
+
+
 Q1. Can you briefly tell us about yourself?
 Answer:Hello, my name is Sayan Maitra. I am a fourth-year student at Hooghly Engineering and Technology, Kolkata. I have a strong educational background, having completed my schooling at Ramkrishna Mission Vivekananda Vidyamandir, where I spent 14 years honing my academic skills.
 
