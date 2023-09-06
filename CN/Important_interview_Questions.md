@@ -71,6 +71,10 @@ A router is a networking device that operates at the Network Layer (Layer 3) of 
 4. Repeater:
 A repeater is a networking device used to extend the reach of a network by amplifying or regenerating network signals. It operates at the Physical Layer (Layer 1) of the OSI model. When data travels over long distances, it can experience signal degradation and loss. Repeaters help to overcome these issues by receiving weak signals, cleaning and boosting them, and then retransmitting them to extend the network's range. Repeaters do not make any decision based on the data being transmitted; they simply regenerate the signals.
 
+5. Bridge : 
+A bridge in a computer network is a networking device that operates at the data link layer (Layer 2) of the OSI model. Its primary function is to filter and forward traffic between two or more network segments, making decisions based on MAC (Media Access Control) addresses. Bridges are used to create smaller collision domains, which can help improve network performance and reduce network collisions in Ethernet networks.
+
+
 In summary, hubs and switches are used to connect devices within a LAN, with switches being more efficient and capable of intelligent packet forwarding. Routers are used to connect multiple networks together and facilitate data exchange between them based on IP addresses. Repeaters, on the other hand, extend the range of a network by amplifying signals. As networking technology has evolved, switches and routers have largely replaced hubs and repeaters in modern networks due to their improved performance and functionality.
 
 
@@ -305,54 +309,3 @@ In summary, if your main priority is to send a large file in a shorter amount of
 
 
 
-
-27. Explain Segmentation and Paging  in depth simple words . Compare and which is faster ?
-= Certainly, I'd be happy to explain segmentation and paging, compare them, and touch on virtual memory.
-
-**Segmentation:**
-Segmentation is a memory management technique used by some operating systems. In segmentation, a program's memory is divided into different segments, where each segment holds a specific type of data, such as code, data, and stack. Each segment has a unique identifier or name.
-
-Imagine it like different sections in a library. You have one section for fiction books, another for non-fiction, and so on. In the same way, segmentation separates different parts of a program's memory.
-
-**Paging:**
-Paging is another memory management technique. In paging, memory is divided into fixed-size blocks called "pages," and the program's memory is also divided into fixed-size blocks called "frames." The pages of a program don't have to be contiguous in physical memory; they can be scattered. The operating system maintains a table (called a page table) that maps pages to frames.
-
-Think of it like a puzzle where you break a picture into many pieces (pages), and you have a separate set of pieces (frames) to assemble the picture. The table helps you know which piece goes where.
-
-**Comparison:**
-Segmentation and paging have their pros and cons. Segmentation can help manage different types of data more flexibly, but it can lead to fragmentation, where free memory is divided into small chunks. Paging helps avoid fragmentation but might require more memory to store the page table.
-
-**Speed Comparison:**
-In terms of speed, paging tends to be faster in many cases. This is because paging allows the operating system to move individual pages between RAM and disk, making memory management more efficient. Segmentation might involve moving larger chunks of data, which can be less efficient in terms of speed.
-
-
-
-
-
-28. **Virtual Memory:**
-Virtual memory is a memory management technique that allows a computer to use more memory than is physically available by using a combination of RAM and disk space. It's an extension of the computer's physical memory. When programs need more memory than is available in RAM, the operating system swaps data between RAM and disk, making it seem like there's more memory available than there actually is.
-
-Imagine you're working on a desk with limited space. Virtual memory is like having extra drawers where you can store things that you're not currently using on the desk. You can swap things between the desk and drawers as needed.
-
-In summary, segmentation and paging are memory management techniques that divide a program's memory in different ways. Paging is often faster due to its efficiency, and virtual memory is a technique that extends physical memory using disk space when needed. The choice between these techniques depends on the specific requirements and constraints of the system.
-
-
-29. How will you check number of running processes in your PC?
-= **Task Manager**: Press Ctrl + Shift + Esc or Ctrl + Alt + Delete and then select "Task Manager." In the "Processes" tab, you'll see a list of running processes along with their details.
-
-**Command Prompt**: Open the Command Prompt (CMD) and enter the command tasklist to see a list of running processes along with their process IDs (PIDs) and memory usage.
-
-30. Explain  Internal Fragmentation  and External Fragmentation ?
-
-= **Internal Fragmentation**:
-
-Internal fragmentation occurs when memory is allocated in fixed-size blocks, and a block is assigned to a process that doesn't fully utilize all the space within the block, resulting in wasted memory.
-
-In internal fragmentation, a memory block assigned to a process is bigger. Some portion of the memory is left unused, as it cannot be used by another process. Also, the problem of internal fragmentation occurs when the memory is divided into fixsized partitions. The problem of internal fragmentation can be reduced by effectively assigning the smallest partition but large enough for the process.
-The solution of internal fragmentation is the best-fit block.
-
-**External Fragmentation**:
-
-External fragmentation occurs when free memory is available, but it's scattered in small, non-contiguous chunks. As a result, it's difficult to allocate larger blocks of memory to new processes, even if the total free space is sufficient.
-
-The solution to external fragmentation is compaction and paging.
