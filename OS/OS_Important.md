@@ -282,7 +282,7 @@ The solution to external fragmentation is compaction and paging.
 
 **20. What is a deadlock in the context of operating systems?**
    
-   Answer: Deadlock is a situation in which two or more processes are unable to proceed further because each is waiting for the other to release a resource that they need to continue execution.
+   Answer: Deadlock is a situation in which two or more processes are unable to proceed further because they are waiting for each other to relase their resources . 
 
 **21. What are the necessary conditions for a deadlock to occur?**
 

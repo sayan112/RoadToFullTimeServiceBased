@@ -77,20 +77,6 @@ Overall, my internship experience as a fresher candidate was incredibly valuable
 
 
 
-
-
-Q1. Can you briefly tell us about yourself?
-Answer:Hello, my name is Sayan Maitra. I am a fourth-year student at Hooghly Engineering and Technology, Kolkata. I have a strong educational background, having completed my schooling at Ramkrishna Mission Vivekananda Vidyamandir, where I spent 14 years honing my academic skills.
-
-In terms of technical expertise, I possess a solid foundation in programming languages such as C++ and JavaScript. I am proficient in React.js and have hands-on experience with Material UI, enabling me to develop user-friendly dashboards and handle complex React components effectively. Additionally, I have a strong grasp of Object-Oriented Programming (OOPs) concepts, which further enhances my problem-solving abilities.
-
-During my third year, I had the opportunity to work as an intern at Bridge Healthcare, where I focused on frontend development. I actively contributed to the Doctor and Patient application, showcasing my ability to work in a real-world software development environment.
-
-Apart from my technical skills, I have a genuine passion for software engineering and strive to keep myself updated with the latest industry trends. My dedication to continuous learning and my ability to adapt to new challenges make me a valuable asset for any software engineering position.
-
-Outside of academics, I have a keen interest in watching movies and web series, particularly those in the thriller genre and Bengali stories. This not only provides me with a way to unwind but also helps me stay creative and open-minded.
-
-
 Q2. What are your strongest points?
 Answer: My strongest points would be dedication, loyalty, and enthusiasm. I also try to be humble, honest, and as collaborative as possible. Cooperation is necessary and I love teamwork. My friends (or colleagues) have mentioned that I have a likable personality and I believe that I have good communication skills. I also believe in goals and I am dedicated to achieving them. It is not great to compliment yourself, but I believe that I would be a good fit for the corporate culture and I have a positive attitude. I am also confident in my work and I maintain the integrity of my initial tasks.
 To be Noted: One should not be too overconfident or speak too well about themselves, however, interviews wish to hear that you are goal-oriented and confident about your skills. Being humble is great but you must also get your greatest strengths across. Employers want loyal, honest, and cooperative employees, thus, it is in one’s best interest to talk about these factors. One should never say that they work better than others or are faster than others. This seems disrespectful and is not the quality of a good leader. One should try to disguise one or two strong points as a weakness and humbly put those across as well. This will make the interviewees think of you as a humble and honest candidate.

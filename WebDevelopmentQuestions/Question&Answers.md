@@ -127,14 +127,6 @@ Lazy loading is a technique used to defer the loading of non-essential resources
 
 
 
-
-
-
-
-
-
-
-
 Sure, I'd be happy to help! Below are some commonly asked questions in interviews for fresher positions related to HTML, CSS, and JavaScript, along with their explanations. 
 
 **HTML:**
@@ -328,14 +320,15 @@ Sure, I'd be happy to help! Below are some commonly asked questions in interview
    - You can use the `classList` property's methods like `add()` and `remove()` to modify an element's classes.
 
 10. **What is an event in JavaScript?**
-    - An event is an action or occurrence that happens in the browser, like a button click or a page load. JavaScript can listen for and respond to these events using event handlers.
+    -Events in JavaScript are actions taken by the user or the browser that trigger JavaScript code. For example, when a user clicks a button, the browser sends an event to the JavaScript code that is associated with that button. The JavaScript code can then respond to the event by performing an action, such as changing the color of the button or displaying a message.
+There are many different types of events, including:
+Mouse events: , such as click, dblclick, mouseover, mouseout, and mousemove.
+Keyboard events: , such as keydown, keyup, and keypress.
+Form events: , such as submit and reset.
+Load and unload events: , such as load and unload.
+Timer events: , such as setInterval and setTimeout.
 
-Remember, while understanding these questions and answers is important, also practice coding and implementing these concepts to strengthen your skills. Additionally, be prepared to discuss any projects you've worked on, as practical experience is highly valued in interviews. Good luck!
 
-
-
-1. **What is event delegation in JavaScript?**
-   - Event delegation is a technique where you attach a single event listener to a parent element, allowing you to handle events for multiple child elements. This is efficient for dynamically created elements.
 
 2. **Explain the concept of closures in JavaScript.**
    - A closure is a function that retains access to its enclosing function's variables, even after that function has finished executing. Closures are often used for encapsulation and data privacy.
@@ -449,6 +442,20 @@ Sure, here's a comparison between SQL (relational databases) and MongoDB (a NoSQ
 
 ***MongoDB***
  is a popular NoSQL (Not Only SQL) database management system that is designed for handling unstructured or semi-structured data. It is classified as a document database, which means it stores data in a format similar to JSON (JavaScript Object Notation). MongoDB is known for its flexibility, scalability, and ease of use, making it suitable for a wide range of applications.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

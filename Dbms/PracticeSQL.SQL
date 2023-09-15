@@ -313,3 +313,26 @@ WHERE
    Address  ='london'
 ORDER BY
     PersonID;
+
+
+
+
+
+
+
+    --  Practice SQL ---
+
+1. from the imdb dataset print the title and rating of those movies which have a genre starting from c released in 2014 with a budget higher than 4 crore download the dataset from console
+
+
+SELECT IMDB.Title, IMDB.Rating
+FROM IMDB
+    JOIN genre on IMDB.Movie_id = genre.Movie_id
+WHERE
+    genre.genre LIKE 'C%'
+    AND IMDB.title LIKE '%2014%'
+    AND IMDB.Budget > 40000000;
+
+
+
+2.     

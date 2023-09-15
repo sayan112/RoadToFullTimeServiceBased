@@ -66,7 +66,7 @@ A hub is a basic networking device that operates at the Physical Layer (Layer 1)
 A switch is a more intelligent and efficient networking device that operates at the Data Link Layer (Layer 2) of the OSI model. It is used to connect multiple devices in a LAN as well. However, unlike a hub, a switch is capable of identifying the destination address of incoming data packets and forwarding them only to the specific device they are meant for. This process is achieved through the use of MAC (Media Access Control) addresses. Switches improve network performance and reduce collisions by creating dedicated communication channels between sender and receiver devices. (collision will be 0 )
 
 3. Router:
-A router is a networking device that operates at the Network Layer (Layer 3) of the OSI model. It is used to connect multiple networks together, such as connecting a LAN to the internet. Routers are responsible for packet forwarding based on IP (Internet Protocol) addresses. When a data packet arrives at a router, it examines the destination IP address and determines the best path to forward the packet to reach its intended destination. Routers also provide functionalities like Network Address Translation (NAT), which allows multiple devices in a private network to share a single public IP address.
+A router is a networking device that operates at the Network Layer (Layer 3) of the OSI model. It is used to connect multiple networks together, such as connecting a LAN to the internet. Routers are responsible for packet forwarding based on IP (Internet Protocol) addresses. When a data packet arrives at a router, it examines the destination IP address and determines the best path to forward the packet to reach its intended destination. Routers also provide functionalities like Network Address Translation (NAT), which allows multiple devices in a private network to share a single public IP address.(A Network Address Translation (NAT) is the process of mapping an internet protocol (IP) address to another by changing the header of IP packets while in transit via a router)
 
 4. Repeater:
 A repeater is a networking device used to extend the reach of a network by amplifying or regenerating network signals. It operates at the Physical Layer (Layer 1) of the OSI model. When data travels over long distances, it can experience signal degradation and loss. Repeaters help to overcome these issues by receiving weak signals, cleaning and boosting them, and then retransmitting them to extend the network's range. Repeaters do not make any decision based on the data being transmitted; they simply regenerate the signals.
@@ -113,7 +113,7 @@ UDP:
 
 8. Q: What is HTTP and HTTPS?
    A: HTTP (Hypertext Transfer Protocol) is a standard protocol used for transmitting data over the internet, while HTTPS (HTTP Secure) is a secure version that uses encryption (SSL/TLS) to protect data during transmission. Example: HTTP is used for regular website browsing, while HTTPS is used for secure online transactions and sensitive data transfer.
-
+a
    ***Security***: HTTPS provides data encryption and thus enhances the security of data transmission, making it much more difficult for attackers to intercept and understand the data being exchanged.
 
 ***Trust and Authentication***: HTTPS also involves the use of digital certificates that are issued by trusted Certificate Authorities (CAs). These certificates verify the identity of the website, ensuring that you are indeed connected to the genuine website and not a malicious imposter.

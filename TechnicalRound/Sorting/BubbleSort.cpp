@@ -11,9 +11,7 @@ using namespace std;
             if(vec[i]>vec[i+1])
             {
                 swap(vec[i],vec[i+1]);
-               //   int temp= vec[i];
-               //   vec[i]=vec[i+1];
-               //    vec[i+1]=temp;
+             
             }
         }
         counter++;

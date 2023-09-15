@@ -14,8 +14,8 @@ using namespace std;
             count++;
          }
       }
-      int pivotIndex = start+count;
-      swap(arr[pivotIndex],arr[start]);
+      int pivotIndex = start+count; // making the right pivot position
+      swap(arr[pivotIndex],arr[start]);// swap it 
        int i=start;
        int j = end;
        while(i<pivotIndex && j>pivotIndex)
@@ -24,7 +24,7 @@ using namespace std;
         {
 i++;
         }
-        while (arr[j] > pivot)
+        while (arr[j] >pivot)
         {
 j++;
         }

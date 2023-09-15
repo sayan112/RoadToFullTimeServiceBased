@@ -131,6 +131,8 @@ Virtual Function
     =
     Operating Systems : C++ is most widely used programming language and become an ideal choice for developing operating systems. Mac OS X has majority of parts written in C++ and Most of Microsoft’s software like Windows, Microsoft Office, IDE Visual Studio, and Internet Explorer are also written in C++.
     Games : C++ used for game development and companies use it as their first choice to develop gaming systems because C++ is very close to the machine so It can easily manipulate resources and able to built complex 3D games, multiplayer game, etc. Unreal game engine make games using C++.
+
+
 22. C++ Basic syntax ->
 
     = Header File: we used the #include <iostream> statement to tell the compiler to include an iostream header file library which stores the definition of the cin and cout methods that we have used for input and output. #include is a preprocessor directive using which we import header files.
@@ -535,3 +537,247 @@ DFS has multiple variants, including Preorder DFS (process the node before its c
 
 
 
+
+16. Difference between string and char of array?
+= C++ provides two primary ways to work with text data: `std::string` and character arrays (`char[]` or `const char[]`). Here's a comparison of the two with code examples:
+
+1. **`std::string`:**
+
+   `std::string` is a part of the C++ Standard Library and is a dynamic, resizable, and mutable string class. It offers various built-in methods for string manipulation and is generally easier to work with than character arrays.
+
+   ```cpp
+   #include <iostream>
+   #include <string>
+
+   int main() {
+       std::string cppString = "Hello, C++";
+
+       // Appending to a string
+       cppString += " World";
+
+       // Length of the string
+       std::cout << "Length: " << cppString.length() << std::endl;
+
+       // Accessing characters
+       char firstChar = cppString[0];
+
+       // Printing the string
+       std::cout << cppString << std::endl;
+
+       return 0;
+   }
+   ```
+
+   Output:
+   ```
+   Length: 12
+   Hello, C++ World
+   ```
+
+2. **Character Array (`char[]` or `const char[]`):**
+
+   Character arrays are arrays of characters and are often used for simple string storage. They are mutable and are usually null-terminated (i.e., have a null character `\0` at the end to mark the end of the string). You need to manage memory and handle many string operations manually.
+
+   ```cpp
+   #include <iostream>
+   #include <cstring>
+
+   int main() {
+       char cString[] = "Hello, C";
+
+       // Concatenating to a character array
+       strcat(cString, "++");
+
+       // Length of the string (manually calculated)
+       int length = strlen(cString);
+
+       // Accessing characters
+       char firstChar = cString[0];
+
+       // Printing the string
+       std::cout << "Length: " << length << std::endl;
+       std::cout << cString << std::endl;
+
+       return 0;
+   }
+   ```
+
+   Output:
+   ```
+   Length: 11
+   Hello, C++
+   ```
+
+**Key Differences:**
+
+- `std::string` is a C++ class with built-in methods for string manipulation, while character arrays require manual string manipulation using functions like `strcpy`, `strcat`, `strlen`, etc.
+- `std::string` handles memory management automatically, whereas you need to manage memory explicitly for character arrays.
+- `std::string` is dynamic and can resize itself as needed, while character arrays have a fixed size,staticly .
+- `std::string` is safer as it performs bounds checking, while character arrays do not.
+- `std::string` can store Unicode and multibyte characters easily, while character arrays require more care when dealing with non-ASCII characters.
+
+In general, it's recommended to use `std::string` when working with text in C++ unless you have specific performance or compatibility requirements that necessitate the use of character arrays.
+
+17. Implicit Type Conversion?
+
+The type conversion that is done automatically done by the compiler is known as implicit type conversion. This type of conversion is also known as automatic conversion.
+
+Let us look at two examples of implicit type conversion.
+
+
+// Working of implicit type-conversion
+  ```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   // assigning an int value to num_int
+   int num_int = 9;
+
+   // declaring a double type variable
+   double num_double;
+ 
+   // implicit conversion
+   // assigning int value to a double variable
+   num_double = num_int;
+
+   cout << "num_int = " << num_int << endl;
+   cout << "num_double = " << num_double << endl;
+
+   return 0;
+}
+   ```
+
+
+   C++ Explicit Conversion
+When the user manually changes data from one type to another, this is known as explicit conversion. This type of conversion is also known as type casting.
+
+  ```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // initializing a double variable
+    double num_double = 3.56;
+    cout << "num_double = " << num_double << endl;
+
+
+    // function-style conversion from double to int
+    int num_int2 = int(num_double);
+    cout << "num_int2   = " << num_int2 << endl;
+
+    return 0;
+}
+
+
+
+17. C++ String Functions
+
+C++ provides some inbuilt functions which are used for string manipulation, such as the strcpy() and strcat() functions for copying and concatenating strings. Some of them are:
+
+
+length()
+
+This function returns the length of the string.
+
+swap() 	
+This function is used to swap the values of 2 strings.
+
+size() 
+
+Used to find the size of string
+
+resize()	
+This function is used to resize the length of the string up to the given number of characters.
+
+find()	
+Used to find the string which is passed in parameters
+
+push_back()	
+This function is used to push the passed character at the end of the string 
+
+ find()
+
+This function is used to search for a certain substring inside a string and returns the position of the first character of the substring. 
+
+substr()
+
+This function is used to create a substring from a given string. 
+
+compare()
+
+This function is used to compare two strings and returns the result in the form of an integer.
+
+erase()
+
+This function is used to remove a certain part of a string.
+  // Deletes 4 characters from index number 1
+    str.erase(1, 4);
+
+pop_back() 
+
+This function is used to pop the last character from the string
+
+clear() 
+
+This function is used to remove all the elements of the string.
+
+begin()
+
+This function returns an iterator pointing to the beginning of the string.
+
+end()
+
+This function returns an iterator that points to the end of the string.
+
+
+
+18. Guess the Output :)
+= ```c++```
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+ 
+int a = 10;
+ cout <<a++<<++a<< a++<<a++<<++a<<endl;
+	   
+
+    return 0;
+}
+
+The code you've provided contains a series of post-increment (a++) and pre-increment (++a) operations on the variable 'a' in the `cout` statement. The result of these operations depends on the order in which they are executed, and the behavior can be undefined in some cases.
+
+Here's a breakdown of what's happening in your code:
+
+1. `cout << a++` - This will print the current value of 'a' (which is 10) and then increment 'a' by 1. So, it will print 10 and set 'a' to 11.
+2. `++a` - This will increment 'a' by 1 and return the new value (which is 12). So, it will print 12.
+3. `a++` - This will print the current value of 'a' (which is now 12) and then increment 'a' by 1. So, it will print 12 and set 'a' to 13.
+4. `a++` - This will print the current value of 'a' (which is now 13) and then increment 'a' by 1. So, it will print 13 and set 'a' to 14.
+5. `++a` - This will increment 'a' by 1 and return the new value (which is 15). So, it will print 15.
+6. `endl` - This is an end-of-line character, so it will move to the next line.
+
+Therefore, the output of your code will be: `10121315`
+
+It's important to note that the order of evaluation of expressions involving multiple increments and decrements in a single statement is undefined behavior in C++. The behavior may vary between different compilers, and you should avoid writing such code for clarity and portability.
+
+``````
+
+19. what is dangling Pointer?
+= A pointer pointing to a memory location that has been deleted (or freed) is called dangling pointer. There are three different ways where Pointer acts as dangling pointer
+
+int main()
+{
+    int* ptr = (int *)malloc(sizeof(int));
+ 
+    // After below free call, ptr becomes a
+    // dangling pointer
+    free(ptr);
+     
+    print(ptr);// garbage value 
+}
+ 
+ 20. 
