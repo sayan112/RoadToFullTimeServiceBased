@@ -13,6 +13,7 @@
 // Two Important  property of Encapsulation
 
 // Data Protection: Encapsulation protects the internal state of an object by keeping its data members private. Access to and modification of these data members is restricted to the class’s public methods, ensuring controlled and secure data manipulation.
+
 // Information Hiding: Encapsulation hides the internal implementation details of a class from external code. Only the public interface of the class is accessible, providing abstraction and simplifying the usage of the class while allowing the internal implementation to be modified without impacting external code.
 
 #include <iostream>
@@ -73,3 +74,14 @@ int main()
     cout << sayan.getaddress() << " ";
     cout << sayan.getage() << endl;
 }
+
+// Abstraction
+// -> In abstraction, problems are solved at the design or interface level.
+// -> 	Abstraction is the method of hiding the unwanted information.
+// -> Main purpose -> To provide a high-level view of an object or system, focusing on what an object does rather than how it does it.
+
+// Encapsulation
+// -> While in encapsulation, problems are solved at the implementation level.
+// -> While in encapsulation, the data is hidden using methods of getters and setters.
+// ->While encapsulation is the process or method to contain the information.
+// Encapsulation in C++ is defined as the wrapping up of data and information(methods) in a single unit, protecting it from outside intervention

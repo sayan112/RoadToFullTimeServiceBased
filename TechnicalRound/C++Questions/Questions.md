@@ -779,5 +779,65 @@ int main()
      
     print(ptr);// garbage value 
 }
- 
- 20. 
+
+   ```
+
+ 20. what is malloc and calloc?
+ = In the C programming language, malloc and calloc are functions used to allocate memory dynamically during program execution. They are part of the standard C library (stdlib.h) and are commonly used when you need to allocate memory for data structures like arrays, linked lists, or any other data that you don't know the size of at compile time.
+
+
+  ***malloc***
+  malloc() only takes one argument
+  malloc() is faster than calloc.
+
+  ***calloc***
+  calloc (Contiguous Allocation):
+The calloc function stands for "contiguous allocation."
+It allocates memory for an array of elements, where each element is of a specified size.
+It takes two arguments: the number of elements you want to allocate memory for and the 
+
+
+*** c++ relevent ***
+
+In C++, the Standard Template Library (STL) provides various container classes like std::vector, std::list, and std::map. These containers automatically manage memory for you, making manual memory management less common.
+When you use these containers, you don't need to worry about memory allocation and deallocation; it's handled behind the scenes.
+
+```cpp```
+
+#include <vector>
+
+std::vector<int> vec; // Dynamically resizable array
+vec.push_back(42);   // Add elements
+
+
+
+21. Typed languages refer to programming languages that have a type system, which defines the rules for how different data types (e.g., integers, strings, arrays) can be used in a program. These rules help catch type-related errors and ensure that data is used in a consistent and safe manner during program execution.
+
+There are two main categories of typed languages: statically typed and dynamically typed.
+
+1. **Statically Typed Language**:
+   - In a statically typed language, the data types of variables are determined at compile-time, before the program is executed.
+   - Type checking occurs at compile-time, and the compiler verifies that the types of variables and expressions are compatible.
+   - If a type mismatch is found during compilation, the program will not be able to run until the error is fixed.
+   - Examples of statically typed languages include C, C++, Java, and Swift.
+
+2. **Dynamically Typed Language**:
+   - In a dynamically typed language, variable types are determined at runtime, during program execution.
+   - Type checking occurs at runtime, and variables can change their type during the course of the program.
+   - This flexibility can lead to more concise code but can also make it easier to introduce type-related errors.
+   - Examples of dynamically typed languages include Python, JavaScript, Ruby, and PHP.
+
+The relationship between compiled languages and interpreted languages is somewhat separate from the dynamic/static typing distinction:
+
+1. **Compiled Languages**:
+   - In a compiled language, the source code is translated into machine code or an intermediate form (bytecode) before execution.
+   - Compilation occurs before the program runs, and the resulting binary or bytecode can be executed independently of the original source code.
+   - Examples of compiled languages include C, C++, and Rust.
+
+2. **Interpreted Languages**:
+   - In an interpreted language, the source code is executed directly by an interpreter without prior compilation into machine code.
+   - The interpreter reads and executes the code line by line or in small chunks, making decisions on the fly.
+   - This typically results in slower execution compared to compiled languages but offers greater portability.
+   - Examples of interpreted languages include Python, JavaScript, and Ruby.
+
+There's also a category of languages that blend aspects of both compilation and interpretation, such as Java (compiled to bytecode and then executed by the Java Virtual Machine) or C# (compiled to Common Intermediate Language code and executed by the .NET runtime). These languages combine elements of both compiled and interpreted approaches.

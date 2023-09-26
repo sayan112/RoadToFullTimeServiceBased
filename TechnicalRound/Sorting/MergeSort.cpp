@@ -115,3 +115,10 @@ int main()
 
      return 0;
 }
+
+// Merge Sort:
+
+// Best - case:
+// O(n log n) - It always divides the input into two halves and merges them.
+//Worst - case: n O(n log n) - Same as the best - case, as it always divides and conquers.
+//Average - case: O(n log n).

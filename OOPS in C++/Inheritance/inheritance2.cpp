@@ -59,10 +59,11 @@ class sayan : protected Human
 {
 public:
     string fav;
-    void favorite()
+    void Favorite()
     {
         cout << " you are my fav ";
     }
+    
       sayan()
       {
         setGetColor("black");
@@ -71,10 +72,17 @@ public:
     {
          return color;
     }
+
+    void getSleep()
+    {
+         sleep();
+    }
+    
 };
 int main()
 {
     sayan Obj;
   cout << Obj.GetColor();
-  
+    Obj.Favorite();
+    Obj.getSleep();// by getter function u have to access the parent member functions 
 }

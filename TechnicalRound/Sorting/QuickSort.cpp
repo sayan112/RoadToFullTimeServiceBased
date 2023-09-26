@@ -67,3 +67,7 @@ void quickSort(int arr[], int start, int end)
    }
    
  }
+
+ // Best-case: O(n log n) - Occurs when the pivot chosen always splits the array into two nearly equal halves.
+ //Worst - case: O(n ^ 2) - This happens when the pivot is chosen poorly, resulting in an unbalanced partition.
+//  Average - case:O(n log n).

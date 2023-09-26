@@ -1,3 +1,4 @@
+-- SQLBook: Code
 SHOW DATABASES;
 
 -- CREATE DATABASE CUSTOMER ;
@@ -13,6 +14,64 @@ CONTACTNAME VARCHAR(255) NOT NULL,
   COUNTRY VARCHAR(255)
  
 );
+
+ CREATE TABLE CUSTOMERORDER (
+   ORDERID INT PRIMARY KEY UNIQUE,
+    ORDERPRICE INT NOT NULL,
+     ORDERNAME INT NOT NULL ,
+    ORDERPLACE VARCHAR(255) NOT NULL DEFAULT 'Sandnes', 
+  CUSTOMERID INT ,
+ CONSTRAINT  CHECK (ORDERPRICE>1000) ,
+  FOREIGN KEY (CUSTOMERID) REFERENCES CUSTOMER(CUSTOMERID)
+ )
+
+
+-- check order SCHEMA
+ DESC CUSTOMERORDER ;
+
+ -- change the datatype of a column ADD
+  ALTER TABLE CUSTOMERORDER MODIFY ORDERNAME VARCHAR(255) NOT NULL ;
+
+SELECT * FROM CUSTOMERORDER ; 
+-- DELTE ALL ROWS FROM customerorder
+ DELETE FROM CUSTOMERORDER ;
+
+-- Insert sample data into CUSTOMERORDER
+INSERT INTO CUSTOMERORDER (ORDERID, ORDERPRICE, ORDERNAME, ORDERPLACE, CUSTOMERID)
+VALUES
+(1, 1500, 'AC123', 'Sandnes', 1), -- Connects with CustomerID 1 from the CUSTOMER table
+(2, 2200, 'BB123', 'Oslo', 4),   -- Connects with CustomerID 4 from the CUSTOMER table
+(3, 1200, 'CB123', 'Bergen', 3),  -- Connects with CustomerID 3 from the CUSTOMER table
+(4, 2500, 'UB123', 'Stavanger', 2); -- Connects with CustomerID 2 from the CUSTOMER table
+
+
+-- Insert more data into CUSTOMERORDER
+INSERT INTO CUSTOMERORDER (ORDERID, ORDERPRICE, ORDERNAME, ORDERPLACE, CUSTOMERID)
+VALUES
+(5, 1800, 'AB123', 'Bergen', 5),     -- Connects with CustomerID 5 from the CUSTOMER table
+(6, 2100, 'CD678', 'Oslo', 6),       -- Connects with CustomerID 6 from the CUSTOMER table
+(7, 1350, 'EF987', 'Trondheim', 7),  -- Connects with CustomerID 7 from the CUSTOMER table
+(8, 2900, 'GH543', 'Tromsø', 8),     -- Connects with CustomerID 8 from the CUSTOMER table
+(9, 1750, 'IJ210', 'Bergen', 9),     -- Connects with CustomerID 9 from the CUSTOMER table
+(10, 2200, 'KL876', 'Stavanger', 10), -- Connects with CustomerID 10 from the CUSTOMER table
+(11, 1275, 'MN345', 'Bergen', 11),    -- Connects with CustomerID 11 from the CUSTOMER table
+(12, 2650, 'OP987', 'Oslo', 12),     -- Connects with CustomerID 12 from the CUSTOMER table
+(13, 1400, 'QR654', 'Trondheim', 13), -- Connects with CustomerID 13 from the CUSTOMER table
+(14, 3150, 'ST321', 'Stavanger', 14), -- Connects with CustomerID 14 from the CUSTOMER table
+(15, 1900, 'UV987', 'Oslo', 15),     -- Connects with CustomerID 15 from the CUSTOMER table
+(16, 2000, 'WX654', 'Bergen', 16),    -- Connects with CustomerID 16 from the CUSTOMER table
+(17, 2250, 'YZ321', 'Trondheim', 17), -- Connects with CustomerID 17 from the CUSTOMER table
+(18, 2600, 'AB654', 'Bergen', 18),    -- Connects with CustomerID 18 from the CUSTOMER table
+(19, 1450, 'CD987', 'Oslo', 19);     -- Connects with CustomerID 19 from the CUSTOMER table
+
+
+INSERT INTO CUSTOMERORDER (ORDERID, ORDERPRICE, ORDERNAME, ORDERPLACE, CUSTOMERID)
+VALUES
+(20, 1500, 'AC1233', 'Sandnes', 19), -- Connects with CustomerID 1 from the CUSTOMER table
+(21, 2200, 'BB1253', 'Oslo', 2),   -- Connects with CustomerID 4 from the CUSTOMER table
+(22, 1200, 'CB1273', 'Bergen', 2),  -- Connects with CustomerID 3 from the CUSTOMER table
+(23, 2500, 'UB1238', 'Stavanger', 2); -- Connects with CustomerID 2 from the CUSTOMER table
+
 
 
 -- CHECK THE SCHEMA
@@ -108,6 +167,13 @@ VALUES
 
 SELECT COUSTOMERNAME FROM CUSTOMER WHERE COUNTRY ='France' AND ADDRESS='Paris';
 
+
+
+
+-- ORDER BY 
+
+
+
 -- Retrieve the names of customers and sort them in alphabetical order. 
 
 SELECT CUSTOMERNAME FROM CUSTOMER ORDER BY CUSTOMERNAME;
@@ -124,7 +190,14 @@ SELECT CUSTOMERNAME , COUNTRY , CITY FROM CUSTOMER ORDER BY COUNTRY ASC  ,CITY ;
 
 SELECT CUSTOMERNAME , PostalCode , COUNTRY  FROM CUSTOMER WHERE COUNTRY='Sweden' ORDER BY PostalCode ASC;
 
+
+
+
+
 -- AGGREGATING RELATED
+
+
+
 
 -- Count of Customers in Each City 
 SELECT CITY , COUNT(CITY) FROM CUSTOMER GROUP BY CITY;
@@ -134,10 +207,96 @@ SELECT CITY , COUNT(CITY) FROM CUSTOMER GROUP BY CITY;
 SELECT COUNTRY , COUNT(COUNTRY) FROM CUSTOMER GROUP BY COUNTRY;
 
 -- count of Customers in Each Country, Sorted by Count: 
-SELECT COUNTRY , COUNT(COUNTRY) AS CUSTOMERCOUNT FROM CUSTOMER GROUP BY COUNTRY ORDER BY CUSTOMERCOUNT DESC ;
+SELECT COUNTRY , COUNT(COUNTRY) AS CUSTOMERCOUNT FROM CUSTOMER GROUP BY COUNTRY ORDER BY CUSTOMERCOUNT ;
 
 -- Count of Customers in Each Postal Code Area:
 
 -- Calculate the number of customers in each unique postal code area (e.g., "London W1," "México D.F. 05021").
 
 SELECT POSTALCODE , COUNT(CUSTOMERID) AS NUMBEROFCUSTOMER FROM CUSTOMER GROUP BY POSTALCODE ORDER BY POSTALCODE;
+
+
+
+-- Count of Customers in Each City in Brazil: 
+
+SELECT  CITY , COUNT(*) AS CustomerCount  FROM Customer WHERE COUNTRY ='Brazil' GROUP BY CITY  ORDER BY CustomerCount DESC ;
+
+-- same ans using having 
+
+SELECT CITY , COUNT(CUSTOMERID), COUNTRY AS CUSTOMERCOUNT FROM CUSTOMER GROUP BY CITY,COUNTRY  HAVING COUNTRY='Brazil';
+
+
+
+-- Average Order Price by City in Germany: 
+
+-- Calculate the average order price for customers in each city in Germany.List the city name , and the average order price.
+
+SELECT AVG(CUSTOMERORDER.ORDERPRICE),customer.CITY,customer.COUNTRY FROM CUSTOMERORDER JOIN customer GROUP BY CITY,COUNTRY HAVING COUNTRY='Germany';
+
+
+-- Maximum and Minimum Order Prices by City in France:
+
+-- Find the maximum and minimum order prices for customers in each city in France. List the city name, maximum order price, and minimum order price.
+
+SELECT MAX(ORDERPRICE ), MIN(ORDERPRICE) , COUNTRY, CITY FROM CUSTOMERORDER JOIN CUSTOMER ON CUSTOMERORDER.CUSTOMERID=CUSTOMER.CUSTOMERID  WHERE COUNTRY ='France' GROUP BY CITY ORDER BY CITY;
+
+
+
+-- Total Customers by Country with More Than 5 Customers: 
+--Group customers by country and calculate the total number of customers in each country, but only show results for countries with more than 5 customers.
+
+
+SELECT COUNT(CUSTOMERID) AS CUSTOMERCOUNT,COUNTRY FROM CUSTOMER GROUP BY COUNTRY HAVING CUSTOMERCOUNT>5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Lets see Joins 
+
+ SELECT * FROM CUSTOMER LEFT JOIN CUSTOMERORDER ON CUSTOMERORDER.CUSTOMERID = CUSTOMER.CUSTOMERID;
+
+
+ -- List Orders with Customer Information: Retrieve a list of orders with details such as OrderID, OrderPrice, and CustomerName.
+SELECT ORDERID , ORDERPRICE , ORDERNAME ,CUSTOMERORDER.CUSTOMERID, CUSTOMERNAME FROM CUSTOMERORDER JOIN CUSTOMER ON CUSTOMERORDER.CUSTOMERID=CUSTOMER.CUSTOMERID;
+
+--List Customers with No Orders: Find customers who have not placed any orders. 
+
+SELECT CUSTOMERNAME FROM CUSTOMER LEFT JOIN CUSTOMERORDER ON CUSTOMER.CUSTOMERID=CUSTOMERORDER.CUSTOMERID WHERE CUSTOMERORDER.CUSTOMERID IS NULL;
+
+
+-- List Customers with Total Order Price: Retrieve a list of customers with their names and the total price of all their orders.
+
+SELECT * FROM CUSTOMERORDER;
+
+SELECT CUSTOMER .CUSTOMERID , CUSTOMERNAME , SUM(ORDERPRICE) as TotalPrice  FROM CUSTOMER JOIN CUSTOMERORDER  ON CUSTOMER.CUSTOMERID=CUSTOMERORDER.CUSTOMERID GROUP BY CUSTOMER .CUSTOMERID ORDER BY CUSTOMER .CUSTOMERID   ;
+
+
+--List Orders Shipped to Each Country: Display a list of orders along with the country where they were shipped.
+
+
+SELECT CUSTOMER.CUSTOMERID, CUSTOMERNAME, CUSTOMER.ADDRESS AS ShippingAddress , CUSTOMERORDER.ORDERNAME,CUSTOMERORDER.ORDERID FROM CUSTOMER JOIN CUSTOMERORDER ON CUSTOMER.CUSTOMERID=CUSTOMERORDER.CUSTOMERID ;
+
+-- count how many orders in every shipping address;
+
+SELECT
+   
+   COUNT(*) AS ORDERCOUNT,
+    CUSTOMER.COUNTRY AS ShippingAddress
+FROM CUSTOMER
+    JOIN CUSTOMERORDER ON CUSTOMER.CUSTOMERID = CUSTOMERORDER.CUSTOMERID
+     GROUP BY CUSTOMER.COUNTRY ;
+
+
+     

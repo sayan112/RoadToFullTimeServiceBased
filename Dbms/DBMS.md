@@ -265,6 +265,8 @@ There are several types of transparency in DDBMS:
    - The syntax to delete rows from a table is as follows:
      ```sql
      DELETE FROM table_name WHERE condition;
+      if want to delte all rows 
+      DELETE FROM CUSTOMER;
      ```
 
   TRUNCATE:
@@ -564,7 +566,7 @@ It helps in widening customer base of an organization by simplifying individual 
     
 
 32.  Advantages of Indexing ?
-= Indexing in the context of a database management system (DBMS) refers to the process of creating data structures that improve the speed of data retrieval operations on a database table. An index provides a way to quickly look up records based on the values in one or more columns, similar to how an index in a book helps you quickly find specific topics or information.
+= Indexing in the context of a database management system (DBMS) refers to the process of creating data structures that improve the speed of data retrieval operations on a database table. An index provides a way to quickly look up records based on the values in one or more columns, similar to how an index in a book helps you quickly find specific topics or information. 
 
 Advantages of Indexing in DBMS:
 
@@ -577,3 +579,14 @@ Advantages of Indexing in DBMS:
 4. **Reduced Disk I/O**: Indexes can reduce the amount of disk input/output operations required to retrieve data, as they provide a shortcut to directly access the necessary rows.
 
 5. **Support for Constraints**: Some indexes, like primary key and unique key indexes, enforce data integrity by ensuring that duplicate or null values are not inserted into indexed columns
+
+
+
+33. diff ***where clause*** and  ***ha  ving clause***?
+= The WHERE clause in SQL is used to filter data from specific rows in a table based on certain conditions , process before grouping . The HAVING clause is used to filter data from a group of rows in a query based on conditions involving aggregate values , process after grouping.
+
+
+34. what is Data Redundency ?
+= ![Alt text](image.png)
+Data redundancy is a condition created within a database or data storage technology in which the same piece of data is held in two separate places.
+

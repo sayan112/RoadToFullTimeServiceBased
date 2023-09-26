@@ -38,3 +38,12 @@ using namespace std;
          }
        
  }
+
+
+
+
+// Bubble Sort:
+
+// Best-case: O(n) - This occurs when the input array is already sorted, and no swaps are needed.
+// Worst-case: O(n^2) - When the input is sorted in reverse order, it requires the maximum number of comparisons and swaps.
+// Average-case: O(n^2) .
