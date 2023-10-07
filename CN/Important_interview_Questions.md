@@ -57,7 +57,7 @@ The OSI model is a theoretical framework that aids in understanding networking c
 
 3. Q: What is the difference between a hub, switch, and router?
 
-   A: Sure, let's delve into the details of hub, switch, router, and repeater in the context of computer networking (CN):
+A: Sure, let's delve into the details of hub, switch, router, and repeater in the context of computer networking (CN):
 
 1. Hub:
 A hub is a basic networking device that operates at the Physical Layer (Layer 1) of the OSI model. It is used to connect multiple devices in a Local Area Network (LAN). When a data packet arrives at a hub, it broadcasts the packet to all connected devices, regardless of the destination. This means that all devices on the hub's network segment receive the data, even if it is not intended for them. Hubs are considered outdated and inefficient because they create unnecessary network traffic and collisions, leading to performance issues in larger networks.

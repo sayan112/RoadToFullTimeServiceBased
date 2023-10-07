@@ -42,6 +42,18 @@ int main()
 
 // A destructor is a special member function with the same name as the class but preceded by a tilde (~). It is called automatically when an object is destroyed or goes out of scope. The purpose of a destructor is to clean up any resources allocated by the object, such as dynamic memory, file handles, or network connections.
 
+
+
+
+
+
+
+
+
+
+
+
+
 //  Interview Questions  
 
 // 1.Does C++ compiler create a default constructor when we write our own ? 

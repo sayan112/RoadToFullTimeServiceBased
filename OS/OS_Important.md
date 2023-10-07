@@ -67,7 +67,12 @@ In summary, a thread is a unit of execution within a process, and multithreading
 
 
 7. what is Kernel?
-   = kernel is the core component of an operating system , It has direct access to the core component of Hardware .  Kernel acts as a bridge between applications and data processing performed at hardware level using inter-process communication and system calls. Kernel loads first into memory when an operating system is loaded and remains into memory until operating system is shut down again. It is responsible for various tasks such as disk management, task management, and memory management. 
+   =  **kernel** is the core component of an operating system .
+    It has direct access to the core component of Hardware . 
+
+   (kernal is a heart of OS , if an application want to use a hardware component , then it make call to the kernal then karnal connects to the hardware , and it will acts acccordingly   )
+   (suppose u have a txt file , now u want to save it , then make a system call , karnal will save the txt file in memory )
+
 
  Kernel has a process table that keeps track of all active processes . 
 
@@ -83,6 +88,9 @@ File System Management: Managing file operations, including reading, writing, an
 
 Security and Protection: Enforcing security policies, access controls, and preventing unauthorized access to system resources.
 
+
+
+ **Monolithic Kernal** -> 
 
 
 8. what is user Mode and Kernal Mode ?
@@ -354,7 +362,6 @@ Advantages of Semaphores:
 5. **Priority Management:** Semaphores can be used in priority systems to manage access to resources based on priorities assigned to processes or threads.
 
 6. **Flexibility:** Semaphores can be used to implement various synchronization patterns, making them a versatile tool for managing concurrency.
-
 However, it's worth noting that improper use of semaphores can lead to deadlocks (where processes wait indefinitely for resources) or other synchronization issues. Therefore, careful design and implementation are necessary to avoid these problems. Additionally, modern programming languages and operating systems often provide higher-level synchronization constructs, like monitors and locks, which encapsulate the complexities of semaphore usage.
 
 

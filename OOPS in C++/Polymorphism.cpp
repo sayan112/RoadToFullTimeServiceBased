@@ -73,7 +73,7 @@ B. Operator Overloading :  C++ also provides options to overload operators. For 
 
  #include <iostream>
 using namespace std;
-class Test
+class Test 
 {
    private:
       int num;

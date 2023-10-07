@@ -718,3 +718,301 @@ Certainly! Here are more Computer Networks (CN) MCQs that are commonly asked in 
     Answer: c) To provide network services directly to end-users
 
 Remember to study these topics thoroughly and practice solving problems related to Computer Networks to excel in interviews. Good luck!
+
+
+
+
+
+
+
+
+*** linkedlist ***
+
+
+1. 
+```C++
+
+void fun1(struct node* head)
+{
+  if(head == NULL)
+    return;
+  
+  fun1(head->next);
+  printf("%d  ", head->data);
+}
+
+What does the following function do for a given Linked List with first node as head?
+
+Ans -> This function fun1 recursively prints the elements of a linked list in reverse order.
+
+
+
+``
+
+2. Which of the following points is/are true about Linked List data structure when it is compared with array?
+= 
+The following points are true when comparing Linked List data structure with an array:
+
+Insertion and deletion: Linked lists allow for efficient insertion and deletion operations at any point in the list, as they involve simply adjusting pointers, while in an array, these operations can be expensive as all the elements after the insertion or deletion point need to be shifted.
+
+Memory allocation: Linked lists use dynamic memory allocation, so they can grow or shrink as needed, while arrays have a fixed size and need to be allocated a contiguous block of memory upfront.
+
+Access time: Arrays provide constant-time access to any element in the array (assuming the index is known), while accessing an element in a linked list takes linear time proportional to the number of elements in the list, as the list needs to be traversed from the beginning to find the desired element.
+
+Random access: Arrays support random access, which means that we can directly access any element in the array with its index, while linked lists do not support random access and we need to traverse the list to find a specific element.
+
+
+3.
+```C++```
+
+void fun(struct node **head_ref)
+{
+    struct node *temp = NULL;
+    struct node *current = *head_ref;
+ 
+    while (current !=  NULL)
+    {
+        temp = current->prev;
+        current->prev = current->next;
+        current->next = temp;
+        current = current->prev;
+    }
+ 
+    if(temp != NULL )
+        *head_ref = temp->prev;
+}
+
+
+
+
+
+
+
+
+4. Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?
+= Both Merge sort and Insertion sort can be used for linked lists , Since worst case time complexity of Merge Sort is O(nLogn) and Insertion sort is O(n^2), merge sort is preferred.
+
+
+5. What is the output of following function in which start is pointing to the first node of the following linked list 1->2->3->4->5->6 ?
+
+
+```c++```
+
+void fun(struct node* start)
+{
+  if(start == NULL)
+    return;
+  printf("%d  ", start->data); 
+  
+  if(start->next != NULL )
+    fun(start->next->next);
+  printf("%d  ", start->data);
+}
+
+
+ans -> The function prints the data of the current node and then recursively calls itself with the second next node (i.e., start->next->next).
+
+So, it prints the data of every alternate node of the linked list i.e 1 3 5, and then, since the next->next of 5 is null, it returns and prints the data of the current node, so it then prints 5 3 1.
+
+Therefore, for the given linked list 1->2->3->4->5->6, the function would print 1 3 5 5 3 1.
+
+
+6. The following  function takes a single-linked list of integers as a parameter and rearranges the elements of the list. The function is called with the list containing the integers 1, 2, 3, 4, 5, 6, 7 in the given order. What will be the contents of the list after the function completes execution? 
+
+class Node {
+    int value;
+    Node next;
+}
+ 
+void rearrange(Node list) {
+    Node p, q;
+    int temp;
+    if (list == null || list.next == null) {
+        return;
+    }
+    p = list;
+    q = list.next;
+    while (q != null) {
+        temp = p.value;
+        p.value = q.value;
+        q.value = temp;
+        p = q.next;
+        q = p != null ? p.next : null;
+    }
+}
+
+
+ans->Explanation: 
+The function rearrange() exchanges data of every node with its next node. It starts exchanging data from the first node itself.
+For eg. 3,5,7,9,11
+answer:- 5,3,9,7,11
+
+
+
+
+
+
+
+
+```
+
+***array***
+
+
+```c++```
+
+
+1. 
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+ 
+    int arr[2] = { 1, 2 };
+    cout << 0 [arr] << ", " << 1 [arr] << endl;
+    return 0;
+}
+
+
+ans-> 0[arr]] is a different way to represent array element, which represents the first element of the array.
+similarly, 1[arr] is a different way to represent array element, which represents the second element of the array.
+
+Hence the correct output is (A)
+
+
+
+2. The minimum number of comparisons required to determine if an integer appears more than n/2 times in a sorted array of n integers is ?
+
+=  The Best way to find out whether an integer appears more than n/2 times in a sorted array(Ascending Order) of n integers, would be binary search approach.
+
+The First occurrence of an element can be found out in O(log(n)) time using divide and conquer technique,lets say it is i.
+The Last occurrence of an element can be found out in O(log(n)) time using divide and conquer technique,lets say it is j.
+Now number of occurrence of that element(count) is (j-i+1). Overall time complexity = log n +log n +1 = O(logn)
+
+
+
+
+3.
+```c++```
+ C = 100
+for i = 1 to n do
+    for j = 1 to n do
+    {
+        Temp = A[i][j] + C
+        A[i][j] = A[j][i]
+        A[j][i] = Temp - C
+    } 
+for i = 1 to n do
+    for j = 1 to n do
+        Output(A[i][j]);
+
+
+ans-> ***it will give the matrix itself*** 
+        Explanation: 
+If we take look at the inner statements of first loops, we can notice that the statements swap A[i][j] and A[j][i] for all i and j. Since the loop runs for all elements, every element A[l][m] would be swapped twice, once for i = l and j = m and then for i = m and j = l. Swapping twice means the matrix doesn’t change.
+
+
+4. Consider an array consisting of –ve and +ve numbers. What would be the worst case time complexity of an algorithm to segregate the numbers having same sign altogether i.e all +ve on one side and then all -ve on the other ?
+
+-> Here we can use the partition algorithm of quick sort for segregation and answer will be O(N*N). Choose the first element as pivot whatever may be its sign we don’t care and keep an extra index at pivot position .
+
+
+5. Which of the following correctly declares an array?
+
+int geeks[20];
+
+int geeks;
+
+geeks{20};
+
+array geeks[20];
+
+
+6. #include <iostream>
+using namespace std;
+ 
+int main()
+{
+ 
+    int arr[] = { 1, 2, 3, 4, 5 };
+    cout << arr << ", " << &arr << ", " << &arr[0] << &arr[1] << endl;
+    return 0;
+}
+
+
+ans -> 1200 1200 1200 1204 (bcz int has 4 byte)
+
+
+6. Let A be a matrix of size n x n. Consider the following program. What is the expected output? 
+
+void fun(int A[][N])
+{
+    for (int i = 0; i < N; i++)
+        for (int j = i + 1; j < N; j++)
+            swap(A[i][j], A[j][i]);
+}
+
+
+ ans -> Transpose of matrix A
+
+
+7. What will do the following code?
+
+void fun(int arr[], int n)
+{
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            for (int k = i; k <= j; k++)
+                cout << arr[k] << " ";
+ 
+            cout << endl;
+        }
+    }
+}
+
+ans -> The above code will print subarray of the elements.
+
+
+8. Which of the following is the limitation of the array?
+= Memory waste if an array's elements are smaller than the size allotted to them
+
+
+9. #include <bits/stdc++.h>
+using namespace std;
+ 
+void print(char a[], int n, int ind)
+{
+    for (int i = ind; i < n + ind; i++)
+        cout << a[(i % n)] << " ";
+}
+ 
+int main()
+{
+    char a[] = { 'A', 'B', 'C', 'D', 'E', 'F' };
+    int n = sizeof(a) / sizeof(a[0]);
+    print(a, n, 3);
+    return 0;
+}
+
+ans -> It is printing circular array rotated by 3
+
+
+10.
+
+Consider the below program. What is the expected output?
+
+ void fun(int arr[], int start, int end)
+{
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+
+ans -> Reverse an array
+

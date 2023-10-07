@@ -137,7 +137,6 @@ Sure! Let's discuss the concepts of primary key, candidate key, super key, and f
     In the "Employees" table, a combination of EmployeeID and Department can uniquely identify each employee. 
     This combination (EmployeeID + Department) is a super key because it satisfies the uniqueness requirement.
      However, it is not the minimum set of columns required for a candidate key since the EmployeeID itself is sufficient. Hence, EmployeeID is the candidate key, and (EmployeeID + Department) is a super key.
-
   -   4. Foreign Key:
     A foreign key is a column or a set of columns in one table that refers to the primary key of another table. It establishes a relationship between two tables, enforcing referential integrity. The values in the foreign key column(s) must exist in the referenced table's primary key or be null (if allowed).
 
@@ -148,7 +147,6 @@ Sure! Let's discuss the concepts of primary key, candidate key, super key, and f
 
 13. What is Attribute?
 = An attribute refers to a database component. It is used to describe the property of an entity. An attribute can be defined as the characteristics of the entity. Entities can be uniquely identified using the attributes. Attributes represent the instances in the row of the database.
-     
 
     For example: If a student is an entity in the table then age will be the attribute of that student. 
 
@@ -342,7 +340,7 @@ Normalization is needed for several reasons:
 
     Example : Designing registration form which contains a text box, label, button or a large website on the Internet, etc.
 
-22. What is SQL?
+22. What is SQL(structured Query Language)?
  = SQL is a standard language for retrieving and manipulating structured databases. 
   On the contrary, MySQL is a relational database management system, like SQL Server, Oracle or IBM DB2, that is used to manage SQL databases.
   
