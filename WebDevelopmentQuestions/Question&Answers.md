@@ -79,7 +79,16 @@ To integrate JWT authentication into a web application like NoteFy, you would ty
 In NoteFy, I integrated JWT authentication by following these steps, ensuring that user data and access to notes were securely protected and that users could perform CRUD operations on their notes while authenticated. The use of JWTs provided a convenient and secure way to manage user sessions and access control in the application.
 
 
+*** JWT THE BAAP OF security ***
 
+Authentication:
+
+JWTs are commonly used to authenticate users. When a user logs in with their email and password, the server can issue a JWT to represent their authenticated session.
+This JWT can then be used for subsequent requests to prove the user's identity without needing to send the email and password with every request.
+
+Reduced Exposure of Sensitive Data:
+
+When a user logs in, their email and password are transmitted securely over HTTPS. After authentication, JWTs are used, so the email and password are no longer sent with every request. This reduces the risk of interception.
 
 
 
