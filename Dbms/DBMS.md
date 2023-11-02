@@ -92,7 +92,7 @@ Many-to-many: Here more than one records of an object can be related to n number
 = 
 - Strong Attribute:
     A strong attribute is an attribute that is fully functional and can uniquely identify, exist as  an entity on its own. It is not dependent on any other attribute within the entity. Strong attributes are represented inside the entity rectangle in an ER diagram.
-
+ 
     For example, consider an entity "Student" with attributes such as "Student ID" and "Name." The "Student ID" attribute can uniquely identify a student, even without considering any other attributes. Hence, it is a strong attribute.
 
 -  Weak Attribute: 
@@ -378,11 +378,13 @@ Normalization is needed for several reasons:
 
         HAVING clause in SQL is used to filter records in combination with the GROUP BY clause. It is different from WHERE, since the WHERE clause cannot filter aggregated records.
 
+```SQL
         SELECT COUNT(studentId), country
         FROM myDB.students
         WHERE country != "INDIA"
         GROUP BY country
         HAVING COUNT(studentID) > 5;
+```
 
 26. Aggregate function?
 
@@ -398,7 +400,7 @@ LAST() - Fetches the last element in a collection of values.
 
 27. What are the differences between OLTP and OLAP?
 
-    = ***OLTP*** stands for Online Transaction Processing, is a class of software applications capable of supporting transaction-oriented programs. An important attribute of an OLTP system is its ability to maintain concurrency. OLTP systems often follow a decentralized architecture to avoid single points of failure. These systems are generally designed for a large audience of end-users who conduct short transactions. Queries involved in such databases are generally simple, need fast response times, and return relatively few records. A number of transactions per second acts as an effective measure for such systems.
+    = ***OLTP  Online Transaction Processing*** stands for, is a class of software applications capable of supporting transaction-oriented programs. An important attribute of an OLTP system is its ability to maintain concurrency. OLTP systems often follow a decentralized architecture to avoid single points of failure. These systems are generally designed for a large audience of end-users who conduct short transactions. Queries involved in such databases are generally simple, need fast response times, and return relatively few records. A number of transactions per second acts as an effective measure for such systems.
 
     Every industry in today’s world use OLTP system to record their transactional data. The main concern of OLTP systems is to enter, store and retrieve the data. They covers all day to day operations such as purchasing, manufacturing, payroll, accounting, etc.of an organization. Such systems have large numbers of user which conduct short transaction. It supports simple database query so the response time of any user action is very fast.
 
@@ -411,7 +413,7 @@ This systems are original source of the data.
 It helps to administrate and run fundamental business tasks.
 It helps in widening customer base of an organization by simplifying individual processes.
 
-    1. **OLTP Online Analytical Processing:** , is a technology used for data analysis and reporting. It allows users to interactively analyze multidimensional data to gain insights and make informed decisions. Here are the characteristics of OLAP:
+   **OLAP Online Analytical Processing:**  is a technology used for data analysis and reporting. It allows users to interactively analyze multidimensional data to gain insights and make informed decisions. Here are the characteristics of OLAP:
 
 1. **Multidimensional Data:** OLAP systems organize data into multidimensional structures, such as cubes or hypercubes. These structures represent data with multiple dimensions, such as time, geography, and product categories, making it easy to analyze data from different perspectives.
 
@@ -580,8 +582,8 @@ Advantages of Indexing in DBMS:
 
 
 
-33. diff ***where clause*** and  ***ha  ving clause***?
-= The WHERE clause in SQL is used to filter data from specific rows in a table based on certain conditions , process before grouping . The HAVING clause is used to filter data from a group of rows in a query based on conditions involving aggregate values , process after grouping.
+33. diff ***where clause*** and  ***having clause***?
+= The WHERE clause in SQL is used to filter data from specific rows in a table based on certain conditions , process before grouping . The HAVING clause is used to filt er data from a group of rows in a query based on conditions involving aggregate values , process after grouping.
 
 
 34. what is Data Redundency ?

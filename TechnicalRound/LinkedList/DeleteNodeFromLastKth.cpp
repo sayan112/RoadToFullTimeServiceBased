@@ -13,46 +13,57 @@ public:
 };
 void DeleteKthNode  (Node *&head , int k )
 {
-    cout<<"hey"<<endl;
-     Node *temp=head;
+    Node *temp=head;
+    //  while (temp)
+    //  {
+    //     cout << temp->data << endl;
+    //     temp=temp->next;
+    //  }
+     
+      if(k==1)
+      {
+        Node *tempNode=head;
+         head=head->next;
+          delete(tempNode);
+           return ;
+      }
+
       int size =0;
-     while(temp!=NULL)
-     {
-         temp=temp->next;
- size++;
-     }
-     if(size==k)
-     {
-        Node*tempnode=head;
-        head=head->next;
-        delete (tempnode);
-        return;
-     }
-      temp=head;
-      Node*prev=NULL;
-    //   cout << size<<endl;
-       int needsize=size-k;
-       cout << needsize<<endl;
+
+       while (temp)
+       {
+      size++;
+          temp=temp->next;
+
+       }
+        temp=head;
+         if(size<k)
+         {
+             cout <<"Not possible to delete anything because its out of bounds" << endl;
+         }
+   
+   Node *prev=NULL;
+    int check=1;
+  while (temp)
+  {
+  
+      if(check==k)
+      {
+      cout << prev->data << endl;
+        prev->next=temp->next;
+   
+         return;
+      }
+      prev = temp;
+      temp = temp->next;
+      check++;
+
+  }
+  return;
 
 
-        while (true)
-        {
-           if(needsize!=0)
-           {
-               prev=temp;
-               temp=temp->next;
-        
-           }
-           else{
-             break;
-           }
-           needsize--;
-        }
-         cout << prev->data<<endl;
-         cout << temp->data<<endl;
-          prev->next=prev->next->next;
-          delete(temp);
-     return;
+
+
 }
 int main()
 {
@@ -65,9 +76,9 @@ int main()
     Three->next = Fourth;
 
         Node *head = One;
-
+// checked with all testcases
     int k=4;
-
+ 
     DeleteKthNode(head,k);
     while (head)
     {

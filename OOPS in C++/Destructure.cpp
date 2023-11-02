@@ -3,8 +3,9 @@ using namespace std;
 
 class car
 {
-public:
+private:
     int horsepower;
+public:
     car()
     {
         cout << " constuctor is called" << endl;

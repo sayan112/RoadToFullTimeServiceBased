@@ -27,7 +27,7 @@ CONTACTNAME VARCHAR(255) NOT NULL,
 
 
 -- check order SCHEMA
- DESC CUSTOMERORDER ;
+ DESC CUSTOMERORDER;
 
  -- change the datatype of a column ADD
   ALTER TABLE CUSTOMERORDER MODIFY ORDERNAME VARCHAR(255) NOT NULL ;
@@ -122,13 +122,13 @@ VALUES
 
 
 
- -- UPDATE A VALUE 
+                                                -- UPDATE A VALUE 
   UPDATE CUSTOMER SET PostalCode ='894893' WHERE CUSTOMERID=37;
 
     SELECT * FROM CUSTOMER;
 
 
-    -- Basic SELECT Query: 
+                                                 -- Basic SELECT Query: 
 
   --  Retrieve the names of all customers in the dataset. 
    SELECT CUSTOMERNAME  FROM CUSTOMER;
@@ -145,14 +145,13 @@ VALUES
    -- Retrieve the names of customers located in either Germany or Switzerland.
 
    SELECT CUSTOMERNAME, COUNTRY  FROM CUSTOMER WHERE COUNTRY IN ('GERMANY','SWitzerland');
-   SELECT CUSTOMERNAME, COUNTRY  FROM CUSTOMER WHERE (COUNTRY='GERMANY' OR COUNTRY='SWITZERLAND'); 
-
-
-   -- Find the names of customers whose ContactName contain the word "Delikatessen."
+   SELECT CUSTOMERNAME, COUNTRY  FROM CUSTOMER WHERE (COUNTRY='GERMANY' OR COUNTRY='SWITZERLAND');
+   
+   -- Find the names of customers whose ContactName contain the word "Anders"
 
    SELECT CUSTOMERNAME , ContactName  FROM CUSTOMER WHERE ContactName  LIKE '%Anders%';
 
-   -- List the addresses of customers located in London, UK. 
+   -- List the addresses of customers located in London, Venezuela . 
 
    SELECT COUNTRY, CUSTOMERNAME FROM CUSTOMER WHERE Country IN ('Venezuela','UK');
 
@@ -161,16 +160,15 @@ VALUES
    -- List the names of customers located in either Mexico or Canada. 
 
    SELECT CUSTOMERNAME , COUNTRY  FROM CUSTOMER WHERE COUNTRY IN ('Mexico','Canada');
+ 
+   -- Find the names and addresses of customers in Switzerland  whose address contains the word "Hauptstr"
+
+SELECT CustomerName,COUNTRY,ADDRESS   FROM CUSTOMER WHERE COUNTRY ='Switzerland' AND ADDRESS LIKE 'Hauptstr%';
 
 
-   -- Find the names and addresses of customers in France whose address contains the word "Paris."
-
-SELECT COUSTOMERNAME FROM CUSTOMER WHERE COUNTRY ='France' AND ADDRESS='Paris';
 
 
-
-
--- ORDER BY 
+                                             -- ORDER BY 
 
 
 
@@ -194,12 +192,13 @@ SELECT CUSTOMERNAME , PostalCode , COUNTRY  FROM CUSTOMER WHERE COUNTRY='Sweden'
 
 
 
--- AGGREGATING RELATED
+                                                 -- AGGREGATING RELATED grouping 
 
 
-
+SELECT * from customer;
 
 -- Count of Customers in Each City 
+
 SELECT CITY , COUNT(CITY) FROM CUSTOMER GROUP BY CITY;
 
 -- Count of Customers in Each Country: 
@@ -210,15 +209,16 @@ SELECT COUNTRY , COUNT(COUNTRY) FROM CUSTOMER GROUP BY COUNTRY;
 SELECT COUNTRY , COUNT(COUNTRY) AS CUSTOMERCOUNT FROM CUSTOMER GROUP BY COUNTRY ORDER BY CUSTOMERCOUNT ;
 
 -- Count of Customers in Each Postal Code Area:
+SELECT POSTALCODE , COUNT(POSTALCODE) AS COUNTOFPOSTALCODE FROM CUSTOMER GROUP BY POSTALCODE ;
 
 -- Calculate the number of customers in each unique postal code area (e.g., "London W1," "México D.F. 05021").
 
-SELECT POSTALCODE , COUNT(CUSTOMERID) AS NUMBEROFCUSTOMER FROM CUSTOMER GROUP BY POSTALCODE ORDER BY POSTALCODE;
-
-
+SELECT POSTALCODE , COUNT(POSTALCODE ) AS NUMBEROFCUSTOMER FROM CUSTOMER GROUP BY POSTALCODE ORDER BY POSTALCODE;
+ 
 
 -- Count of Customers in Each City in Brazil: 
 
+ SELECT CITY, COUNT(CITY) FROM customer WHERE COUNTRY='Brazil' GROUP BY CITY ;
 SELECT  CITY , COUNT(*) AS CustomerCount  FROM Customer WHERE COUNTRY ='Brazil' GROUP BY CITY  ORDER BY CustomerCount DESC ;
 
 -- same ans using having 
@@ -246,7 +246,8 @@ SELECT MAX(ORDERPRICE ), MIN(ORDERPRICE) , COUNTRY, CITY FROM CUSTOMERORDER JOIN
 --Group customers by country and calculate the total number of customers in each country, but only show results for countries with more than 5 customers.
 
 
-SELECT COUNT(CUSTOMERID) AS CUSTOMERCOUNT,COUNTRY FROM CUSTOMER GROUP BY COUNTRY HAVING CUSTOMERCOUNT>5;
+SELECT COUNT(CUSTOMERID) AS CUSTOMERCOUNT,COUNTRY FROM CUSTOMER  GROUP BY COUNTRY HAVING CUSTOMERCOUNT >5  ;
+SELECT Country , COUNT(Country ) AS COUNTCUSTOMER FROM CUSTOMER  GROUP BY COUNTRY HAVING  COUNTCUSTOMER>5  ;
 
 
 
@@ -261,9 +262,7 @@ SELECT COUNT(CUSTOMERID) AS CUSTOMERCOUNT,COUNTRY FROM CUSTOMER GROUP BY COUNTRY
 
 
 
-
-
--- Lets see Joins 
+                              -- Lets see Joins 
 
  SELECT * FROM CUSTOMER LEFT JOIN CUSTOMERORDER ON CUSTOMERORDER.CUSTOMERID = CUSTOMER.CUSTOMERID;
 

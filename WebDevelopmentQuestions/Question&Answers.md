@@ -4,7 +4,7 @@
  = Certainly, as a candidate, I would answer the interview questions related to the NoteFy project as follows:
 
 1. **Project Overview:**
-   - NoteFy is a notes application that I developed to provide users with a secure and user-friendly platform for managing their notes. The project aimed to implement JWT authentication for enhanced data protection and offer CRUD functionality for creating, reading, updating, and deleting notes.
+   - NoteFy is a notes application that I developed to provide users with a secure and user-friendly platform for managing their notes. The project aimed to implement JW T authentication for enhanced data protection and offer CRUD functionality for creating, reading, updating, and deleting notes.
 
 2. **Technology Stack:**
    - For NoteFy, I used React and Bootstrap for the front-end development to create a responsive and visually appealing user interface. On the backend, I employed Node.js to build the server, and MongoDB was chosen as the database for efficient data storage and retrieval. These technologies were selected for their compatibility and suitability for the project requirements.

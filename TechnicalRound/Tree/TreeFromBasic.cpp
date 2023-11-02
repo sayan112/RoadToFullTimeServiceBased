@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
-struct Node
+class Node
 {
+     public:
     int data;
-    struct Node *left;
-    struct Node *right;
+     Node *left;
+     Node *right;
     Node(int val)
     {
         data = val;

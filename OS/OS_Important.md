@@ -162,7 +162,7 @@ These are some of the commonly used process scheduling algorithms in operating s
   Starvation can occur in the multilevel process scheduling algorithm  -> If a higher-priority process is constantly arriving in the system, lower-priority processes may not get an opportunity to execute. As a result, they remain blocked or waiting for a long time, causing starvation.
 
 
-
+ 
 12. what is Process Syncronization?
 
 = Process synchronization in operating systems refers to the techniques used to coordinate the activities of multiple processes or threads to ensure that they access shared resources in a controlled and orderly manner. When multiple processes or threads concurrently access shared resources without proper synchronization, it can lead to a situation called a "race condition."

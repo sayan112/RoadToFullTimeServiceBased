@@ -1,5 +1,5 @@
 // Inheritance is one of the key features of Object - oriented programming in C++.It allows us to create a new class(derived class) from an existing class(base class).
-
+ 
 //Inheritance is one of the fundamental concepts in object - oriented programming(OOP) , that allows a class to inherit properties and behaviors from another class.In C++, inheritance provides a way to create a new class(derived class) based on an existing class(base class).The derived class inherits the members(data members and member functions) of the base class, thereby reusing and extending its functionality.
 
 // The derived class inherits the features from the base class and can have additional features of its own.
@@ -16,7 +16,7 @@
 
 // You can clearly see that the above process results in duplication of the same code 3 times.This increases the chances of error and data redundancy.To avoid this type of situation, inheritance is used.If we create a class Vehicle and write these three functions in it and inherit the rest of the classes from the vehicle class, then we can simply avoid the duplication of data and increase re - usability.Look at the below diagram in which the three classes are inherited from vehicle class:
 // Using inheritance, we have to write the functions only one time instead of three times as we have inherited the rest of the three classes from the base class(Vehicle).
-
+ 
 // Modes of Inheritance
 
 // Public mode : If we derive a subclass from a public base class.Then, the base class’s public members will become public in the derived class, and protected class members will become protected in the derived class.

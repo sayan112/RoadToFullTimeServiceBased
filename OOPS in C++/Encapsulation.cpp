@@ -16,7 +16,7 @@
 
 // Information Hiding: Encapsulation hides the internal implementation details of a class from external code. Only the public interface of the class is accessible, providing abstraction and simplifying the usage of the class while allowing the internal implementation to be modified without impacting external code.
 
-#include <iostream>
+#include <iostream> 
 using namespace std;
 class studentDetails
 {

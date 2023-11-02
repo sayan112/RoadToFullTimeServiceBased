@@ -4,7 +4,7 @@ using namespace std;
  {
        char c;
         cin>> c ;
-         cout << int(c)<<endl;
+         cout << int(c)<<endl; // char to ASCI value 
           char need = '5';
            cout<< need-'0'<<endl;// getting the exact same numchar as number 
 
@@ -12,4 +12,6 @@ using namespace std;
             string  numchar;
              numchar+=num+'0';// turn the number into numchar
               cout<< numchar<<endl;
+
+
  }

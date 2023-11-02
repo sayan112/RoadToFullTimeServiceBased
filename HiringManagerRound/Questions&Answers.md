@@ -77,7 +77,7 @@ Overall, my internship experience as a fresher candidate was incredibly valuable
 
 
 
-Q2. What are your strongest points?
+Q2. What are your strongest points? 
 Answer: My strongest points would be dedication, loyalty, and enthusiasm. I also try to be humble, honest, and as collaborative as possible. Cooperation is necessary and I love teamwork. My friends (or colleagues) have mentioned that I have a likable personality and I believe that I have good communication skills. I also believe in goals and I am dedicated to achieving them. It is not great to compliment yourself, but I believe that I would be a good fit for the corporate culture and I have a positive attitude. I am also confident in my work and I maintain the integrity of my initial tasks.
 To be Noted: One should not be too overconfident or speak too well about themselves, however, interviews wish to hear that you are goal-oriented and confident about your skills. Being humble is great but you must also get your greatest strengths across. Employers want loyal, honest, and cooperative employees, thus, it is in one’s best interest to talk about these factors. One should never say that they work better than others or are faster than others. This seems disrespectful and is not the quality of a good leader. One should try to disguise one or two strong points as a weakness and humbly put those across as well. This will make the interviewees think of you as a humble and honest candidate.
 

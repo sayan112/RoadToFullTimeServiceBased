@@ -1,3 +1,7 @@
+
+// 3^3 + 5^3 + 1^3 = 27+ 125+1 = 153
+// if in a number every digit's cube's addition  will gonna be the same number then it calls at armstrong number 
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -29,3 +33,5 @@ int main()
         cout<< elem <<" ";
     }
 }
+
+

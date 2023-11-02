@@ -1,32 +1,29 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-class Solution
+
+bool isValid(string s)
 {
-public:
-    bool isValid(string s)
+    stack<char> st;
+    for (auto elem : s)
     {
-        stack<char> st;
-        for (auto elem : s)
+        if (elem == '[' || elem == '{' || elem == '(')
         {
-            if (elem == '(' || elem == '{' || elem == '[')
+            st.push(elem);
+        }
+        else
+        {
+
+            if (st.empty())
             {
-                st.push(elem);
+                return false;
             }
             else
             {
-                if (st.size())
+                auto lastOpenBracket = st.top();
+                st.pop();
+                if ((lastOpenBracket == '[' && elem == ']') || (lastOpenBracket == '{' && elem == '}') || (lastOpenBracket == '(' && elem == ')'))
                 {
-
-                    char check = st.top();
-                    st.pop();
-                    if ((check == '(' && elem == ')') || (check == '{' && elem == '}') || (check == '[' && elem == ']'))
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    continue;
                 }
                 else
                 {
@@ -34,17 +31,21 @@ public:
                 }
             }
         }
-        if (st.size())
-        {
-            return false;
-        }
-        return true;
     }
-};
-
+    return true;
+}
 
 int main()
 {
-      
 
+    string s;
+    cin >> s;
+    if (isValid(s))
+    {
+        cout << "Valid" << endl;
+    }
+    else
+    {
+        cout << "Non Valid" << endl;
+    }
 }

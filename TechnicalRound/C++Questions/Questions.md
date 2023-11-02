@@ -86,8 +86,7 @@ Strings – That contains the homogenous sequence of data
 Special Symbols – They have some special meaning and cannot be used for another purpose; eg: [] () {}, ; \* = #
 Operators – Who perform operations on the operand
 
-13. What is Function Overriding?
-    = When a function of the same name, same arguments or parameters, and same return type already present/declared in the base class is used in a derived class is known as Function Overriding. It is an example of Runtime Polymorphism or Late Binding which means the overridden function will be executed at the run time of the execution.
+
 
 14. Explain inheritance?
     = The capability or ability of a class to derive properties and characteristics from another class is known as inheritance. In simple terms, it is a system or technique of reusing and extending existing classes without modifying them.
@@ -798,7 +797,7 @@ It takes two arguments: the number of elements you want to allocate memory for a
 
 
 *** c++ relevent ***
-
+ 
 In C++, the Standard Template Library (STL) provides various container classes like std::vector, std::list, and std::map. These containers automatically manage memory for you, making manual memory management less common.
 When you use these containers, you don't need to worry about memory allocation and deallocation; it's handled behind the scenes.
 
@@ -841,3 +840,14 @@ The relationship between compiled languages and interpreted languages is somewha
    - Examples of interpreted languages include Python, JavaScript, and Ruby.
 
 There's also a category of languages that blend aspects of both compilation and interpretation, such as Java (compiled to bytecode and then executed by the Java Virtual Machine) or C# (compiled to Common Intermediate Language code and executed by the .NET runtime). These languages combine elements of both compiled and interpreted approaches.
+
+
+1. **High Level Programming Language**
+High-level programming languages are designed to be more user-friendly and abstracted from the hardware of the computer.
+They provide a higher level of abstraction, making it easier for programmers to write code without needing to have a deep understanding of the computer's architecture.
+Examples of high-level programming languages include Python, Java, C++, C#, Ruby, and JavaScript.
+High-level languages are human-friendly. They are, thus, very easy to understand and learn by any programmer.
+
+2. **Low Level  Programming Language**
+These are machine-friendly languages that are very difficult to understand by human beings but easy to interpret by machines.
+Some examples of low-level languages include the Machine language and Assembly language.

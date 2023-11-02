@@ -103,7 +103,17 @@ WHERE `EmpId` IN (
             AND `Salary` <= 10000
     );
 
+
 -- using inner join
+
+SELECT
+    EMPLOYEEDETAILS.EMPID,
+    FULLNAME
+FROM EMPLOYEEDETAILS
+    JOIN EMPLOYEESALARY ON EMPLOYEESALARY.EMPID = EMPLOYEEDETAILS.EMPID
+WHERE
+    SALARY >= 5000 && SALARY <= 10000  LIMIT 3 OFFSET 3;
+
 
 SELECT Fullname, Salary
 from Employeedetails
@@ -125,14 +135,14 @@ SELECT AVG(salary) from Employeesalary;
 SELECT Salary
 FROM Employeesalary
 ORDER BY `Salary` DESC
-LIMIT 1
-OFFSET 2;
+LIMIT 1 OFFSET 1;
 
 SELECT Salary
 FROM Employeesalary
 ORDER BY `Salary` DESC
 LIMIT 1
-OFFSET 3;
+OFFSET 2;
+
 
 --  Write an SQL query to find the current date-time.
 
@@ -142,7 +152,7 @@ SELECT NOW();
 
 SELECT
     Project,
-    COUNT(empId) AS EmpCountOnProject
+    COUNT(Project) AS EmpCountOnProject
 from employeesalary
 GROUP BY (`Project`)
 ORDER BY
@@ -173,7 +183,7 @@ SELECT Project from EmployeeSalary GROUP BY Project;
 
 SELECT FullName
 from Employeedetails
-where `FullName` LIKE '% J';
+where `FullName` LIKE '%J';
 
 -- return all the name s end with surname "white"
 
@@ -183,8 +193,13 @@ where `FullName` LIKE '% White';
 
 
 -- What is query to display first 50% records from table employee?
-SELECT * FROM Employeedetails LIMIT (SELECT COUNT(*)/2 FROM Employeedetails);
-
+SELECT *
+FROM Employeedetails
+LIMIT ROUND( (
+            SELECT COUNT(*)/2
+            FROM Employeedetails
+        ) 
+    );
 
 -- SELECT return only 9th no record 
 SELECT * FROM Employeedetails  ORDER BY EmpId  LIMIT 1 OFFSET 9;
@@ -251,7 +266,7 @@ GROUP BY PROJECT;
 
  -- GROUPING + HAVING 
 
--- GIVE me  number of project having salary around 8000 to 10000  
+-- GIVE me  number of project WHERE EMPLOYEES having salary around 8000 to 10000  
   SELECT  PROJECT , COUNT(project)  from EmployeeSalary WHERE SALARY>=8000 AND SALARY <=10000 GROUP BY project ; 
 
 

@@ -3,7 +3,7 @@
 //  ********* Purpose Of a Friend Function :) ************
 
 
-// Okay so we know that the private section of any class is accessible only and only through the public section of the same class. what if we want to give access to the private member through a function which is outside of the class in such circumstances we use the concept of a friend function. 
+// Okay so we know that the private section of any class is accessible only and only through the public section of the same class. what if we want to give access to the private me mber through a function which is outside of the class in such circumstances we use the concept of a friend function. 
 
 
 // Features of Friend Functions :)

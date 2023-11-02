@@ -3,7 +3,7 @@
 
 2. Q: Explain the OSI model.
    A: The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a communication system into seven layers. Each layer serves a specific purpose and facilitates communication between devices. Example: Layer 1 (Physical) deals with the physical transmission of data, such as electrical signals or light pulses.
-The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven distinct layers. Each layer has specific responsibilities, and it helps in understanding and designing complex networking protocols and systems. Let's dive into the details of each layer:
+The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven distinct layers. Each layer has specific responsibilities, and it helps in understanding and designing complex networking protocols and systems. Let's dive int o the details of each layer:
 
 **1. Layer 7: Application Layer**(end user application , mail service )
 - The topmost layer that interacts directly with end-users and applications.

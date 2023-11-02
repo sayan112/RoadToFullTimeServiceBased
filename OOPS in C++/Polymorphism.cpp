@@ -15,6 +15,12 @@ Polymorphism is considered one of the important features of Object - Oriented Pr
 Compiletime Polymorphism -> This type of polymorphism is achieved by function overloading or operator overloading.
 also called  static polymorphism , early binding
 
+Method Overloading (Compile-Time Polymorphism):
+
+Method overloading involves defining multiple methods in a class with the same name but different parameters (different number or types of parameters).
+The selection of which method to call is determined by the compiler at compile time, based on the method signature (name and parameter list) in the source code.
+
+
 A. Function Overloading
 When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded, hence this is known as Function Overloading. Functions can be overloaded by changing the number of arguments or/and changing the type of arguments. In simple terms, it is a feature of object-oriented programming providing many functions that have the same name but distinct parameters when numerous tasks are listed under one function name. There are certain Rules of Function Overloading that should be followed while overloading a function.
 
@@ -110,6 +116,13 @@ Rules for method overriding:
 ●The parent class method and the method of the child class must have the same parameters.
 ●It is possible through inheritance only.
 
+
+Method Overriding (Runtime Polymorphism):
+
+When a subclass object is used to invoke the overridden method, the actual implementation to be called is determined at runtime, based on the type of the object.
+This behavior is dynamic and depends on the runtime type of the object, making it runtime polymorphism.
+
+
 */
 
 #include <bits./stdc++.h>
@@ -117,7 +130,7 @@ using namespace std;
 class Animal
 {
 public:
-  void color()
+   void color()
   {
     cout << "grey" << endl;
   }
@@ -126,13 +139,13 @@ class Dog : public Animal
 {
 public:
 // redefine your parent class method based on requirements , its called method overiding.
-  void color()
+  void color() 
   {
     cout << "black" << endl;
   }
 };
 int main()
 {
-  Dog germanshepherd;
+  Animal germanshepherd;
   germanshepherd.color();
 }

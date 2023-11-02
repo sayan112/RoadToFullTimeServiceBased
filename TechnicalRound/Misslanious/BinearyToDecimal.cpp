@@ -1,3 +1,5 @@
+// 1001 -> 8 4 2 1 -> 1*8 + 1*1-> 9 
+
 #include<bits/stdc++.h>
 using namespace std;
 int main()
