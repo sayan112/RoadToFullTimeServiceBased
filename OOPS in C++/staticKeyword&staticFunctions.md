@@ -14,7 +14,7 @@ public:
 };
 
 // Call the static function without creating an object
-MyClass::staticFunction();
+MyClass::staticFunction(); 
 ```
 
 ### 2. Static Local Variables:

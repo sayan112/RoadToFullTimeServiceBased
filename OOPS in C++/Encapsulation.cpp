@@ -79,9 +79,11 @@ int main()
 // -> In abstraction, problems are solved at the design or interface level.
 // -> 	Abstraction is the method of hiding the unwanted information.
 // -> Main purpose -> To provide a high-level view of an object or system, focusing on what an object does rather than how it does it.
+// ->  We can implement abstraction using abstract class and interfaces.
 
 // Encapsulation
 // -> While in encapsulation, problems are solved at the implementation level.
 // -> While in encapsulation, the data is hidden using methods of getters and setters.
 // ->While encapsulation is the process or method to contain the information.
-// Encapsulation in C++ is defined as the wrapping up of data and information(methods) in a single unit, protecting it from outside intervention
+// -> Encapsulation in C++ is defined as the wrapping up of data and information(methods) in a single unit, protecting it from outside intervention
+// -> Whereas encapsulation can be implemented using by access modifier i.e. private, protected and public.

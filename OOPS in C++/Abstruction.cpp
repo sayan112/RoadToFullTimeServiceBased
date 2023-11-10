@@ -5,54 +5,41 @@
 // "what happens when you click send, how data is transmitted over the network to the recipient is hidden from you(because it is irrelevant to you)."
 // We can implement Abstraction in C++ using classes.The class helps us to group data members and member functions using available access specifiers.A Class can decide which data members will be visible to the outside world and not .Access specifiers are the main pillar of implementing abstraction in C++.We can use access specifiers to enforce restrictions on class members.
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// class implimentation
+// {
+// private:
+//     int a;
+//     int b;
+//     int result;
 
-#include <bits/stdc++.h>
-using namespace std;
-class implimentation
-{
-private:
-    int a;
-    int b;
-    int result;
+// public:
+// // code reusability increases
+// // setter
+//     void plus(int a, int b)
+//     {
+//         result = a + b;
+//     }
+//     //
+//     int getresults()
+//     {
+//         return result;
+//     }
+// };
 
-public:
-// code reusability increases
-// setter
-    void plus(int a, int b)
-    {
-        result = a + b;
-    }
-    // 
-    int getresults()
-    {
-        return result;
-    }
-};
+// int main()
+// {
+//     implimentation ab;
+//     ab.plus(10, 20);
+//     cout << ab.getresults();
+// }
 
-int main()
-{
-    implimentation ab;
-    ab.plus(10, 20);
-    cout << ab.getresults();
-}
-
-// Advantages Of Abstraction 
+// Advantages Of Abstraction
 //  ●Only you can make changes to your data or function, and no one else can.
-//  ●It makes the application secure by not allowing anyone else to see the background details. 
-//  ●Increases the reusability of the code. 
+//  ●It makes the application secure by not allowing anyone else to see the background details.
+//  ●Increases the reusability of the code.
 //  ●Avoids duplication of your code.
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Here is a counter question how email works ->
 /*
@@ -82,3 +69,46 @@ It's important to note that emails can go through additional steps if encryption
 
 This process is a simplified explanation, and the actual communication involves various technical details and protocols. But at a high level, this is how an email is sent from one person to another within a networked environment.
 */
+
+
+
+
+
+// what is Abstruct Class? = its a special class which we cannot create instace or object from it . in c++ we do not have any abstuct keyword , so do declare abstruct class we use pure virtual function , or we can say a class having a pure virtual function is called abstruct class.
+
+
+// but whats the need ? 
+// the need is , koyi bhi abstract class se obj na bana paye , sab abstract class ko base class man kar , usko inherit karke apna apna kudka banale 
+// the fact is we cannot make objects from base abstract class we have to inherit the properties from base abstract class ans make new class and redefine all properties and pure virtual functions as per our need;
+ 
+
+// simple explaination using code
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Demo
+{
+
+public:
+    virtual void f1() = 0; // pure virtual function
+    void f2()
+    {
+        cout << "abe lawre";
+    }
+};
+
+class DemoDerivedClass : public Demo
+{
+
+public:
+    void f1()
+    {
+        cout << "abe lawre in derived class which is redefined" << endl;
+    }
+};
+int main()
+{
+    DemoDerivedClass d1;
+    d1.f1();
+}
