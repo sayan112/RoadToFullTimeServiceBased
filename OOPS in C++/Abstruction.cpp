@@ -41,6 +41,11 @@
 //  ●Increases the reusability of the code.
 //  ●Avoids duplication of your code.
 
+
+
+
+
+
 // Here is a counter question how email works ->
 /*
 Sending an email from one person to another involves a series of steps that occur within a networked environment. Here's a simplified overview of the process:
@@ -74,7 +79,7 @@ This process is a simplified explanation, and the actual communication involves 
 
 
 
-// what is Abstruct Class? = its a special class which we cannot create instace or object from it . in c++ we do not have any abstuct keyword , so do declare abstruct class we use pure virtual function , or we can say a class having a pure virtual function is called abstruct class.
+// what is Abstruct Class?  its a special class which we cannot create instace or object from it . in c++ we do not have any abstuct keyword , so do declare abstruct class we use pure virtual function , or we can say a class having a pure virtual function is called abstruct class.
 
 
 // but whats the need ? 
@@ -104,11 +109,12 @@ class DemoDerivedClass : public Demo
 public:
     void f1()
     {
-        cout << "abe lawre in derived class which is redefined" << endl;
+        cout << "in derived class which is redefined" << endl;
     }
 };
 int main()
 {
     DemoDerivedClass d1;
     d1.f1();
+    d1.f2();// u can call base class member functions by inheritance  and create a derived class, call them 
 }

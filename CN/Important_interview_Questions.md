@@ -104,7 +104,7 @@ TCP:
 UDP:
 - Connectionless
 - Unreliable data delivery
-- No handshake or connection setup
+- No handshake or connection setup 
 - Does not guarantee ordered delivery
 - Does not retransmit lost packets
 - Faster with less overhead

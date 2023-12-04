@@ -104,7 +104,7 @@ WHERE `EmpId` IN (
     );
 
 
--- using inner join
+-- using inner join 
 
 SELECT
     EMPLOYEEDETAILS.EMPID,
@@ -236,9 +236,6 @@ DESCRIBE persons;
 
 --delete the whole table , no SCHEMA;
 DROP TABLE persons;
-
-
-
 
 
 

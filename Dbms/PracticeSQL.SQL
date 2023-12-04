@@ -708,3 +708,49 @@ Q -50. Write an SQL query to fetch the names of workers who earn the highest sal
      SELECT  CONCAT(FIRST_NAME,' ',LAST_NAME) AS NAME , SALARY FROM WORKER ORDER BY SALARY DESC LIMIT 1 ; 
 
 
+
+
+
+
+
+
+
+
+--     ************      JOINS    **************
+
+
+1. SELECT salesman.salesman_id ,  salesman.name ,customer.cust_name , customer.city from salesman , customer WHERE salesman.city=customer.city;
+
+
+2. SELECT ord_no  , purch_amt ,  cust_name , city   FROM  orders JOIN  customer ON orders.customer_id=customer.customer_id WHERE purch_amt>=500 AND purch_amt<=2000;
+
+3. SELECT customer.cust_name, customer.city, salesman.name, salesman.commission , salesman.salesman_id  FROM customer JOIN salesman ON customer.salesman_id =salesman.salesman_id ;
+
+
+4. SELECT customer.cust_name ,  customer.city ,salesman.salesman_id, salesman.name, salesman.commission from customer join salesman on customer.salesman_id=salesman.salesman_id where commission>0.12;
+
+
+5.SELECT customer.cust_name ,  customer.city AS CUSTOMERCITY ,salesman.salesman_id, salesman.name, salesman.city AS SALESMANCITY, salesman.commission from customer join salesman on customer.salesman_id=salesman.salesman_id where (commission>0.12) AND customer.city!=salesman.city;
+
+
+6. SELECT orders.ord_no,orders.ord_date,orders.purch_amt, customer.cust_name ,customer.grade,salesman.name,salesman.commission from orders join customer on orders.customer_id=customer.customer_id  join salesman on orders.salesman_id=salesman.salesman_id;
+
+
+7. SELECT * FROM orders NATURAL JOIN customer NATURAL JOIN salesman;
+
+8.SELECT customer.cust_name , customer.city ,customer.grade,salesman.name , salesman.city from customer join salesman on customer.salesman_id=salesman.salesman_id ORDER BY customer.customer_id ASC;
+
+9. SELECT customer.cust_name ,  customer.city  AS customerCity ,customer.grade ,salesman.name , salesman.city AS salesmanCity FROM customer join salesman on customer.salesman_id=salesman.salesman_id WHERE customer.grade<300 ORDER BY customer.customer_id;
+
+
+10.SELECT customer.cust_name, customer.city , orders.ord_no  , orders.ord_date , orders.purch_amt FROM orders join customer on orders.customer_id=customer.customer_id order by orders.ord_date ASC;
+
+11.
+
+
+
+
+
+
+
+
