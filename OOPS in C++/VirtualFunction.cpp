@@ -33,6 +33,7 @@ int main()
 }
 
 
+
 // Okay so when a virtual function is defined in base class then the pointer to the base class is created,  now on the basis of the type of object assigned ,  the respective  class functions called :)
 
 

@@ -186,9 +186,6 @@ Sure, I'd be happy to help! Below are some commonly asked questions in interview
 5. **Explain the difference between the `<ol>` and `<ul>` elements.**
    - `<ol>` is used for ordered (numbered) lists, while `<ul>` is used for unordered (bulleted) lists.
 
-6. **What's the purpose of the `<abbr>` element?**
-   - The `<abbr>` element is used to mark up an abbreviation or acronym, providing an optional full description that can be shown on hover.
-
 7. **How do you create a clickable email link in HTML?**
    - You can use the `<a>` tag with the `href` attribute set to `mailto:email@example.com`.
 
@@ -309,7 +306,7 @@ Sure, I'd be happy to help! Below are some commonly asked questions in interview
 
 3. **What's the difference between `let`, `const`, and `var` for variable declaration?**
    - `let` and `const` have block scope and can be reassigned (`const` can't be redeclared or reassigned). `var` has function scope and can be hoisted.
-
+ 
 4. **Explain the concept of hoisting in JavaScript.**
    - Hoisting is a behavior where variable and function declarations are moved to the top of their containing scope during compilation, making them accessible before they're declared.
 

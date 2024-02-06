@@ -70,7 +70,7 @@ SELECT DISTINCT(Project) from EmployeeSalary ;
 
         SELECT COUNT(EmpId)
         from EmployeeSalary
-        WHERE `Project` = 'P1';
+        WHERE project = 'P1';
 
 
         SELECT COUNT(EmpId) from EmployeeSalary  WHERE `Project`='P2'
@@ -83,6 +83,10 @@ WHERE `EmpId` IN (
         from EmployeeSalary
         WHERE `Project` = 'P1'
     );
+
+     --- write an query to generate first half of employyes record 
+
+     SELECT * FROM EMPLOYEEDETAILS ORDER BY FULLNAME LIMIT 10 ;
 
 -- Write an SQL query to uppercase the name of the employee and lowercase the city values.
 SELECT UPPER(FullName) , LOWER(City) FROM EmployeeDetails ;
@@ -261,10 +265,11 @@ GROUP BY PROJECT;
  SELECT PROJECT, COUNT(PROJECT) FROM EmployeeSalary WHERE PROJECT IS NOT NULL GROUP BY PROJECT ORDER BY COUNT(PROJECT) ASC;
 
 
- -- GROUPING + HAVING 
+ -- GROUPING + WHERE  
 
 -- GIVE me  number of project WHERE EMPLOYEES having salary around 8000 to 10000  
-  SELECT  PROJECT , COUNT(project)  from EmployeeSalary WHERE SALARY>=8000 AND SALARY <=10000 GROUP BY project ; 
+  SELECT  PROJECT , COUNT(project)  from EmployeeSalary WHERE  SALARY <=10000 GROUP BY project ; 
 
 
-  -- 
+  -- GROUPING + HAVING 
+   SELECT PROJECT , COUNT(project) from EmployeeSalary GROUP BY PROJECT  HAVING COUNT(project)>3;

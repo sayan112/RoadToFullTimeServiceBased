@@ -111,6 +111,7 @@ public:
     {
         cout << "in derived class which is redefined" << endl;
     }
+   
 };
 int main()
 {

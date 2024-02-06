@@ -14,11 +14,11 @@ public:
 };
 
 // Call the static function without creating an object
-MyClass::staticFunction(); 
+MyClass::staticFunction();   
 ```
 
 ### 2. Static Local Variables:
-
+ 
 In the context of local variables within a function, the `static` keyword is used to declare a variable as static. A static local variable retains its value between function calls. It is initialized only once, and its value is preserved between function calls.
 
 ```cpp

@@ -10,7 +10,7 @@
 
  =
  -  ( Data Redundancy) control ,
- -  (Data Security) Restriction for unauthorized access ,
+ -  (Data Security) Restriction for unauthorized access , 
  -   Provides multiple user interfaces ,
  -  (Data Backup and Recovery) Provides backup and recovery,
  -  (Data Inegrity) Enforces integrity constraints,
@@ -318,7 +318,7 @@ Normalization is needed for several reasons:
 
      **3NF**: It is known as the third normal form. A table to be in its third normal form should satisfy the following conditions:
     The table should be in its 2NF i.e. satisfy all the conditions of 2NF.
-    There is no transitive functional dependency of one attribute on any attribute in the same table.
+    There is no transitive  dependency of one attribute on any attribute in the same table.
     
     (when a non prime attribute  depends on a another non prime attribute its called transitive dependency , its not allowed in 3nf , exaple-> 
      R(abcd) ab->c , c->d , but here c and d are both non prime 😊

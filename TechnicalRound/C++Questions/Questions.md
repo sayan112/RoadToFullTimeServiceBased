@@ -203,13 +203,13 @@ cout << &food << "\n";
 24. float vs. double?
 
 =
-float: A float is a single-precision floating-point type. It typically occupies 4 bytes (32 bits) of memory and provides about 7 decimal digits of precision.
-double: A double is a double-precision floating-point type. It usually occupies 8 bytes (64 bits) of memory and provides about 15 decimal digits of precision.
+float: A float is a single-precision floating-point type. It typically occupies 4 bytes (32 bits) of memory and provides about 7 decimal digits odouble-precision floating-point type. It usually occupies 8 bytes (64 bits) of memory and provides about 15 decimal digits of precision.
 Certainly! Here's an example that demonstrates the difference in precision between `double` and `float` types:
 
 ```cpp
 #include <iostream>
-#include <iomanip>
+#include <iomanip>f precision.
+double: A double is a 
 
 int main() {
     double doubleNum = 3.141592653589793238;

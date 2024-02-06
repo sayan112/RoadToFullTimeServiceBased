@@ -16,64 +16,64 @@
 
 // Information Hiding: Encapsulation hides the internal implementation details of a class from external code. Only the public interface of the class is accessible, providing abstraction and simplifying the usage of the class while allowing the internal implementation to be modified without impacting external code.
 
-#include <iostream> 
-using namespace std;
-class studentDetails
-{
-    // private data members
-private:
-    string name;
-    int age;
-    string address;
+// #include <iostream> 
+// using namespace std;
+// class studentDetails
+// {
+//     // private data members
+// private:
+//     string name;
+//     int age;
+//     string address;
 
-public:
-    // public member functions
+// public:
+//     // public member functions
 
-    // set method for student name to set  the value in private variable Name
-    void setname(string name)
-    {
-        this->name = name;
-    }
-    // get method for student name to access private variable name
-    string getname()
-    {
-        return name;
-    }
+//     // set method for student name to set  the value in private variable Name
+//     void setname(string name)
+//     {
+//         this->name = name;
+//     }
+//     // get method for student name to access private variable name
+//     string getname()
+//     {
+//         return name;
+//     }
 
-    // set method for student age to set the value in private variable age
-    void setage(int age)
-    {
-        this->age = age;
-    }
-    // get method for student age to access private variable age
-    int getage()
-    {
-        return age;
-    }
-    // set method for student address to set the value in private variable address
-    void setaddress(string address)
-    {
-        this->address = address;
-    }
-    // get method for student address to access private variable address
-    string getaddress()
-    {
-        return address;
-    }
-};
-int main()
-{
+//     // set method for student age to set the value in private variable age
+//     void setage(int age)
+//     {
+//         this->age = age;
+//     }
+//     // get method for student age to access private variable age
+//     int getage()
+//     {
+//         return age;
+//     }
+//     // set method for student address to set the value in private variable address
+//     void setaddress(string address)
+//     {
+//         this->address = address;
+//     }
+//     // get method for student address to access private variable address
+//     string getaddress()
+//     {
+//         return address;
+//     }
+// };
+// int main()
+// {
 
-    studentDetails sayan;
-    // setting the values of the variables
-    sayan.setname("Sayan Maitra");
-    sayan.setaddress("West Bengal");
-    sayan.setage(21);
-    // Printing the values of student object
-    cout << sayan.getname() << " ";
-    cout << sayan.getaddress() << " ";
-    cout << sayan.getage() << endl;
-}
+//     studentDetails sayan;
+//     // setting the values of the variables
+//     sayan.setname("Sayan Maitra");
+//     sayan.setaddress("West Bengal");
+//     sayan.setage(21);
+//     // Printing the values of student object
+//     cout << sayan.getname() << " ";
+//     cout << sayan.getaddress() << " ";
+//     cout << sayan.getage() << endl;
+// }
 
 // Abstraction
 // -> In abstraction, problems are solved at the design or interface level.
@@ -87,3 +87,28 @@ int main()
 // ->While encapsulation is the process or method to contain the information.
 // -> Encapsulation in C++ is defined as the wrapping up of data and information(methods) in a single unit, protecting it from outside intervention
 // -> Whereas encapsulation can be implemented using by access modifier i.e. private, protected and public.
+
+
+ #include<bits/stdc++.h>
+ using namespace std;
+  class studentDetails
+  {
+     private: 
+      int age ;
+       string name;
+public : 
+  void setName(string name)
+  {
+     this->name = name;
+     
+  }
+  void setAge(int age)
+  {
+      this->age = age;
+  }
+  };
+  int main ()
+  {
+      studentDetails studentA;
+       
+  }

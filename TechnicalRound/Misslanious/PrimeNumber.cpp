@@ -18,7 +18,8 @@ using namespace std;
  bool checkItsPrimeOrnotOptimised(int n )
  {
     if (n<2 || n%2==0)
-    {  return false; 
+    { 
+         return false; 
 
     }
      else if(n==2)

@@ -28,7 +28,8 @@ using namespace std;
             j++;
         }
      }
-      str.resize(j);
+     cout << str << endl;
+     str.resize(j);
      cout << str<<endl;
 
  }

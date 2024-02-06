@@ -36,29 +36,70 @@ this->weight = weight;
 
 // another examle of this 
 
- #include<bits/stdc++.h>
+//  #include<bits/stdc++.h>
+  // using namespace std;
+  //  class mobile{
+  //   private:
+  //   string model ;
+  //    string details;
+  //    int year_of_manufacture; 
+  //     public:
+  //     void setdetails (  string model , string details , int year_of_manufacture)
+  //     {
+  //        this->model=model;
+  //       this->details = details;
+  //       this->year_of_manufacture = year_of_manufacture;
+  //     }
+  //      void getdetails()
+  //      {
+  //        cout << model<< " "<< details<<" "<< year_of_manufacture<< endl;
+  //      }
+  //  };
+
+  //  int main  ()
+  //  {
+  //   mobile pocom2;
+  //   pocom2.setdetails("pocom2(m002)","flagship,20mp front camera , 30 mp back camera", 2020);
+  //    pocom2.getdetails();
+  //      }
+
+
+  #include<bits/stdc++.h>
   using namespace std;
    class mobile{
     private:
-    string model ;
-     string details;
-     int year_of_manufacture; 
-      public:
-      void setdetails (  string model , string details , int year_of_manufacture)
+    string model;
+    int price;
+    string details;
+     public:
+       void setmodel(string model)
+       {
+         this->model = model;
+       }
+       void setprice(int  price)
+       {
+         this->price = price;
+       }
+      void setDetails(string details)
       {
-         this->model=model;
         this->details = details;
-        this->year_of_manufacture = year_of_manufacture;
       }
        void getdetails()
        {
-         cout << model<< " "<< details<<" "<< year_of_manufacture<< endl;
-       }
-   };
+         cout << this->price << endl;
+         cout << this->model << endl;
+         cout << this->details << endl;
 
-   int main  ()
-   {
-    mobile pocom2;
-    pocom2.setdetails("pocom2(m002)","flagship,20mp front camera , 30 mp back camera", 2020);
-     pocom2.getdetails();
        }
+
+   };
+   int main ()
+   {
+     
+mobile samsungFe;
+samsungFe.setDetails("mast phone");
+samsungFe.setmodel("samsung s21 fe 5g");
+samsungFe.setprice(32000);
+samsungFe.getdetails();
+
+   }

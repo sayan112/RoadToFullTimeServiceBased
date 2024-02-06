@@ -10,14 +10,15 @@
 
           if (originalString.substr(idx, targetSubstring.size()) == targetSubstring)
           {
-              originalString.replace(idx, replacementSubstring.size(), replacementSubstring);
+            originalString.replace(idx, targetSubstring.size(), replacementSubstring);
+            return originalString;
            }
        }
 
 
     }
-     cout << originalString << endl;
-    return originalString;
+ 
+ 
   }
 
    int main ()
@@ -28,6 +29,6 @@
   string replacementSubstring;
 
   cin >> originalString >> targetSubstring >> replacementSubstring;
-  replaceSubstring(originalString, targetSubstring, replacementSubstring);
+ cout <<  replaceSubstring(originalString, targetSubstring, replacementSubstring);
    }
 
