@@ -34,7 +34,7 @@
 
 class Solution {
 public:
-     void generateAllCombination (vector<int>& candidates , int idx , int target ,     vector<int>ds , vector<vector<int>>&ans  )
+     void generateAllCombination (vector<int>& candidates , int idx , int target ,  vector<int>ds , vector<vector<int>>&ans  )
      {
          if(idx==candidates.size())
          {

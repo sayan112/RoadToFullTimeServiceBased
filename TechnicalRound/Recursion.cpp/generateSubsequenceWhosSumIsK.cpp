@@ -109,25 +109,25 @@
 
 
 
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
-bool checkSubsetSumToK(vector<int> arr , i)
-{
+// bool checkSubsetSumToK(vector<int> arr , i)
+// {
 
-}
- int main()
-{
-    int n ;
-     cin >> n ;
-      vector<int>arr;
-       for(int i = 0; i < n;i++)
-       {
-        int need;
-         cin >> need ;
-         arr.push_back(need);
-       }
-       int k ;
-        cin >> k ;
-        cout << checkSubsetSumToK(arr, k);
- }
+// }
+//  int main()
+// {
+//     int n ;
+//      cin >> n ;
+//       vector<int>arr;
+//        for(int i = 0; i < n;i++)
+//        {
+//         int need;
+//          cin >> need ;
+//          arr.push_back(need);
+//        }
+//        int k ;
+//         cin >> k ;
+//         cout << checkSubsetSumToK(arr, k);
+//  }
