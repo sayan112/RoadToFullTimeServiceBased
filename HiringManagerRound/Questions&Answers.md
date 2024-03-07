@@ -153,3 +153,29 @@ Q10. Do you have any questions for us?
 
 
 
+Q11.Tata products -> tata salt , tata tea ,  tata coffee grand , tata steel ,tata gluco
+
+Q12 Suppose I have sister wedding and at the same time my manager is leaving and I also , but urgency came up and I already take leave as well  , what should I do ?
+
+= Inform Your Manager: Have an open and honest conversation with your manager as soon as possible. Explain the situation regarding your sister's wedding and the urgency that has arisen. Express your commitment to your job and your desire to handle the transition smoothly.
+
+Discuss Options: Explore potential solutions with your manager. This could involve adjusting your leave dates, finding alternative coverage during your absence, or prioritizing tasks to ensure critical work is addressed before you leave.
+
+Offer Assistance: Assure your manager that you are willing to assist in any way possible before your leave and upon your return. This might include training a replacement, documenting important processes, or providing guidance to colleagues who will be taking over your responsibilities temporarily.
+
+Plan Ahead: Take proactive steps to minimize the impact of your absence. Delegate tasks, set clear expectations with your team members, and ensure that any pending work is either completed or handed off to someone else who can manage it in your absence.
+
+Stay in Touch: While you are away, make yourself available for any urgent matters that may arise. Provide your contact information to relevant colleagues or team members and establish a plan for how they can reach you if necessary.
+
+Communicate with Family: Keep your family informed about the situation at work and the potential need for flexibility regarding your leave dates. Discuss alternative arrangements or adjustments that could be made to accommodate both your sister's wedding and your work commitments.
+
+Manage Expectations: Be realistic about what you can accomplish given the circumstances. It's important to prioritize your family obligations during such significant events, but also to fulfill your professional responsibilities to the best of your ability.
+
+
+Q12 . TCS ->
+
+**Current CEO** -> K. Krithivasan
+**about** -> TCS was founded in 1968 as a division of Tata Sons Limited. It began as a provider of punch card services to sister company Tata Steel. Over the years, TCS expanded its services and became one of the largest IT services firms globally.
+TCS offers a comprehensive range of IT services, consulting, and business solutions. This includes software development, application management, infrastructure services, enterprise solutions, digital services, cybersecurity, and more. TCS serves clients across various industries, including banking and financial services, healthcare, manufacturing, retail, telecommunications, and government sectors.
+ TCS is known for its focus on innovation and technology leadership. The company invests heavily in research and development to stay at the forefront of emerging technologies such as artificial intelligence (AI), machine learning, blockchain, cloud computing, Internet of Things (IoT), and more. TCS also collaborates with leading academic institutions and partners with technology companies to drive innovation and develop cutting-edge solutions . 
+**Net worth**->  $12.21 B

@@ -15,6 +15,16 @@ Here's a table summarizing the differences between C and C++ in various aspects:
 | Functions inside Structures       | Cannot be defined              | Can be defined                   |
 | Memory Allocation/Deallocation    | calloc(), malloc(), and free() | new operator and delete operator |
 
+Object-Oriented Programming (OOP): C++ supports object-oriented programming, allowing for the creation of classes, objects, inheritance, polymorphism, and encapsulation. This makes it easier to organize and manage large codebases, promote code reuse, and model real-world entities more effectively.
+
+Abstraction and Encapsulation: C++ provides features like classes, access specifiers, and namespaces, which facilitate abstraction and encapsulation. This allows developers to hide implementation details, control access to data and functions, and build more modular and maintainable code.
+
+Standard Template Library (STL): C++ includes a powerful standard library known as the Standard Template Library (STL), which provides generic algorithms, containers (like vectors, lists, maps), and utilities. These components simplify common programming tasks, reduce development time, and improve code quality.
+
+Exceptions Handling: C++ supports exceptions handling, allowing developers to write cleaner and more maintainable code by separating error-handling logic from regular code flow. This can improve code readability and make error handling more robust.
+Try: Code that might potentially throw an exception is enclosed within a try block. The try block is followed by one or more catch blocks that handle different types of exceptions.
+
+
 2. What do you mean by call by value and call by reference?
 
 In call by value method, we pass a copy of the parameter is passed to the functions. For these copied values a new memory is assigned and changes made to these values do not reflect the variable in the main function.
@@ -917,7 +927,7 @@ ML is driving significant advancements in areas such as image and speech recogni
 **Cloud Computing:**
 
 **Definition:**
-Cloud computing refers to the delivery of computing services over the internet, allowing users to access and use computing resources such as servers, storage, databases, networking, software, and applications on-demand, without the need for direct management of physical hardware or infrastructure.
+Cloud computing refers to the delivery of computing services over the internet, allowing users to access and use computing resources such as servers, storage, databases, networking, software, and applications on-demand, without the need for direct management of physical hardware or infrastructure.  
 
 **Working:**
 Cloud computing providers maintain and manage vast data centers containing servers, storage devices, and networking equipment. Users access cloud services through the internet, typically via web browsers or dedicated software applications. Cloud computing offers three main service models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), catering to different levels of control and management by the user.

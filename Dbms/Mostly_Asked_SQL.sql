@@ -151,16 +151,13 @@ OFFSET 2;
 --  Write an SQL query to find the current date-time.
 
 SELECT NOW();
+--Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+
+SELECT DISTINCT (CITY) FROM STATION WHERE MOD(ID, 2) = 0;
 
 --Write an SQL query to fetch the project-wise count of employees sorted by project’s count in descending order.
 
-SELECT
-    Project,
-    COUNT(Project) AS EmpCountOnProject
-from employeesalary
-GROUP BY (`Project`)
-ORDER BY
-    EmpCountOnProject DESC;
+SELECT PROJECT , COUNT(*) FROM EMPLOYEESALARY GROUP BY PROJECT ORDER BY COUNT(*);  
 
 -- Write a query to fetch employee names and salary records. Display the employee details even if the salary record is not present for the employee.
 
@@ -178,6 +175,17 @@ LIMIT 10;
 -- Fetching distinct values from a column:
 
 SELECT DISTINCT( Project) from EmployeeSalary ;
+
+
+-- Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
+SELECT COUNT(CITY) - COUNT(DISTINCT (CITY)) FROM STATION;
+
+-- Query the Name of any student in STUDENTS who scored higher than  Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+SELECT NAME
+FROM STUDENTS
+WHERE
+    MARKS > 75
+ORDER BY RIGHT(NAME, 3), ID;
 
 -- What is query to find distinct records without using distinct keyword?(Asked 90 % of Interview Questions for IBM)
 

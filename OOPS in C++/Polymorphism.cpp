@@ -105,7 +105,7 @@ int main()
 Runtime Polymorphism
 (Method overriding)
 
-This type of polymorphism is achieved by Function Overriding. Late binding and dynamic polymorphism are other names for runtime polymorphism. The function call is resolved at runtime in runtime polymorphism. In contrast, with compile time polymorphism, the compiler determines which function call to bind to the object after deducing it at runtime.
+This type of polymorphism is achieved by  Function Overriding. Late binding and dynamic polymorphism are other names for runtime polymorphism. The function call is resolved at runtime in runtime polymorphism. In contrast, with compile time polymorphism, the compiler determines which function call to bind to the object after deducing it at runtime.
 
 Runtime polymorphism is also known as dynamic polymorphism. Method overriding is a way to implement runtime polymorphism.
 
