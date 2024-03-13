@@ -1,0 +1,280 @@
+The interview took place at Guru Gobind Singh Indraprasth University in Delhi on 26 July at 12 o'clock. The process started with document checking, followed by a combined HR/technical interview session. Here are the key questions asked:
+1. What is an exception?
+2. What is the difference between supervised and unsupervised learning?
+3. What is IoT?
+4. What is a pointer, and what are its advantages and disadvantages?
+5. What are the differences between Java and C++?
+6. How is a database connected in a system?
+7. Tell us about your project (in C++ STL).
+8. How many types of search are there? (mentioned two liner and binary search)
+9. Which is better, linear or binary search? (stated that binary search is better due to O(log n) complexity)
+10. Explain stack/queue.
+11. Implement a queue using a stack (drew logic on paper).
+12. Are you willing to relocate to Chennai?
+13. Are you okay with Ninja, if not, would you consider Digital?
+14. How would you stay motivated in the company if you got bored?
+15. Share your weaknesses.
+Suggestion: Consider working on a project involving new technologies like ML, IoT, deep learning, Android, or blockchain.
+
+1. Introduction:
+- About yourself
+- Project experience
+- Technologies worked on
+- Programming languages proficiency
+- Expertise in Cloud and Machine Learning
+- Familiarity with NLP and chatbot applications
+- Experience with Google services like Dialogflow
+- Coding skills (e.g., Bubble sort)
+- GitHub usage and commands
+- REST API security
+- JSON format knowledge
+- Angular component integration
+- Payment gateway integration and authorization
+- E-Commerce application design approach
+- Family background and higher studies plans
+- Willingness to relocate and work on various technologies
+
+2. Technical Questions:
+- Exception handling and examples
+- Differences between HashMap and HashSet
+- Tree vs. Graph and applications of Graph
+- Method overloading vs. overriding
+- Recent programming practice
+- GitHub benefits and commands
+- Angular component creation command
+- REST API security measures
+- JSON format explanation
+
+3. Follow-up from Projects:
+- Java version used, enhancements, drawbacks
+- Lambda function usage
+- ACID properties understanding
+- Normalization in databases
+- NoSQL databases overview
+- Future language learning plans
+- Kotlin advantages over Java
+- OOP concepts (Inheritance, Encapsulation, Abstraction, Polymorphism)
+- Hobbies and interests
+
+This summary should help you prepare for similar interview questions effectively.
+
+
+Why you used c++ for solving problems(in codevita)
+Why C++ is faster than java
+Difference between queue and priority queue
+Explain Heap sort Algorithm
+Questions relate to BST and time complexities and further questions on AVL Tree
+What is recursion and Dynamic Programming
+I was not asked questions from projects and core subjects but my friends were asked , so prepare oops and dbms also and also projects .
+
+
+About my academic project (Around 6 questions they asked about my project)
+About HTML tags
+What queries have you performed in project ?
+Tell me about joins and explain each
+About normalisation, primary key, unique key, foreign key, composite key
+Difference between primary key and unique key
+Can you write palindrome program in all the languages mentioned in your CV? (C++, JAVA, Python)
+You need to design a web app, what all steps will you be considering? 
+1.Tell me something about yourself.
+
+2.Asked about a project I had worked on. (I answered all of their questions about my project for approximately 10-15 minutes. They were impressed by my project!)
+
+3.Which language are you more comfortable with? me: Java. (tell the language that you are really confident about 4.as all the further questions will be upon it.)
+
+5.Why is String immutable?
+
+6.Which other things are immutable in Java?
+
+7.How can you explicitly make anything immutable.
+
+8.Suppose you have a large quantity of data input in your application. how would you handle it? (Cache servers, which are used by facebook)
+
+9.what is the algorithm of cache servers?
+
+10.what is the difference between ML and DL and AI?
+
+11.We can see that you have worked with Kali Linux. what did you specifically do with it?
+
+12.How does an aircrack attack work?
+
+13.What is dark web? How can you access it?
+
+14.Why can’t you access the dark web with chrome or any other normal browser?
+
+15.What is the difference between an application server and a web server?
+
+16.How is packet bundling handled in PHP? (this is because I had PHP in my skillset)
+
+17.Where and how is MongoDB used?
+
+18.what is the use of MongoDB and why to use it besides having relational databases like MySQL?
+
+19.What happens when you hit enter after typing a URL?
+
+20.OOP concepts of Java.
+
+21.You seem to have quite a taste in research work along with studies. what would you choose research or development?
+
+23.Have you understood all the job-related criteria and aware of the pay scale? (You are free to ask any doubts if any at this moment. The interview is basically completed.)
+
+I thanked them for their valuable time and left. Results came out about after 2 weeks. 21 got selected from 90 students. And, I was selected too!
+
+Tip: Always wear a smile in front of the interviewers and try to make the interview as interactive as possible.
+
+
+python vs c++ vs c
+which language do you know well?
+what is oops?
+what is polymorphism?
+write a code example for polymorphism
+
+code walk through of codevita code
+try catch block
+are more than one catch block allowed?
+what are exceptions
+
+tell me about your project
+
+dbms
+primary key vs foreign key
+are nulls allowed in foreign key?
+
+CN
+HTTP vs HTTPS
+HTTP at what layer?
+TCP udp protocol at which layer?
+
+what trending technologies do you know?
+what is cloud computing?
+what are differenct cloud providers?
+what is version control system?
+what cloud services do you know?
+Do you know about microservices?
+
+
+
+. Ok sanjeev tell me which language you prefer.
+
+2. What are various operator.
+
+3. What is bit wise operator name them.
+
+4. "a&&b" and "a& b" is there any difference in the output of both
+
+5. Follow up:- how you conclude they are different.(In simple words after one explanation he want me to go into the depth)
+
+6. What are the pillars of opp concept.
+
+7. Follow up:- explain each of the four pillars.
+
+8. What is run time polymorphism.(He picks a random one from the above and dive into little deep)
+
+9. Follow up what is virtual class is c++.
+
+10. Do you Know about SQL.
+
+11. How to get highest salary in the tabel.
+
+12. How to get nth highest salary.
+
+13. Write a program to print 1,-2,3,-4,5 means alternative number should be negative.
+
+Now again HR comes into the Picture
+
+1. He ask me what you feel how the interview goes.
+
+2. What you think what are the things that you learn form this interview.
+
+3. Do you have problem with relocation and problem with shift.
+
+Now the devil question comes into the picture.
+
+If we assign you a data entry job and you know that you have to work on data entry for 3 yr then what will you do. Honestly I have no answer for this one like I try to be little diplomatic such as i prepare a lot and any opportunity will come then I will definitely grab that .
+
+Then he ask me that do you prepare for other company as well if company comes in your campus.
+
+Then he again ask data entry question that if you get job in data entry field then what you will do as you have to work on same position for 3 year.Again try to convince him.
+
+Now MR times
+
+MR ask some general question.
+
+And again ask the same data entry question and now this time it made me cry(honestly) they ask same question three time each time i try to convince them but unsuccessful.
+
+He mention we know you are good at coding and things but if we assign you a post of data entry then what is your reaction. I don't know what they want to hear.
+
+Review in the 40 to 45 min first 30 min i was happy but one HR question screw my life and made the environment little bit critical for me.
+
+So prepare for the HR question and best of luck.
+
+And I like to mention that the rank doesn't matter at all I got 463 but no use so be confident with your rank.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TCS HR Interview Question:-
+1. Introduce yourself.
+
+2. Are you ready for relocation and night shift?
+
+3. Do you have any offers from other companies?
+
+4. Tell me about your hobbies.
+
+5. Why should we hire you?
+
+1.Give a brief introduction about yourself.
+
+2. Are you ready for relocation?
+
+3. Do you have any active backlogs?
+
+4.How much did you score in your graduation?
+
+5.Why TCS?
+6. If you get selected in TCS and later on you received the offer from google, what will you do?
+7. What are your hobbies?
+8. Which is your favorite author? and why?
+9. Location preference?
+
+What you know about TCS ?
+What are the technologies used in TCS ?
+If we assign you in a new domain for 10 years will you work ?
+Plans about higher studies
+You know Machine Learning and Artificial Intelligence ?
+What you did in lockdown ?
+What will be your contribution to company ?
+Which is better online lectures or offline lectures ?
+Any questions ?
+Where do you see yourself in 3 years?
+Why TCS?
+What if you don't get work from data science field ?
+How would you handle dispute with teammates?
+How would you manage client delivery if your team is not present on that day?
+Questions about relocation and why I should be offered higher package?

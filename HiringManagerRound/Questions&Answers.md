@@ -179,3 +179,100 @@ Q12 . TCS ->
 TCS offers a comprehensive range of IT services, consulting, and business solutions. This includes software development, application management, infrastructure services, enterprise solutions, digital services, cybersecurity, and more. TCS serves clients across various industries, including banking and financial services, healthcare, manufacturing, retail, telecommunications, and government sectors.
  TCS is known for its focus on innovation and technology leadership. The company invests heavily in research and development to stay at the forefront of emerging technologies such as artificial intelligence (AI), machine learning, blockchain, cloud computing, Internet of Things (IoT), and more. TCS also collaborates with leading academic institutions and partners with technology companies to drive innovation and develop cutting-edge solutions . 
 **Net worth**->  $12.21 B
+
+
+
+
+**1. Give a brief introduction about yourself.**
+
+Certainly! My name is [Your Name], and I'm a final year B.Tech student majoring in [Your Major] from [Your College/University]. I've always been passionate about technology and its applications in solving real-world problems. Throughout my academic journey, I've actively participated in various extracurricular activities, which have honed my leadership, teamwork, and communication skills.
+
+**2. Are you ready for relocation?**
+
+Yes, absolutely. I understand that relocation might be necessary to align with the requirements of the job, and I'm fully prepared and willing to relocate as per the company's needs.
+
+**3. Do you have any active backlogs?**
+
+No, I don't have any active backlogs. I've maintained a consistent academic record throughout my tenure, ensuring timely completion of all coursework and exams.
+
+**4. How much did you score in your graduation?**
+
+I scored [Your GPA/Percentage] in my graduation. I'm proud of my academic achievements, and I believe they reflect my dedication and commitment to excellence.
+
+**5. Why TCS?**
+
+TCS stands out to me for several reasons. Firstly, its global presence and reputation as a leader in the IT industry offer tremendous opportunities for growth and learning. Secondly, TCS's commitment to innovation and cutting-edge technologies aligns perfectly with my interests and career aspirations. Additionally, TCS's emphasis on employee development and work-life balance makes it an ideal choice for someone like me who values both professional growth and personal well-being.
+
+**6. If you get selected in TCS and later on you receive an offer from Google, what will you do?**
+
+While receiving an offer from Google would indeed be an incredible opportunity, I would evaluate the offer based on various factors such as the role, growth prospects, work culture, and alignment with my long-term career goals. However, at this moment, my focus is entirely on securing a position with TCS and contributing my best to the organization.
+
+**7. What are your hobbies?**
+
+In my free time, I enjoy [mention your hobbies, e.g., reading, playing musical instruments, sports, volunteering, etc.]. These activities not only help me unwind and relax but also allow me to develop skills such as creativity, discipline, and time management.
+
+**8. Which is your favorite author? And why?**
+
+My favorite author is [Author's Name]. I admire their ability to weave intricate plots, create compelling characters, and delve into thought-provoking themes. Their works have not only entertained me but also provided valuable insights into the human condition and society.
+
+**9. Location preference?**
+
+I'm open to working in various locations, and my preference would primarily depend on the job role and opportunities available. However, I'm flexible and adaptable, and I'm willing to relocate wherever the company deems fit.
+
+**What do you know about TCS?**
+
+TCS, or Tata Consultancy Services, is a multinational IT services, consulting, and business solutions organization headquartered in Mumbai, India. It is part of the Tata Group, one of India's largest and most respected conglomerates. TCS is renowned for its expertise in providing a wide range of services, including software development, consulting, and outsourcing solutions to clients across various industries worldwide.
+
+**What are the technologies used in TCS?**
+
+TCS utilizes a diverse range of technologies to deliver innovative solutions to its clients. Some of the prominent technologies include cloud computing, artificial intelligence, machine learning, data analytics, Internet of Things (IoT), blockchain, and cybersecurity, among others.
+
+**If we assign you in a new domain for 10 years, will you work?**
+
+Absolutely. I am committed to continuous learning and professional growth, and I would welcome the opportunity to explore new domains and expand my skill set over the course of my career at TCS.
+
+**Plans about higher studies?**
+
+While I'm open to furthering my education if it aligns with my career goals and contributes to my personal and professional development, my immediate focus is on establishing a successful career in the industry.
+
+**Do you know Machine Learning and Artificial Intelligence?**
+
+Yes, I have a solid understanding of machine learning and artificial intelligence concepts. I've had the opportunity to study and work on projects related to these fields during my academic tenure, and I'm keen on further enhancing my expertise in these areas.
+
+**What did you do during the lockdown?**
+
+During the lockdown, I utilized the time to enhance my skills and knowledge through online courses, engage in personal projects, and stay updated with industry trends and developments. Additionally, I also volunteered for initiatives aimed at supporting communities affected by the pandemic.
+
+**What will be your contribution to the company?**
+
+I believe my strong technical skills, coupled with my ability to communicate effectively and work collaboratively in a team environment, will enable me to make significant contributions to the company. I'm committed to delivering high-quality work, solving complex problems, and continuously striving for excellence in all tasks assigned to me.
+
+**Which is better: online lectures or offline lectures?**
+
+Both online and offline lectures have their advantages and limitations. However, I believe online lectures offer more flexibility and accessibility, allowing learners to access educational resources from anywhere at their convenience. That being said, the effectiveness of either mode ultimately depends on the quality of content delivery and engagement strategies employed.
+
+**Where do you see yourself in 3 years?**
+
+In three years, I envision myself in a role where I have leveraged my skills and experiences to make significant contributions to the organization. I aim to have grown both professionally and personally, taking on more responsibilities and leadership roles within the company.
+
+**What if you don't get work from the data science field?**
+
+While data science is an area of interest for me, I'm open to exploring other opportunities within the IT industry that align with my skills and interests. I believe in being adaptable and seizing opportunities that allow me to learn and grow, regardless of the specific domain.
+
+**How would you handle disputes with teammates?**
+
+In the event of disputes with teammates, I believe in addressing the issue openly and constructively, focusing on finding solutions rather than assigning blame. I would actively listen to all perspectives, seek common ground, and work towards a resolution that benefits the team and maintains a positive work environment.
+
+**How would you manage client delivery if your team is not present on that day?**
+
+In such a scenario, I would first assess the situation and prioritize tasks based on urgency and importance. I would communicate with the client to manage expectations and ensure transparency regarding the team's availability. Depending on the nature of the work, I would either delegate tasks to available team members, work on critical deliverables myself, or explore alternative solutions to meet the client's needs within the specified timeframe.
+
+**Questions about relocation and why I should be offered a higher package?**
+
+Certainly. Relocation is not a concern for me, as I'm fully prepared to relocate as per the company's requirements. Regarding the compensation package, I believe that my skills, experience, and potential contributions to the company justify a competitive compensation package. I'm confident in my ability to add value to the organization and deliver results that exceed expectations, which I believe warrants consideration for a higher package.
+
+**Any questions?**
+
+Yes, I have a few questions about the company culture, opportunities for professional development, and potential growth paths within the organization. Can you please provide some insights into these aspects?
+
+
