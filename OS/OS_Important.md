@@ -253,6 +253,13 @@ Imagine you're working on a desk with limited space. Virtual memory is like havi
 In summary, segmentation and paging are memory management techniques that divide a program's memory in different ways. Paging is often faster due to its efficiency, and virtual memory is a technique that extends physical memory using disk space when needed. The choice between these techniques depends on the specific requirements and constraints of the system.
 
 
+ **How can we play 100gb game in 6gb ram laptop**
+You can explain that even though the computer has only 6GB of RAM, the operating system can use a technique called virtual memory to create a portion of the hard drive space (1TB) as a temporary storage area for data that doesn't fit in RAM. This allows the computer to run programs that require more memory than physically available.
+
+In this case, to play a 100GB game on a computer with 6GB of RAM and 1TB storage, the operating system can use virtual memory to swap data between RAM and the hard drive, allowing the game to run by utilizing the available storage space as an extension of physical memory.
+
+
+
 18. How will you check number of running processes in your PC?
 = **Task Manager**: Press Ctrl + Shift + Esc or Ctrl + Alt + Delete and then select "Task Manager." In the "Processes" tab, you'll see a list of running processes along with their details.
 
@@ -383,4 +390,4 @@ Non-atomic: Operations that are non-atomic but interruptible by multiple process
 Race conditions: A race condition occurs of the outcome depends on which of several processes gets to a point first.
 Blocking: Processes can block waiting for resources. A process could be blocked for a long period of time waiting for input from a terminal. If the process is required to periodically update some data, this would be very undesirable.
 Starvation: It occurs when a process does not obtain service to progress.
-Deadlock: It occurs when two processes are blocked and hence neither can proceed to execute
+Deadlock: It occurs when two processes are blocked and hence neither can proceed to execute 

@@ -99,6 +99,7 @@ As an interview candidate, my main weakness is public speaking. I can feel a bit
 
 
 Q6. What skills do you have for this role?
+
 Answer: As an interview candidate, I possess a strong set of skills that align well with the requirements of this role:
 
 1. C++: I am proficient in C++, which is a versatile and powerful programming language commonly used in software development and system programming.
