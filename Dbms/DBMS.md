@@ -35,7 +35,6 @@ Examples of popular RDBMS systems are MySQL, Oracle DB, etc.
 
 
 
-
 6. What is the Relationship?
 
 = The Relationship is defined as an association among two or more entities. There are three type of relationships in DBMS-

@@ -76,6 +76,9 @@ To integrate JWT authentication into a web application like NoteFy, you would ty
 
 6. **Expiration:** JWTs often have an expiration time (the "exp" claim), and the server checks whether the token is still valid based on this expiration time. If the token has expired, the user is required to log in again.
 
+**Normal website:**  Relies on session cookies for user authentication and session management. Server maintains session state.
+**JWT authenticated website:**  Uses JWTs for authentication and authorization. Client holds the token, and server verifies it with each request. Allows for stateless authentication.
+
 In NoteFy, I integrated JWT authentication by following these steps, ensuring that user data and access to notes were securely protected and that users could perform CRUD operations on their notes while authenticated. The use of JWTs provided a convenient and secure way to manage user sessions and access control in the application.
 
 
@@ -132,7 +135,10 @@ Overall, this project allowed me to apply my programming and design skills to cr
 *** what is Lazy Loading ***
 
 Lazy loading is a technique used to defer the loading of non-essential resources (typically images) until they are needed, such as when they are about to enter the viewport of a web page.
-
+<!-- import LazyLoad from 'react-lazy-load';
+    <LazyLoad height={250}>
+      <Image pic='https://placedog.net/500/400' />
+    </ LazyLoad> -->
 
 
 
@@ -197,7 +203,17 @@ Sure, I'd be happy to help! Below are some commonly asked questions in interview
 
 10. **How can you create a comment in HTML?**
     - HTML comments are created using `<!-- Comment text here -->`. They are not displayed on the rendered page and are used for adding notes to the code.    
-
+11. **new html tags**
+= <video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+</video>
+<br>
+AUDIO
+<br>
+<audio controls>
+  <source src="voice.ogg" type="audio/ogg">
+</audio>
 
 
 

@@ -282,6 +282,20 @@ The solution to external fragmentation is compaction and paging.
 
 
 
+25. Situation based questions like if you have 50 MB process and 40 MB RAM, how to run it interview question ?
+= The interview question you've provided seems to be testing your problem-solving skills and your understanding of memory management. When faced with a situation where a process requires more memory (50 MB) than what's currently available (40 MB RAM), you might consider various strategies to address this situation. Here's how you could approach this question:
+
+1. **Virtual Memory:**
+   Most modern operating systems use virtual memory, which allows processes to use more memory than physically available RAM by using a portion of the hard disk as an extension of RAM. The OS swaps data between RAM and the disk as needed. In this scenario, the operating system might use a portion of the hard disk as additional "virtual" memory to accommodate the 50 MB process.
+
+2. **Memory Paging:**
+   Memory paging is a technique where the memory is divided into fixed-sized blocks called "pages." When a process is too large to fit into available physical RAM, the OS can swap portions of the process in and out of RAM as needed. The 50 MB process could be divided into pages, and only the necessary pages would be loaded into RAM at a given time.
+
+
+
+
+
+
 19. Process vs Thread?
 = 
    1.  Process means any program is in execution.    

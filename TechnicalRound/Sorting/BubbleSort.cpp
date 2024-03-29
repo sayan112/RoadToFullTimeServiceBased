@@ -4,21 +4,20 @@ using namespace std;
  void sortBubble(vector<int> &vec)
  {
     int counter=1;
-     while (counter<vec.size())
+     while(counter<vec.size())
      {
-        for (int i = 0; i < vec.size()-counter; i++)
+        for (int i = 1; i < vec.size() - counter; i++)
         {
-            if(vec[i]>vec[i+1])
-            {
-                swap(vec[i],vec[i+1]);
-             
-            }
+           if (vec[i] < vec[i - 1])
+           {
+              swap(vec[i], vec[i - 1]);
+           }
+           counter++;
         }
-        counter++;
-        
      }
-    
+
  }
+
  int main ()
  {
     int n ;
@@ -36,14 +35,10 @@ using namespace std;
          {
             cout<<elem <<" ";
          }
-       
  }
 
 
-
-
 // Bubble Sort:
-
 // Best-case: O(n) - This occurs when the input array is already sorted, and no swaps are needed.
 // Worst-case: O(n^2) - When the input is sorted in reverse order, it requires the maximum number of comparisons and swaps.
 // Average-case: O(n^2) .

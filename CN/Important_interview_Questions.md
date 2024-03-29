@@ -113,7 +113,14 @@ UDP:
 
 8. Q: What is HTTP and HTTPS?
    A: HTTP (Hypertext Transfer Protocol) is a standard protocol used for transmitting data over the internet, while HTTPS (HTTP Secure) is a secure version that uses encryption (SSL/TLS) to protect data during transmission. Example: HTTP is used for regular website browsing, while HTTPS is used for secure online transactions and sensitive data transfer.
-a
+
+
+***Need of HTTP ***
+
+HTTP, which stands for Hypertext Transfer Protocol, is needed to facilitate the transfer of information on the World Wide Web. It is the foundation of data communication on the internet, allowing web browsers and servers to communicate and exchange resources such as HTML pages, images, videos, and other types of files. HTTP enables the retrieval of linked resources from across the web and the display of web pages on your device.
+
+
+
    ***Security***: HTTPS provides data encryption and thus enhances the security of data transmission, making it much more difficult for attackers to intercept and understand the data being exchanged.
 
 ***Trust and Authentication***: HTTPS also involves the use of digital certificates that are issued by trusted Certificate Authorities (CAs). These certificates verify the identity of the website, ensuring that you are indeed connected to the genuine website and not a malicious imposter.
@@ -263,18 +270,6 @@ Please note that some devices, like routers and switches, can operate at multipl
 
 
 
-25. Situation based questions like if you have 50 MB process and 40 MB RAM, how to run it interview question ?
-= The interview question you've provided seems to be testing your problem-solving skills and your understanding of memory management. When faced with a situation where a process requires more memory (50 MB) than what's currently available (40 MB RAM), you might consider various strategies to address this situation. Here's how you could approach this question:
-
-1. **Virtual Memory:**
-   Most modern operating systems use virtual memory, which allows processes to use more memory than physically available RAM by using a portion of the hard disk as an extension of RAM. The OS swaps data between RAM and the disk as needed. In this scenario, the operating system might use a portion of the hard disk as additional "virtual" memory to accommodate the 50 MB process.
-
-2. **Memory Paging:**
-   Memory paging is a technique where the memory is divided into fixed-sized blocks called "pages." When a process is too large to fit into available physical RAM, the OS can swap portions of the process in and out of RAM as needed. The 50 MB process could be divided into pages, and only the necessary pages would be loaded into RAM at a given time.
-
-
-
-
 
 
 
@@ -309,3 +304,6 @@ In summary, if your main priority is to send a large file in a shorter amount of
 
 
 
+
+27. VPN ( virtual Private network)
+= VPN, or Virtual Private Network, is a technology that enables users to securely access a private network and share data remotely over public networks. It provides a secure and encrypted connection, allowing users to bypass internet censorship and access restricted websites and services.

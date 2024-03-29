@@ -58,7 +58,7 @@ During my internship as a fresher candidate, I had the opportunity to work on a 
 
 2. **React Calendar for Doctor Appointments**: I implemented a React calendar component to help manage doctor appointments efficiently. This feature allowed doctors and patients to schedule, view, and manage their appointments easily, enhancing the overall user experience.
 
-3. **Nivo Charts for Patient Height and Weight**: I integrated Nivo charts to visualize patient height and weight data. This addition made it simpler for healthcare professionals to monitor patient progress and make data-driven decisions.
+3. **Nivo Charts for Patient Height and Weight**: I integrated Nivo charts to visualize patient height and weight data. This addition made it simpler for healthcare professionals to monitor patient progress and make data-driven decisions.(bar chart , data-driven chart , graphs )
 
 4. **Material UI and Tailwind CSS**: I used Material UI and Tailwind CSS to design an intuitive and visually appealing user interface. These UI libraries helped in creating a modern and responsive design, ensuring that the application was user-friendly and aesthetically pleasing.
 
