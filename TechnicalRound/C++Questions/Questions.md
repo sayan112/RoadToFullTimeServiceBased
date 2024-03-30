@@ -120,7 +120,7 @@ Operator Overloading
 Run Time Polymorphism
 
 Function Overriding
-Virtual Function
+
 
 17. What is STL?
     = STL is known as Standard Template Library, it is a library that provides 4 components like container, algorithms, and iterators.
@@ -129,9 +129,6 @@ Virtual Function
     = A function is used to reduce the redundancy , as well as save the memory space when a function is invoked a bunch of task is performed like matching arguments ,matching the returns :( , but when the funcation defination is consist of one or two states mensts , there is noting to match the number of arguments , return type , so thats why c++ has somthing called as Inline function.
     // inline int cube(int s) { return s _ s _ s; }
 
-19. What is an abstract class and when do you use it?
-    = An abstract class is a class that is specifically designed to be used as a base class. An abstract class contains at least one pure virtual function. You declare a pure virtual function by using a pure specifier(= 0) in the declaration of a virtual member function in the class declaration
-    Abstract Classes are a good fit if you want to provide implementation details to your children
 
 20. When is void() return type used?
     = The void keyword, when used as a function return type, indicates that the function does not return a value.

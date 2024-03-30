@@ -17,7 +17,9 @@ also called  static polymorphism , early binding
 
 Method Overloading (Compile-Time Polymorphism):
 
+
 Method overloading involves defining multiple methods in a class with the same name but different parameters (different number or types of parameters).
+
 The selection of which method to call is determined by the compiler at compile time, based on the method signature (name and parameter list) in the source code.
 
 

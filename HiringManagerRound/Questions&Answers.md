@@ -181,12 +181,10 @@ TCS offers a comprehensive range of IT services, consulting, and business soluti
  TCS is known for its focus on innovation and technology leadership. The company invests heavily in research and development to stay at the forefront of emerging technologies such as artificial intelligence (AI), machine learning, blockchain, cloud computing, Internet of Things (IoT), and more. TCS also collaborates with leading academic institutions and partners with technology companies to drive innovation and develop cutting-edge solutions . 
 **Net worth**->  $12.21 B
 
+**Tata Consultancy Services (TCS) has collaborated with Microsoft to utilize its expertise in industrial control systems and develop AI-powered autonomous solutions using Project Bonsai on Microsoft Azure Cloud. These solutions aim to optimize manufacturing, reduce downtime, improve quality, and enhance safety. TCS has already created a warehouse optimization solution and plans to expand into manufacturing yield optimization, chemical processing, logistics and supply chain optimization, and energy management.**
 
 
 
-**1. Give a brief introduction about yourself.**
-
-Certainly! My name is [Your Name], and I'm a final year B.Tech student majoring in [Your Major] from [Your College/University]. I've always been passionate about technology and its applications in solving real-world problems. Throughout my academic journey, I've actively participated in various extracurricular activities, which have honed my leadership, teamwork, and communication skills.
 
 **2. Are you ready for relocation?**
 
@@ -198,7 +196,7 @@ No, I don't have any active backlogs. I've maintained a consistent academic reco
 
 **4. How much did you score in your graduation?**
 
-I scored [Your GPA/Percentage] in my graduation. I'm proud of my academic achievements, and I believe they reflect my dedication and commitment to excellence.
+I scored  in my graduation. I'm proud of my academic achievements, and I believe they reflect my dedication and commitment to excellence.
 
 **5. Why TCS?**
 
