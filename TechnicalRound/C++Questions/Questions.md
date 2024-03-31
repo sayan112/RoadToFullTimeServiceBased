@@ -860,25 +860,6 @@ These are machine-friendly languages that are very difficult to understand by hu
 Some examples of low-level languages include the Machine language and Assembly language.
 
 
-3. **Big Data** 
-
-**Definition:**
-Big Data refers to a massive volume of structured, semi-structured, and unstructured data that is generated at an unprecedented rate and scale. This data comes from various sources such as social media, sensors, mobile devices, website clicks, and more.
-
-**Working:**
-Big Data is typically processed and analyzed using advanced technologies like Hadoop, Spark, and other data processing tools. These technologies allow companies to store, manage, and analyze large datasets efficiently. Data is collected, processed, and analyzed to extract valuable insights and make data-driven decisions.
-
-**Modern-Day Significance:**
-In today's digital age, Big Data plays a crucial role in various industries such as retail, healthcare, finance, and marketing. It helps businesses understand customer behavior, optimize operations, improve products and services, and gain a competitive edge in the market.
-
-**Pros:**
-1. **Insight Generation:** Big Data analysis helps businesses gain valuable insights into customer preferences, market trends, and operational efficiency.
-2. **Decision Making:** Data-driven decisions based on Big Data analysis are often more accurate and effective, leading to better outcomes.
-3. **Innovation:** Big Data enables companies to innovate by identifying new opportunities, predicting future trends, and developing innovative products and services.
-4. **Competitive Advantage:** Businesses that effectively leverage Big Data gain a competitive advantage by optimizing processes, improving customer satisfaction, and staying ahead of the competition.
-
-In an interview as a fresher, you can explain Big Data as a vast amount of data that is collected from various sources, processed using advanced technologies, and analyzed to gain insights and make informed decisions. Emphasize the significance of Big Data in today's digital world and its role in driving innovation and competitiveness in businesses.
-
 
 4. Certainly! Let's simplify AI (Artificial Intelligence) and ML (Machine Learning) for you:
 
