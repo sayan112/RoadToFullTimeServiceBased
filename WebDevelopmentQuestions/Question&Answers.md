@@ -3,7 +3,7 @@
 
 1. **Project Overview:**
 
-   - NoteFy is a notes application that I developed to provide users with a secure and user-friendly platform for managing their notes. The project aimed to implement JW T authentication for enhanced data protection and offer CRUD functionality for creating, reading, updating, and deleting notes.
+   - NoteFy is a notes application that I developed to provide users with a secure and user-friendly platform for managing their notes. The project aimed to implement JWT authentication for enhanced data protection and offer CRUD functionality for creating, reading, updating, and deleting notes.
 
 2. **Technology Stack:**
 
@@ -177,10 +177,6 @@ In the context of web development, lazy loading is often used to improve page lo
 
 Sure, I'd be happy to help! Below are some commonly asked questions in interviews for fresher positions related to HTML, CSS, and JavaScript, along with their explanations.
 
-
-
-
-
 1. UI and UX
    = UI (User Interface) and UX (User Experience) are closely related concepts in the field of design, but they serve different purposes and focus on different aspects of the user interaction with a product or system.
 
@@ -205,10 +201,6 @@ In summary, while UI design focuses on the visual and interactive aspects of the
 It includes a comprehensive collection of prebuilt components that are ready for use in production right out of the box.
 
 Material UI is beautiful by design and features a suite of customization options that make it easy to implement your own custom design system on top of our components.
-
-
-
-
 
 14. what is Complied and Interpreted language ?
     = Compiled and interpreted languages are two different approaches to executing computer programs. Here's an explanation of each:
@@ -254,22 +246,6 @@ GET: This method requests data from a specified resource. It should only retriev
 POST: This method is used to submit data to be processed to a specified resource. It often results in the creation of a new resource or the update of an existing one.
 PUT: This method is similar to POST, but it is used to update a resource or create it if it does not exist at the specified URL.
 DELETE: This method is used to request the removal of a resource identified by a specific URL.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 **HTML:**
 
@@ -359,17 +335,31 @@ AUDIO
   <source src="voice.ogg" type="audio/ogg">
 </audio>
 
+21. Pratice Forms :)
 
-
-
-
-
-
-
-
-
-
-
+<form action="#" method="post">
+  <label for="firstname">First Name:</label><br>
+  <input type="text" id="firstname" name="firstname" required><br><br>
+  
+  <label for="lastname">Last Name:</label><br>
+  <input type="text" id="lastname" name="lastname" required><br><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" name="age" min="18" required><br><br>
+  
+  <label for="gender">Gender:</label><br>
+  <select id="gender" name="gender" required>
+    <option value="">Select</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
 
 **CSS:**
 
@@ -465,30 +455,20 @@ GitHub, on the other hand, is a web-based platform that provides hosting for Git
    - The `opacity` property controls the transparency of an element. A value of `1` is fully opaque, while `0` is fully transparent.
 
 10. # **DOM**
+
     The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text.
 
-11. ***Universal selector*** The universal selector in CSS is denoted by an asterisk (`*`) and it matches any element in the HTML document. It applies styles to all elements, regardless of their type, class, or ID.
+11. **_Universal selector_** The universal selector in CSS is denoted by an asterisk (`*`) and it matches any element in the HTML document. It applies styles to all elements, regardless of their type, class, or ID.
 
 Here's how you can use the universal selector:
 
 ```css
 * {
-    /* CSS properties */
+  /* CSS properties */
 }
 ```
-12. 
 
-
-
-
-
-
-
-
-
-
-
-
+12.
 
 **JavaScript:**
 
@@ -520,15 +500,14 @@ Here's how you can use the universal selector:
 
    - Callback functions are functions passed as arguments to another function, which are executed later, often after an asynchronous operation completes. Example: handling the result of a `setTimeout` function.
 
-
-9. **What is an event in JavaScript?**
+8. **What is an event in JavaScript?**
    -Events in JavaScript are actions taken by the user or the browser that trigger JavaScript code. For example, when a user clicks a button, the browser sends an event to the JavaScript code that is associated with that button. The JavaScript code can then respond to the event by performing an action, such as changing the color of the button or displaying a message.
    There are many different types of events, including:
    Mouse events: , such as click, dblclick, mouseover, mouseout, and mousemove.
    Keyboard events: , such as keydown, keyup, and keypress.
 
-10. # **_data type in JS _**
-    **_Primitive data types_** in JavaScript include:
+9. # **_data type in JS _**
+   **_Primitive data types_** in JavaScript include:
 
 Numbers - Integers, floats
 Strings - Any data under single quote, double quote or backtick quote
@@ -542,81 +521,80 @@ Symbol - A unique value that can be generated by Symbol constructor
 Objects
 Arrays
 
-
-
 11. **_spread Operator_**
-the spread operator (...) is a syntax that allows an iterable (such as an array or a string) to be expanded into individual elements. It provides a concise way to copy elements from one array or object into another, to pass elements of an array as function arguments, or to create a new array or object based on an existing one.
+    the spread operator (...) is a syntax that allows an iterable (such as an array or a string) to be expanded into individual elements. It provides a concise way to copy elements from one array or object into another, to pass elements of an array as function arguments, or to create a new array or object based on an existing one.
 
 <!-- const originalArray = [1, 2, 3];
 const copiedArray = [...originalArray];
 console.log(copiedArray); // Output: [1, 2, 3]
  -->
 
+12. In JavaScript, `while` and `do-while` are loop constructs used to execute a block of code repeatedly as long as a specified condition is true. The main difference between them lies in when the condition is evaluated.
 
- 12. In JavaScript, `while` and `do-while` are loop constructs used to execute a block of code repeatedly as long as a specified condition is true. The main difference between them lies in when the condition is evaluated.
+**while loop**:
+The `while` loop executes a block of code as long as the specified condition evaluates to true.
 
- **while loop**:
-   The `while` loop executes a block of code as long as the specified condition evaluates to true.
+Syntax:
 
-   Syntax:
-   ```javascript
-   while (condition) {
-       // code to be executed
-   }
-   ```
+```javascript
+while (condition) {
+  // code to be executed
+}
+```
 
- **do-while loop**:
-   The `do-while` loop is similar to the `while` loop, but it always executes the block of code at least once before checking the condition.
+**do-while loop**:
+The `do-while` loop is similar to the `while` loop, but it always executes the block of code at least once before checking the condition.
 
-   Syntax:
-   ```javascript
-   do {
-       // code to be executed
-   } while (condition);
+Syntax:
+
+````javascript
+do {
+    // code to be executed
+} while (condition);
 
 In summary, `while` loops check the condition before executing the block of code, while `do-while` loops check the condition after executing the block of code at least once.
 
 13. In JavaScript, operators are symbols that perform operations on operands. Here are the types of operators in JavaScript:
 
- **Arithmetic Operators**:
-   - Addition (`+`)
-   - Subtraction (`-`)
-   - Multiplication (`*`)
-   - Division (`/`)
-   - Remainder (`%`)
-   - Increment (`++`)
-   - Decrement (`--`)
+**Arithmetic Operators**:
+- Addition (`+`)
+- Subtraction (`-`)
+- Multiplication (`*`)
+- Division (`/`)
+- Remainder (`%`)
+- Increment (`++`)
+- Decrement (`--`)
 
- **Comparison Operators**:
-   - Equal to (`==`)
-   - Strict equal to (`===`)
-   - Not equal to (`!=`)
-   - Strict not equal to (`!==`)
-   - Greater than (`>`)
-   - Less than (`<`)
-   - Greater than or equal to (`>=`)
-   - Less than or equal to (`<=`)
+**Comparison Operators**:
+- Equal to (`==`)
+- Strict equal to (`===`)
+- Not equal to (`!=`)
+- Strict not equal to (`!==`)
+- Greater than (`>`)
+- Less than (`<`)
+- Greater than or equal to (`>=`)
+- Less than or equal to (`<=`)
 
- **Logical Operators**:
-   - Logical AND (`&&`)
-   - Logical OR (`||`)
-   - Logical NOT (`!`)
+**Logical Operators**:
+- Logical AND (`&&`)
+- Logical OR (`||`)
+- Logical NOT (`!`)
 
- **Bitwise Operators**:
-   - Bitwise AND (`&`)
-   - Bitwise OR (`|`)
-   - Bitwise XOR (`^`)
-   - Bitwise NOT (`~`)
-   - Left shift (`<<`)
-   - Right shift (`>>`)
-   - Zero-fill right shift (`>>>`)
+**Bitwise Operators**:
+- Bitwise AND (`&`)
+- Bitwise OR (`|`)
+- Bitwise XOR (`^`)
+- Bitwise NOT (`~`)
+- Left shift (`<<`)
+- Right shift (`>>`)
+- Zero-fill right shift (`>>>`)
 
 
- **Ternary Operator (Conditional Operator)**:
-   - The ternary operator (`?:`) is a conditional operator that evaluates a condition and returns one of two values based on whether the condition is true or false.
+**Ternary Operator (Conditional Operator)**:
+- The ternary operator (`?:`) is a conditional operator that evaluates a condition and returns one of two values based on whether the condition is true or false.
 
- **String Operators**:
-   - Concatenation (`+`)
+**String Operators**:
+- Concatenation (`+`)
 
 
 14. ***error handling in JS  ***
@@ -627,13 +605,13 @@ The try...catch statement is used to handle runtime errors that may occur within
 javascript
 Copy code
 try {
-    // Code that may throw an error
-    throw new Error('An error occurred');
+ // Code that may throw an error
+ throw new Error('An error occurred');
 } catch (error) {
-    // Code to handle the error
-    console.error(error.message);
+ // Code to handle the error
+ console.error(error.message);
 }
-    
+
 
 
 
@@ -645,82 +623,84 @@ let str1 = 'Hello, world!';
 You can perform various operations and manipulations on strings in JavaScript, such as concatenation, accessing individual characters, finding the length, converting case, and more. Here are some common string methods:
 
 1. **Concatenation**: Combining multiple strings into one.
-   ```javascript
-   let fullName = 'John' + ' ' + 'Doe'; // 'John Doe'
-   ```
+```javascript
+let fullName = 'John' + ' ' + 'Doe'; // 'John Doe'
+````
 
 2. **Accessing Characters**: Accessing individual characters in a string using bracket notation or the `charAt()` method.
+
    ```javascript
-   let str = 'Hello';
+   let str = "Hello";
    console.log(str[0]); // 'H'
    console.log(str.charAt(1)); // 'e'
    ```
 
 3. **Length**: Finding the length of a string using the `length` property.
+
    ```javascript
-   let str = 'Hello';
+   let str = "Hello";
    console.log(str.length); // 5
    ```
 
 4. **Substring**: Extracting a portion of a string using the `substring()` method.
+
    ```javascript
-   let str = 'Hello, world!';
+   let str = "Hello, world!";
    console.log(str.substring(0, 5)); // 'Hello'
    ```
 
 5. **Case Conversion**: Converting the case of a string using `toUpperCase()` and `toLowerCase()` methods.
+
    ```javascript
-   let str = 'Hello';
+   let str = "Hello";
    console.log(str.toUpperCase()); // 'HELLO'
    console.log(str.toLowerCase()); // 'hello'
+   ```
 
-
-16. In JavaScript, both arrays and objects are used to store collections of data, but they have different characteristics and use cases.
+6. In JavaScript, both arrays and objects are used to store collections of data, but they have different characteristics and use cases.
 
 **Arrays**:
+
 - Arrays are ordered collections of values, indexed by numerical positions starting from 0.
 - They can store any type of data, including numbers, strings, objects, and even other arrays.
 - Arrays are useful when you need to work with a collection of similar items or when you need to maintain order.
 - Common operations on arrays include adding and removing elements, accessing elements by index, iterating through elements, and manipulating the array size.
 
 Example:
+
 ```javascript
 let numbers = [1, 2, 3, 4, 5];
 console.log(numbers[0]); // Output: 1
 ```
 
 **Objects**:
+
 - Objects are collections of key-value pairs where each key is a string (or Symbol) and each value can be any data type, including numbers, strings, arrays, functions, and other objects.
 - Objects are useful when you need to store data in a structured way or when you need to associate each value with a unique identifier (key).
 - Objects are not ordered, so the order of properties is not guaranteed.
 - Common operations on objects include adding, accessing, and deleting properties, iterating through properties, and checking if a property exists.
 
 Example:
+
 ```javascript
 let person = {
-    name: 'John',
-    age: 30,
-    city: 'New York'
+  name: "John",
+  age: 30,
+  city: "New York",
 };
 console.log(person.name); // Output: 'John'
 ```
 
-
-
-
-
 1. **function in JS** ->
    In JavaScript, a function is a block of code that can be defined once and executed or invoked multiple times
-
 
 1. **What is the purpose of the `this` keyword in JavaScript?**
 
    - The `this` keyword refers to the context in which a function is executed. Its value depends on how the function is called: in the global scope, as a method, or with explicit binding.
 
-
 1. **Explain the difference between `null` and `undefined` in JavaScript.**
 
-   - `null` represents an intentional absence of any value, while `undefined` indicates a variable that has been declared but hasn  been assigned a value.
+   - `null` represents an intentional absence of any value, while `undefined` indicates a variable that has been declared but hasn been assigned a value.
 
 1. **What is the purpose of the `localStorage` and `sessionStorage` objects in JavaScript?**
 
@@ -729,22 +709,6 @@ console.log(person.name); // Output: 'John'
 1. **Explain the concept of asynchronous programming in JavaScript.**
 
    - Asynchronous programming allows tasks to be executed independently of the main program flow. Callbacks, Promises, and `async/await` are mechanisms used to handle asynchronous operations.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 **_REACT_**
 
@@ -758,8 +722,8 @@ It will make use of the virtual DOM rather than real DOM (Data Object Model) as 
 It follows unidirectional data binding or data flow.
 It uses reusable or composable UI components for developing the view.
 
-2. What are the advantages of using React?
-   =
+2. # What are the advantages of using React?
+
    **_Use of Virtual DOM to improve efficiency_**: React uses virtual DOM to render the view. As the name suggests, virtual DOM is a virtual representation of the real DOM. Each time the data changes in a react app, a new virtual DOM gets created. Creating a virtual DOM is much faster than rendering the UI inside the browser. Therefore, with the use of virtual DOM, the efficiency of the app improves.
    **_Gentle learning curve_**: React has a gentle learning curve when compared to frameworks like Angular. Anyone with little knowledge of javascript can start building web applications using React.
    **_SEO friendly_**: React allows developers to develop engaging user interfaces that can be easily navigated in various search engines. It also allows server-side rendering, which boosts the SEO of an app.
@@ -852,6 +816,10 @@ You can download all npm public software packages without any registration or lo
 
 10. what is Git and Github?
     = Git and GitHub are tools used for collaborative work on projects. Git is a version control system that tracks changes in code. GitHub is a web-based hosting service that allows users to manage Git repositories.
+    git init
+    git push
+    git clone
+    git pull
 
 11. What are keys in React?
     A key is a special string attribute that needs to be included when using lists of elements.
@@ -881,6 +849,18 @@ You can download all npm public software packages without any registration or lo
 Reason to choose useEffect hook:
 The motivation behind the introduction of useEffect Hook is to eliminate the side effects of using class-based components. For example, tasks like updating the DOM, fetching data from API end-points, setting up subscriptions or timers, etc can lead to unwarranted side effects. Since the render method is too quick to produce a side-effect, one needs to use life cycle methods to observe the side effects.
 
+When making API calls, you typically want to trigger the call only when certain dependencies change. By specifying dependencies in the dependency array of useEffect, you can ensure that the API call is made only when necessary, avoiding infinite loops of API requests.
+
+useEffect(() => {
+const fetchData = async () => {
+try {
+const response = await axios.get('https://api.example.com/data');
+setData(response.data);
+} catch (error) {
+console.error('Error fetching data:', error);
+}
+};
+
 10. **What is the role of the useState hook?**
     The `useState` hook allows functional components to manage local state.
 
@@ -905,7 +885,7 @@ The motivation behind the introduction of useEffect Hook is to eliminate the sid
 17. **What is the significance of the `key` prop when rendering lists of elements?**
     The `key` prop is used by React to efficiently update and re-render lists of elements. It helps React identify which items have changed, been added, or been removed in a list.
 
-Remember that interview questions can vary in depth and complexity, so while these brief answers provide an overview, it is  important to thoroughly understand the concepts and be prepared to discuss them in more detail during interviews.
+Remember that interview questions can vary in depth and complexity, so while these brief answers provide an overview, it is important to thoroughly understand the concepts and be prepared to discuss them in more detail during interviews.
 
 21. **_what is unidireactional dataflow_** ?
     = Unidirectional data flow describes a one-way data flow where the data can move in only one pathway when being transferred between different parts of the program.
@@ -978,14 +958,7 @@ async function fetchData() {
 
 In summary, both Promises and `async/await` are essential tools for managing asynchronous code in JavaScript. `async/await` is often favored for its improved readability and error handling, while Promises are still valuable in scenarios where you need more fine-grained control over asynchronous operations or want to work with libraries or APIs that return Promises.
 
-
-
-
-
-
-
-
-**Example of Js Exercise ***
+**Example of Js Exercise \***
 
 <!-- searching in a string -->
 
@@ -995,12 +968,10 @@ if(str.includes('react'))
 console.log("true");
 }
 
-
 let string = 'I love JavaScript. If you do not love JavaScript what else can you love.'
 console.log(string.search('love')) // 2
 
 <!-- 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array. -->
-
 
 let string1= "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
 const arr=[];
@@ -1028,7 +999,7 @@ for(const elem of arr)
 console.log(elem);
 }
 
-<!-- 
+<!--
 remove dublicates from array -->
 
 const withduplicates=["a", "b", "a", "a", "b", "b", "g", "h", "i", "j",];
@@ -1056,9 +1027,6 @@ console.log("hey bro");
 console.log("Welcome to Programiz!");
 setTimeout(()=>{console.log("hey bro")}, 6000);
 
-
-
-
 // 1. console.log("B" - "B");
 // This expression subtracts the string "B" from the string "B". Since the subtraction operator is not defined for strings, JavaScript tries to convert them to numbers. However, both "B" strings cannot be converted to valid numbers, resulting in `NaN` (Not a Number).
 
@@ -1074,15 +1042,8 @@ setTimeout(()=>{console.log("hey bro")}, 6000);
 // 5. console.log("2" + "2");
 // Similar to the previous explanation, this expression uses the plus operator for string concatenation. The result is the string "22" because both "2" strings are concatenated together.
 
-
 //6. console.log('2'+3)
-// ans -> 23 
-
-
-
-
-
-
+// ans -> 23
 
 const numbers = [1, 2, 3, 4, 5]
 numbers.shift() // -> remove one item from the beginning
@@ -1107,24 +1068,21 @@ const numbers = [1, 2, 3, 4, 5];
 numbers.sort((a, b) => a - b);
 console.log(numbers); // [1, 2, 3, 4, 5]
 
-
-
 <!-- reverse the array in jS -->
 
 <!-- arr.reverse(); -->
 
-
 const arr=[1,2,3,4];
 let start=0;
- let end = arr.length-1;
-    while(end>start)
-   {
-       let temp=arr[start];
-       arr[start]=arr[end];
-       arr[end]=temp;
-       
+let end = arr.length-1;
+while(end>start)
+{
+let temp=arr[start];
+arr[start]=arr[end];
+arr[end]=temp;
+
        start++;
        end--;
-   }
-    console.log(arr);
-   
+
+}
+console.log(arr);

@@ -64,13 +64,21 @@ During my internship as a fresher candidate, I had the opportunity to work on a 
 
 5. **Login and Signup with Validation**: I implemented user authentication features, including login and signup forms with validation. This ensured secure access to the doctor and patient apps. I used React and Axios to seamlessly integrate these features with the backend APIs.
 
-6. **Bug Resolution**: In a fast-paced startup environment, I had the opportunity to troubleshoot and resolve over 80+ bugs and issues. This experience allowed me to develop problem-solving skills and adapt to changing project requirements quickly.
+const passwordValidationMiddleware = [
+    body('password')
+        .isLength({ min: 8 }).withMessage('Password must be at least 8 characters long')
+        .matches(/[a-z]/).withMessage('Password must contain at least one lowercase letter')
+        .matches(/[A-Z]/).withMessage('Password must contain at least one uppercase letter')
+        .matches(/[0-9]/).withMessage('Password must contain at least one numeric digit')
+];
+
+6. **Prescription generator**  : "using Js-pdf" 
+
+7. **Bug Resolution**: In a fast-paced startup environment, I had the opportunity to troubleshoot and resolve over 80+ bugs and issues. This experience allowed me to develop problem-solving skills and adapt to changing project requirements quickly.
 
 Throughout my internship, I learned to work effectively in a team, communicate with colleagues and stakeholders, and adapt to the evolving needs of the project. I gained hands-on experience with popular front-end technologies like React, Axios, Material UI, and Tailwind CSS. Additionally, I improved my problem-solving abilities by tackling a variety of issues and bugs, contributing to the overall success of the project.
 
 Overall, my internship experience as a fresher candidate was incredibly valuable, as it not only allowed me to apply my technical skills but also provided me with exposure to real-world development challenges in a fast-paced startup environment. It was a great opportunity for personal and professional growth, and I look forward to building upon this experience in my future endeavors.
-
-
 
 
 
@@ -183,7 +191,8 @@ TCS offers a comprehensive range of IT services, consulting, and business soluti
 
 **Tata Consultancy Services (TCS) has collaborated with Microsoft to utilize its expertise in industrial control systems and develop AI-powered autonomous solutions using Project Bonsai on Microsoft Azure Cloud. These solutions aim to optimize manufacturing, reduce downtime, improve quality, and enhance safety. TCS has already created a warehouse optimization solution and plans to expand into manufacturing yield optimization, chemical processing, logistics and supply chain optimization, and energy management.**
 
-
+TCS MasterCraft:
+passport seva kendra portal
 
 
 **2. Are you ready for relocation?**

@@ -3,16 +3,17 @@
 using namespace std;
  void sortBubble(vector<int> &vec)
  {
-    int counter=1;
-     while(counter<vec.size())
+    int size = vec.size()+1;
+    
+     while(size--)
      {
-        for (int i = 1; i < vec.size() - counter; i++)
+        for (int i = 1; i < size; i++)
         {
            if (vec[i] < vec[i - 1])
            {
               swap(vec[i], vec[i - 1]);
            }
-           counter++;
+         
         }
      }
 

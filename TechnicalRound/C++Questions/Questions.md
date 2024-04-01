@@ -312,24 +312,6 @@ Remember that with great power comes great responsibility. Pointers can be trick
         The modular approach, also known as modular programming, is a software development technique that emphasizes dividing a program's functionality into self-contained, independent modules or components. Each module represents a specific task or functionality, and these modules can be developed, tested, and maintained separately, making the overall software development process more manageable and organized.
 
 
-    The key principles of the modular approach include:
-
-    1. **Modularity:** The software is divided into smaller, manageable modules, where each module performs a specific function or a well-defined set of related functions. This improves code readability, reusability, and maintainability.
-
-    2. **Encapsulation:** Each module encapsulates its internal workings, hiding the implementation details and exposing only the necessary interfaces. This way, other modules can interact with it without needing to understand its internal complexities.
-
-    3. **Abstraction:** Modules provide a higher-level view of the functionality they offer, abstracting the underlying details. This allows developers to work with higher-level concepts rather than getting bogged down by low-level implementation details.
-
-    4. **Reusability:** By designing modules to be independent and self-contained, they can be reused in different parts of the software or even in other projects, saving time and effort.
-
-    5. **Maintainability:** Since modules are isolated and have well-defined interfaces, modifications or bug fixes can be limited to a specific module, making maintenance and troubleshooting more straightforward.
-
-    6. **Scalability:** The modular approach makes it easier to add new features or expand the software by adding or modifying modules without affecting the existing functionality.
-
-    7. **Collaborative Development:** In larger projects, different developers or teams can work on separate modules simultaneously, promoting parallel development and reducing the chances of conflicts.
-
-    Common techniques to implement modularity include the use of functions, classes, libraries, and packages in programming languages. Modular programming is widely used in various programming paradigms, including procedural, object-oriented, and functional programming. It is a fundamental concept in software engineering and promotes the development of robust, maintainable, and extensible software systems.
-
 30 . what is SDLC ?
 
 = SDLC stands for Software Development Life Cycle. It is a structured approach followed by software development teams to design, create, test, and deploy high-quality software applications. The SDLC process encompasses various phases that guide the development team through the entire software development process. The primary goal of SDLC is to produce efficient, reliable, and scalable software solutions that meet the specific requirements of the end-users or clients. Different organizations may adopt different SDLC models, but the core phases generally remain the same.
@@ -337,17 +319,17 @@ Remember that with great power comes great responsibility. Pointers can be trick
 Here are the typical phases in the SDLC process:
 
 1. **Requirement Gathering and Analysis:** In this initial phase, developers work closely with stakeholders, clients, and end-users to gather all the necessary requirements for the software. The team assesses the feasibility of the project, identifies potential risks, and defines the scope of the software.
-
+(10-20)
 2. **Planning:** Once the requirements are gathered and analyzed, the development team creates a detailed project plan. This plan includes tasks, schedules, resource allocation, and overall project management strategies.
-
+(10 - 20)
 3. **Design:** In this phase, the system architecture is designed, and the software's technical specifications are prepared. The design may include high-level architecture, database design, user interface design, and other system specifications.
-
+(10)
 4. **Implementation (Coding):** This is the phase where the actual development of the software takes place. The programmers write the code according to the design specifications. It's essential to follow coding standards and best practices during this phase.
-
+(30-40)
 5. **Testing:** Once the implementation is complete, the software undergoes a series of testing to identify and fix defects or issues. Different types of testing like unit testing, integration testing, system testing, and user acceptance testing (UAT) are performed to ensure the software functions correctly.
-
+(20)
 6. **Deployment:** After the testing phase is successful, the software is deployed to the production environment, making it available to end-users.
-
+(10)
 7. **Maintenance and Support:** Once the software is in use, there might be a need for ongoing maintenance and support to fix bugs, make enhancements, and ensure it remains compatible with evolving technologies.
 
 It's important to note that various SDLC models exist, such as Waterfall, Agile, Scrum, and DevOps, each with its specific approach to managing the development process. The choice of the SDLC model depends on the project's requirements, complexity, team size, and the organization's development philosophy.
@@ -361,7 +343,7 @@ It's important to note that various SDLC models exist, such as Waterfall, Agile,
 | -------------------- | ----------------------------------------------------------------- | --------------------------------------------------
 | Data Structure       | Linear data structure                                             | Linear data structure     
 
-| Ordering of Elements | First-In-First-Out (FIFO)                                         | Last-In-First-Out (LIFO)                               
+| Ordering of Elements | First-In-First-Out (FIFO)    (downloading )                        | Last-In-First-Out ((LIFO)                                                                                          (search history)
 | Insertion            | Elements are added at the rear                                    | Elements are added at the top            
 
 | Deletion             | Elements are removed from the front                               | Elements are removed from the top    
@@ -405,7 +387,7 @@ Application of Linked Lists:
               To keep the track of turns in a multi-player game, a circular linked list is used. 
     
 
- Application of Stack:
+ Application of Stack:(lifo)
                 examples :
                                 History of visited websites.
                 Message logs and all messages you get are arranged in a stack.
@@ -414,7 +396,7 @@ Application of Linked Lists:
                 Wearing/Removing Bangles, Pile of Dinner Plates, Stacked chairs.             
 
 
-Application of Queue:
+Application of Queue:(fifo)
                                 examples :  Operating System uses queues for job scheduling.
                 To handle congestion in the networking queue can be used.
                 Data packets in communication are arranged in queue format.
@@ -474,17 +456,12 @@ An array is a linear data structure that stores a fixed-size sequence of element
 2. **Linked List**:
 A linked list is a linear data structure composed of nodes, where each node contains data and a reference (or pointer) to the next node in the sequence. Linked lists allow dynamic insertion and deletion of elements without the need to shift elements like in arrays. There are different types of linked lists, such as singly linked lists (each node points to the next node), doubly linked lists (each node points to both the next and previous nodes), and circular linked lists (the last node points back to the first node).
 
-3. **Tree**:
-A tree is a hierarchical data structure that consists of nodes connected by edges. It's used to represent a hierarchical structure or relationships between elements. A tree has a root node at the top, and each node can have child nodes connected downward. Nodes with no children are called leaves. Common types of trees include binary trees (each node has at most two children), binary search trees (a binary tree with a specific ordering property), and balanced trees (trees that maintain balance to ensure efficient operations).
-
 4. **Linear Data Structure**:
 A linear data structure is one where elements are organized sequentially, like a straight line. Arrays, linked lists, stacks, and queues are examples of linear data structures. They follow a specific order and have only one direct predecessor and successor for each element.
 
 5. **Non-Linear Data Structure**:
 Non-linear data structures do not organize elements sequentially like a line. Instead, elements can have multiple predecessors and successors, forming complex relationships. Trees and graphs are examples of non-linear data structures.
 
-6. **Graph**:
-A graph is a non-linear data structure that consists of nodes (also called vertices) connected by edges. Graphs are used to represent relationships between different entities. They are versatile and can model a wide range of real-world scenarios. Graphs can be directed (edges have a specific direction) or undirected (edges have no direction). They can also have weighted edges, where each edge has an associated weight or cost.
 
 7. **Vector**:
 In computer programming, a vector is often used to refer to a dynamic array or a resizable array. Unlike a traditional array with a fixed size, a vector can grow or shrink in size as elements are added or removed. Vectors automatically manage the memory allocation and deallocation for the elements they contain. They provide the convenience of arrays while allowing you to avoid some of the challenges of managing memory manually. Vectors are commonly found in programming languages like C++ (where they are part of the Standard Template Library) and other libraries or frameworks.
@@ -496,15 +473,14 @@ A two-dimensional array is an extension of the concept of a one-dimensional arra
 1.	Set is used to store all the unique elements.	map is used to store all the unique elements.
 2.	Its syntax is -: set<data_type>name_of_set.     Its syntax is -: map<data_type , data_type>name_of_map;
 3.	It stores the elements in increasing order	It stores the elements in key , value pairs.
-4.	Set is implemented using Binary search tree.	Map is implemented using Balance Binary tree.
+4.	Set is implemented using Binary search tree.	Map is implemented using Balance Binary tree.(red black tree)
 5.	Sets are traversed using the iterators. 	It is defined in #include <map> header file.
-
-
-
 
 
 10. what is graph ?
 = A Graph is a non-linear data structure consisting of vertices and edges. The vertices are sometimes also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by G(V, E).
+https://www.geeksforgeeks.org/graph-and-its-representations/
+
 
 11. what is Tree ? 
  = A Binary Tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child, and the topmost node in the tree is called the root.
@@ -675,6 +651,10 @@ int main() {
 
     return 0;
 }
+
+
+18. 
+A double-ended queue, often abbreviated as deque (pronounced "deck"), is a data structure that allows insertion and deletion of elements from both ends, namely the front and the back. Its a generalized form of a queue and a stack, allowing operations like push, pop, enqueue, and dequeue from both ends.
 
 
 
