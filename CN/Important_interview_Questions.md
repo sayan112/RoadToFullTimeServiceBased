@@ -13,7 +13,7 @@ The OSI (Open Systems Interconnection) model is a conceptual framework that stan
 
 **2. Layer 6: Presentation Layer**(encyption,compression)
 - Focuses on data representation and syntax.
-- Translates data between the application layer and the lower layers.
+- Translates data between the application layer and the lower layer   s.
 - Handles data compression, encryption, and data format conversions.
 - Ensures that data from different systems can be interpreted correctly.
 - Examples of data formats: ASCII, JPEG, MPEG.

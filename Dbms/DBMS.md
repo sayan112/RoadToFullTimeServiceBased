@@ -149,7 +149,7 @@ Sure! Let's discuss the concepts of primary key, candidate key, super key, and f
 
     For example: If a student is an entity in the table then age will be the attribute of that student. 
 
-
+![alt text](image-1.png)
     -         Simple attribute : 
         An attribute that cannot be further subdivided into components is a simple attribute. 
         Example: The roll number of a student, the id number of an employee. 
@@ -308,12 +308,13 @@ Normalization is needed for several reasons:
 
      **2NF**: It is known as the second normal form. A table to be in its second normal form should satisfy the following conditions:
     The table should be in its 1NF i.e. satisfy all the conditions of 1NF.
+    should be no partial dependecy (prime->non-prime)
     
      example -> 
-      R(abcd) ab->cd , b->c (here is the problem b is a prime attribute bcz ab is a candidate key (ab-> abcd) , so b->c , and c is a non prime attribute , so its a functional dependency )
+      R(abcd) ab->cd , b->c (here is the problem b is a prime attribute bcz ab is a candidate key (ab-> abcd) , so b->c , and c is a non prime attribute , so its a partial dependency )
 
     Every non-prime attribute of the table should be fully functionally dependent on the primary key.
-    (how to identify its in 2nf-> when a part of a candidate key depent of a non prime attribute , its a functional dependency)
+    (how to identify its in 2nf-> when a part of a candidate key depent of a non prime attribute , its a partial dependency)
 
      **3NF**: It is known as the third normal form. A table to be in its third normal form should satisfy the following conditions:
     The table should be in its 2NF i.e. satisfy all the conditions of 2NF.
@@ -589,3 +590,54 @@ Advantages of Indexing in DBMS:
 = ![Alt text](image.png)
 Data redundancy is a condition created within a database or data storage technology in which the same piece of data is held in two separate places.
 
+
+
+35.Sure, here's a brief overview of NoSQL databases and MongoDB:
+
+**NoSQL Databases:**
+
+1. **What is NoSQL?**
+   NoSQL databases, or "Not Only SQL," are a class of database management systems that do not strictly adhere to the traditional relational database model. They are designed to handle large volumes of unstructured or semi-structured data, offering greater flexibility and scalability compared to relational databases.
+
+2. **Types of NoSQL Databases:**
+   NoSQL databases are typically categorized into four main types:
+   - **Document-oriented databases:** These store data in flexible, JSON-like documents.
+   - **Key-value stores:** These databases store data as a collection of key-value pairs.
+   - **Column-family stores:** Data is stored in columns rather than rows, allowing for efficient storage and retrieval of wide-row data.
+   - **Graph databases:** These databases are designed to represent and query relationships between data elements.
+
+3. **Advantages of NoSQL:**
+   - Scalability: NoSQL databases are designed to scale horizontally, making them suitable for handling large volumes of data and high traffic loads.
+   - Flexibility: NoSQL databases can accommodate diverse data types and structures, making them ideal for applications with evolving schema requirements.
+   - Performance: NoSQL databases often offer high-performance read and write operations, especially for specific use cases like real-time analytics or content management.
+
+4. **Use Cases:**
+   - Big data analytics
+   - Content management systems
+   - Real-time web applications
+   - IoT (Internet of Things) data storage and processing
+   - Social networks and recommendation engines
+
+**MongoDB:**
+
+1. **What is MongoDB?**
+   MongoDB is a popular open-source document-oriented NoSQL database that stores data in flexible, JSON-like documents called BSON (Binary JSON). It provides a rich set of features for querying, indexing, and data manipulation.
+
+2. **Key Features:**
+   - Document-based model: MongoDB stores data in collections of documents, where each document is a JSON-like object with dynamic schemas.
+   - Replication and high availability: MongoDB supports automatic replication with built-in failover and data redundancy features.
+   - Sharding: MongoDB can horizontally partition data across multiple servers to support large-scale deployments and improve performance.
+   - Indexing: MongoDB supports various types of indexes, including single-field, compound, geospatial, and text indexes, to optimize query performance.
+   - Aggregation framework: MongoDB provides a powerful aggregation framework for performing complex data processing and analysis tasks.
+
+3. **Use Cases:**
+   - Content management systems
+   - E-commerce platforms
+   - Real-time analytics
+   - Mobile app backends
+   - IoT data management
+
+4. **Community and Ecosystem:**
+   MongoDB has a vibrant community and extensive ecosystem, with comprehensive documentation, online resources, and third-party tools and libraries available to support developers in building and managing MongoDB applications.
+
+Overall, MongoDB and NoSQL databases in general offer a flexible and scalable alternative to traditional relational databases, making them well-suited for modern applications with diverse data management needs.
